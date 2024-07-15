@@ -120,7 +120,6 @@ export default function Spotify() {
             </div>
           </div>
         </div>
-
         <div className="mx-auto flex max-w-4xl flex-col gap-2 md:flex-row">
           <div className="basis-1/2">
             <Image src={blackpink} alt="Picture of the author" className="" />
@@ -137,6 +136,57 @@ export default function Spotify() {
               Uncover insights and translate concepts into features that address customer behaviours
               and motivations.
             </p>
+          </div>
+        </div>{' '}
+        <div className="mx-auto flex max-w-4xl flex-col gap-2 md:flex-row">
+          <div className="basis-1/2">
+            <Image src={blackpink} alt="Picture of the author" className="" />
+            <h3 className=" pt-5 text-xl text-zinc-400">Data in Context </h3>
+            <p className=" pt-2">
+              “It would be good to put this in context. Is 40 listens in a year a lot or not?”
+            </p>
+          </div>
+          <div className="basis-1/2 ">
+            <Image src={july} alt="Picture of the author" className="" />
+            <h3 className=" pt-5 text-xl text-zinc-400">Human Recommendations </h3>
+            <p className=" pt-2">
+              “Knowing that other people listen to music in another way than me would influence what
+              music I choose to listen to”
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="mx-auto max-w-3xl items-center justify-start  ">
+        <div>
+          <div className="max-w-3xl ">
+            <div className="  pb-8  ">
+              <p className="py-5 text-zinc-400">DEEPER INSIGHTS</p>
+              <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
+                Designing with Data
+              </h1>
+              <p className="py-5">
+                Before I could jump into designing, it was important to understand the data we had
+                access to and what would be feasible to curate. Unlike Wrapped1, the cadence for
+                these data stories would be more frequent, and thus required more data. I partnered
+                with our data scientist and used this framework to investigate what data we had
+                access to. This revealed some gaps in our approach. 1.
+                https://newsroom.spotify.com/2023-wrapped/
+              </p>
+            </div>
+            <div className="mx-auto flex max-w-4xl flex-col gap-2 md:flex-row">
+              <div className="basis-1/2">
+                <h4> Not all data is accounted for.</h4>
+                <p>
+                  Anniversary dates — fans relationship with artists also exists outside of the
+                  platform. We need to collect that data from the user. And encourage them to enter
+                  it in.
+                </p>
+              </div>
+
+              <div className="basis-1/2 ">
+                <Image src={july} alt="Picture of the author" className="" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
