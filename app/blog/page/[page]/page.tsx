@@ -24,7 +24,7 @@ export default function Page({ params }: { params: { page: string } }) {
   }
 
   return (
-    <div className="px-20">
+    <div className="px-10 md:px-20">
       <ListLayout
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
