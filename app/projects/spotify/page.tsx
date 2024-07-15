@@ -2,6 +2,8 @@ import { genPageMetadata } from 'app/seo'
 import spotifyFast from './spotify-fast.gif'
 import blackpink from './blackpink-card.png'
 import july from './july-highlights.png'
+import zoomie from './custom-page.png'
+import elements from './element_grid.png'
 
 import Image from 'next/image'
 
@@ -140,14 +142,14 @@ export default function Spotify() {
         </div>{' '}
         <div className="mx-auto flex max-w-4xl flex-col gap-2 md:flex-row">
           <div className="basis-1/2">
-            <Image src={blackpink} alt="Picture of the author" className="" />
+            <Image src={elements} alt="Picture of the author" className="" />
             <h3 className=" pt-5 text-xl text-zinc-400">Data in Context </h3>
             <p className=" pt-2">
               “It would be good to put this in context. Is 40 listens in a year a lot or not?”
             </p>
           </div>
           <div className="basis-1/2 ">
-            <Image src={july} alt="Picture of the author" className="" />
+            <Image src={zoomie} alt="Picture of the author" className="" />
             <h3 className=" pt-5 text-xl text-zinc-400">Human Recommendations </h3>
             <p className=" pt-2">
               “Knowing that other people listen to music in another way than me would influence what
@@ -184,7 +186,7 @@ export default function Spotify() {
               </div>
 
               <div className="basis-1/2 ">
-                <Image src={july} alt="Picture of the author" className="" />
+                <Image src={zoomie} alt="Picture of the author" className="" />
               </div>
             </div>
           </div>
