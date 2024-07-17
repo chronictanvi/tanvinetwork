@@ -150,8 +150,8 @@ export default function Spotify() {
       </section>
       <section className="mx-auto max-w-3xl items-center justify-start  ">
         <div>
-          <div className="max-w-3xl ">
-            <div className="  pb-8  ">
+          <div className="max-w-3xl pt-10 ">
+            <div className="  py-8  ">
               <p className="py-5 text-zinc-400">DEEPER INSIGHTS</p>
               <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
                 Designing with Data
@@ -165,7 +165,7 @@ export default function Spotify() {
                 https://newsroom.spotify.com/2023-wrapped/
               </p>
             </div>
-            <div className="mx-auto flex max-w-4xl flex-col gap-2 md:flex-row">
+            <div className="mx-auto flex max-w-4xl flex-col py-5 gap-2 md:flex-row">
               <div className="basis-1/2">
                 <h4> Not all data is accounted for.</h4>
                 <p>
@@ -179,6 +179,204 @@ export default function Spotify() {
                 <Image src={zoomie} alt="Picture of the author" className="" />
               </div>
             </div>
+            <div className="mx-auto flex max-w-4xl flex-col py-5 gap-2 md:flex-row">
+              <div className="basis-1/2">
+                <h4> Not all data is accounted for.</h4>
+                <p>
+                  Anniversary dates — fans relationship with artists also exists outside of the
+                  platform. We need to collect that data from the user. And encourage them to enter
+                  it in.
+                </p>
+              </div>
+
+              <div className="basis-1/2 ">
+                <Image src={zoomie} alt="Picture of the author" className="" />
+              </div>
+            </div>
+            <div className="mx-auto flex max-w-4xl flex-col py-5 gap-2 md:flex-row">
+              <div className="basis-1/2">
+                <h4> Not all data is accounted for.</h4>
+                <p>
+                  Anniversary dates — fans relationship with artists also exists outside of the
+                  platform. We need to collect that data from the user. And encourage them to enter
+                  it in.
+                </p>
+              </div>
+
+              <div className="basis-1/2 ">
+                <Image src={zoomie} alt="Picture of the author" className="" />
+              </div>
+            </div>
+            <div className="mx-auto flex max-w-4xl flex-col gap-2 py-5 md:flex-row">
+              <div className="basis-1/2">
+                <h4> Not all data is accounted for.</h4>
+                <p>
+                  Anniversary dates — fans relationship with artists also exists outside of the
+                  platform. We need to collect that data from the user. And encourage them to enter
+                  it in.
+                </p>
+              </div>
+
+              <div className="basis-1/2 ">
+                <Image src={zoomie} alt="Picture of the author" className="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-16 text-black">
+        <div className="mx-auto max-w-4xl items-center justify-start">
+          <div className="flex max-w-4xl flex-col gap-2 md:flex-row">
+            <div className=" basis-1/2 pb-8 ">
+              <p className="py-5">Synthesis</p>
+              <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
+                Why fandom?
+              </h1>
+              <p className="py-5">
+                Compelling data stories require diversity; users are not interested in mere numbers and avoid redundant information. It's crucial to offer a range of content. Presenting data as a simple statement like "they didn't listen much" may come across as confrontational and lacks the power to inspire further action. Emphasize the narrative and exclude elements that don't captivate interest. Our proposal is modular — It allows for a curated set of data stories created for specific users.
+
+
+              </p>
+            </div>
+            <div>
+              {/* <p className="py-5">FURTHER UNDERSTANDING</p>
+              <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
+                What needs focus:{' '}
+        
+              </h1>
+              <p className="py-5">
+                We spoke to a variety of people — including fervent artist or independent devotees,
+                everyday music lovers and active members of fan communities — to understand how fans
+                navigate Japan’s unique music scene. We identified Fandom as the single largest
+                opportunity for Premium Growth for the following reasons:
+              </p> */}
+            </div>
+          </div>
+        </div>
+        <div className="mx-auto flex max-w-4xl flex-col gap-5 md:flex-row">
+          <div className="basis-1/2">
+
+            <h3 className=" pt-5 text-xl text-zinc-400">Infrastructure </h3>
+            <p className=" pt-2">
+              Collect fan memories in one place, we can tap into sentimentality and memorabilia.
+            </p>
+          </div>
+          <div className="basis-1/2 ">
+
+            <h3 className=" pt-5 text-xl text-zinc-400">Platform Content
+            </h3>
+            <p className=" pt-2">
+              Launch an extended version of listening stats that is highly localized and meet local fandom needs
+            </p>
+          </div>
+          <div className="basis-1/2">
+
+            <h3 className=" pt-5 text-xl text-zinc-400">Partnership Integration
+            </h3>
+            <p className=" pt-2">
+              By providing exclusive content through partnerships, we can provide value that stretches beyond our platform.
+
+            </p>
+          </div>
+        </div>{' '}
+        <div className="mx-auto py-5 max-w-4xl ">
+
+          <Image src={zoomie} alt="Picture of the author" className="" />
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-3xl items-center justify-start  ">
+        <div>
+          <div className="max-w-3xl pt-10 ">
+            <div className="  py-8  ">
+              <p className="py-5 text-zinc-400">PROCESS</p>
+              <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
+                Presenting Premium Value
+
+              </h1>
+              <p className="py-5">
+                In an age where everything is demanding your time, Spotify gives you an opportunity to reminisce and grow. Spotify connects you with your communities, reminds you of the memories you have made and expands your relationships with music.
+
+
+              </p>
+            </div>
+
+            <Image src={zoomie} alt="Picture of the author" className="" />
+            <div className="  py-8  ">
+              <p className="py-5 text-zinc-400">PROCESS</p>
+              <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
+                How we got there —
+
+
+              </h1>
+              <p className="py-5">
+                In an age where everything is demanding your time, Spotify gives you an opportunity to reminisce and grow. Spotify connects you with your communities, reminds you of the memories you have made and expands your relationships with music.
+
+
+              </p>
+            </div>
+
+            <div className="mx-auto flex max-w-4xl flex-col py-5 gap-2 md:flex-row">
+              <div className="basis-1/2">
+                <h4>Complexity
+                </h4>
+                <p>
+                  This data story is packed with information — there is a subset of fans, minutes, song that is most listened to, how mainstream that song is, song that is least listened to, how mainstream that song is. To make the data stories easy to digest, I limited the data points in each story to 1 or 2.
+
+
+                </p>
+              </div>
+
+              <div className="basis-1/2 ">
+                <Image src={zoomie} alt="Picture of the author" className="" />
+              </div>
+            </div>
+            <div className="mx-auto flex max-w-4xl flex-col py-5 gap-2 md:flex-row">
+              <div className="basis-1/2">
+                <h4> Surfaces
+                </h4>
+                <p>
+                  Celebrations are best when they come as a surpirse. I explored how data stories can be organically surfaced across the Spotify experience to create moments of delight.
+
+
+                </p>
+              </div>
+
+              <div className="basis-1/2 ">
+                <Image src={zoomie} alt="Picture of the author" className="" />
+              </div>
+            </div>
+            <div className="mx-auto flex max-w-4xl flex-col py-5 gap-2 md:flex-row">
+              <div className="basis-1/2">
+                <h4>Iterations
+                </h4>
+                <p>
+                  Simplified Aesthetics for a Japanese audience, retaining only the esential information on each data card.
+
+
+                </p>
+              </div>
+
+              <div className="basis-1/2 ">
+                <Image src={zoomie} alt="Picture of the author" className="" />
+              </div>
+            </div>
+            <div className="mx-auto flex max-w-4xl flex-col gap-2 py-5 md:flex-row">
+              <div className="basis-1/2">
+                <h4> Not all data is accounted for.</h4>
+                <p>
+                  Anniversary dates — fans relationship with artists also exists outside of the
+                  platform. We need to collect that data from the user. And encourage them to enter
+                  it in.
+                </p>
+              </div>
+
+              <div className="basis-1/2 ">
+                <Image src={zoomie} alt="Picture of the author" className="" />
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
