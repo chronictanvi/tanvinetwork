@@ -1,7 +1,7 @@
 import { genPageMetadata } from 'app/seo'
 import spotifyFast from './spotify-fast.gif'
 import blackpink from './blackpink-card.png'
-import july from './july-highlights.png'
+import july from './july-highlights.gif'
 import zoomie from './custom-page.png'
 import elements from './element_grid.png'
 
@@ -37,7 +37,7 @@ export default function Spotify() {
       <section className="mx-auto max-w-3xl items-center justify-start  ">
         <div className=" my-10 flex flex-col gap-10 md:flex-row">
           <div className="basis-1/2">
-            <p className="text-zinc-400">THE CONTEXT</p>
+            <p className="text-zinc-400">CONTEXT</p>
             <p>
               Spotify is looking to differentiate their offering and accelerate stick user growth
               with new & existing music streamers in Japan.
@@ -94,7 +94,7 @@ export default function Spotify() {
       </section>
       <section className="bg-white py-16 text-black">
         <div className="mx-auto max-w-3xl items-center justify-start">
-          <div className="flex max-w-4xl flex-col gap-2 md:flex-row">
+          <div className=" max-w-4xl gap-2 ">
             <div className=" basis-1/2 pb-8 ">
               <p className="py-5">FOUNDATIONAL RESEARCH</p>
               <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
@@ -107,40 +107,30 @@ export default function Spotify() {
                 opportunity for Premium Growth for the following reasons:
               </p>
             </div>
+            <div></div>
             <div>
-              {/* <p className="py-5">FURTHER UNDERSTANDING</p>
+              <p className="py-5">FURTHER UNDERSTANDING</p>
               <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
                 What needs focus:{' '}
-        
               </h1>
               <p className="py-5">
                 We spoke to a variety of people — including fervent artist or independent devotees,
                 everyday music lovers and active members of fan communities — to understand how fans
                 navigate Japan’s unique music scene. We identified Fandom as the single largest
                 opportunity for Premium Growth for the following reasons:
-              </p> */}
+              </p>
             </div>
           </div>
         </div>
-        <div className="mx-auto flex max-w-4xl flex-col gap-2 md:flex-row">
+        <div className="mx-auto flex max-w-7xl flex-col gap-2 pb-2 md:flex-row">
           <div className="basis-1/2">
             <Image src={blackpink} alt="Picture of the author" className="" />
-            <h3 className=" pt-5 text-xl text-zinc-400">Genuine Community </h3>
-            <p className=" pt-2">
-              Spotify is looking to differentiate their offering and accelerate stick user growth
-              with new & existing music streamers in Japan.
-            </p>
           </div>
           <div className="basis-1/2 ">
             <Image src={july} alt="Picture of the author" className="" />
-            <h3 className=" pt-5 text-xl text-zinc-400">Faster Cadence</h3>
-            <p className=" pt-2">
-              Uncover insights and translate concepts into features that address customer behaviours
-              and motivations.
-            </p>
           </div>
         </div>{' '}
-        <div className="mx-auto flex max-w-4xl flex-col gap-2 md:flex-row">
+        <div className="mx-auto flex max-w-7xl flex-col gap-2 md:flex-row">
           <div className="basis-1/2">
             <Image src={elements} alt="Picture of the author" className="" />
             <h3 className=" pt-5 text-xl text-zinc-400">Data in Context </h3>
@@ -194,4 +184,17 @@ export default function Spotify() {
       </section>
     </>
   )
+}
+
+// <h3 className=" pt-5 text-xl text-zinc-400">Genuine Community </h3>
+// <p className=" pt-2">
+//   Spotify is looking to differentiate their offering and accelerate stick user growth
+//   with new & existing music streamers in Japan.
+// </p>
+{
+  /* <h3 className=" pt-5 text-xl text-zinc-400">Faster Cadence</h3>
+            <p className=" pt-2">
+              Uncover insights and translate concepts into features that address customer behaviours
+              and motivations.
+            </p> */
 }
