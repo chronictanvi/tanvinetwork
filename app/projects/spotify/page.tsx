@@ -6,6 +6,7 @@ import zoomie from './custom-page.png'
 import elements from './element_grid.png'
 import userflow from './userflow.png'
 import contentflow from './contentflow.png'
+import thedeepend from './thedeepend.jpg'
 
 import Image from 'next/image'
 
@@ -16,26 +17,34 @@ import Link from '@/components/Link'
 export default function Spotify() {
   return (
     <>
-      <div className=" my-20 items-center justify-start md:mt-2 md:max-w-3xl md:border-r-2 md:px-10 ">
-        <div className="  px-14 pt-8 md:space-y-5 md:px-6 ">
-          <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
+      <div className=" max-w-8xl my-20 flex flex-col justify-start gap-2 pb-2 align-top md:mt-2  md:flex-row md:px-20 ">
+        <div className="  mr-48 flex basis-1/2 flex-col pt-8 md:space-y-5 ">
+          <h1 className="text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100  md:leading-9">
             Japan is the 2nd largest music market in the world. But 63% of revenue still comes from
             physical sales.
           </h1>
-          <p className="py-5">
-            I was part of an ambitious project to unlock new experiences tailored to audiences in-
-            Japan, by crafting social contexts in which music consumption gains meaning and value
-            within the Spotify platform.
-          </p>
 
-          <small>
-            To comply with my non-disclosure agreement, I have omitted and obfuscated confidential
-            information in this case study. All information in this case study is my own and does
-            not necessarily reflect the views of Spotify.
-          </small>
+          <div className="flex-auto">
+            <p className=" py-5 text-xl font-light">
+              I was part of an ambitious project to unlock new experiences tailored to audiences in-
+              Japan, by crafting social contexts in which music consumption gains meaning and value
+              within the Spotify platform.
+            </p>
+          </div>
+          <div className="flex-none">
+            <small>
+              To comply with my non-disclosure agreement, I have omitted and obfuscated confidential
+              information in this case study. All information in this case study is my own and does
+              not necessarily reflect the views of Spotify.
+            </small>
+          </div>
+        </div>
+
+        <div className="  basis-1/2 ">
+          <Image src={thedeepend} alt="Picture of the author" className="w-full" />
         </div>
       </div>
-      <Image src={spotifyFast} alt="Picture of the author" className="w-full	" />
+
       <section className="mx-auto max-w-3xl items-center justify-start  ">
         <div className=" my-10 flex flex-col gap-10 md:flex-row">
           <div className="basis-1/2">
