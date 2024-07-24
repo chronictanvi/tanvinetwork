@@ -8,8 +8,10 @@ import otherpeople from "./otherpeople.png";
 import elements from "./element_grid.png";
 import userflow from "./userflow.png";
 import contentflow from "./contentflow.png";
+import mainstream from "./Mainstream.png";
 import eveninglistens from "./eveninglistens.gif";
 import mins from "./53min-t.gif";
+import titles from "./titles.gif";
 
 import thedeepend from "./thedeepend.jpg";
 
@@ -20,8 +22,8 @@ export const metadata = genPageMetadata({ title: "Spotify" });
 export default function Spotify() {
   return (
     <>
-      <div className=" max-w-8xl my-20 flex flex-col justify-start gap-2 pb-2 align-top md:mt-2  md:flex-row md:px-20 ">
-        <div className="  mr-48 flex basis-1/2 flex-col pt-8 md:space-y-5 ">
+      <div className=" max-w-8xl my-20 flex flex-col justify-start gap-2 pb-2 align-top md:mt-2  px-5 md:flex-row md:px-20 ">
+        <div className="  md:mr-48 py-5 flex basis-1/2 flex-col pt-8 md:space-y-5 ">
           <h1 className="text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100  md:leading-9">
             Japan is the 2nd largest music market in the world. But 63% of
             revenue still comes from physical sales.
@@ -54,7 +56,7 @@ export default function Spotify() {
         </div>
       </div>
 
-      <section className="mx-auto max-w-6xl pb-16 items-center justify-start  ">
+      <section className="mx-auto  px-5 max-w-6xl pb-16 items-center justify-start  ">
         <div className=" my-10 flex flex-col gap-16 md:flex-row">
           <div className="basis-1/2">
             <p className="text-zinc-400 py-3">CONTEXT</p>
@@ -130,7 +132,7 @@ export default function Spotify() {
           </div>
         </div>
       </section>
-      <section className="bg-white py-16 text-black">
+      <section className="bg-white  px-5 py-16 text-black">
         <div className="mx-auto max-w-3xl items-center justify-start">
           <div className=" max-w-4xl gap-2 ">
             <div className=" basis-1/2 pb-8 ">
@@ -163,7 +165,7 @@ export default function Spotify() {
           </div>
         </div>
       </section>
-      <section className="mx-auto max-w-3xl items-center justify-start  ">
+      <section className="mx-auto max-w-3xl  px-5 items-center justify-start  ">
         <div>
           <div className="max-w-3xl pt-10 ">
             <div className="  py-8  ">
@@ -243,7 +245,7 @@ export default function Spotify() {
         </div>
       </section>
 
-      <section className="bg-white pt-16 text-black">
+      <section className="bg-white  px-5 pt-16 text-black">
         <div className="mx-auto max-w-4xl items-center justify-start">
           <div className="flex max-w-4xl flex-col gap-2 md:flex-row">
             <div className=" basis-1/2 pb-8 ">
@@ -315,7 +317,7 @@ export default function Spotify() {
         <Image src={userflow} alt="Picture of the author" className="" />
       </section>
 
-      <section className="mx-auto max-w-3xl  items-center justify-start  ">
+      <section className="mx-auto max-w-5xl  px-5 items-center justify-start  ">
         <div>
           <div>
             <div className="  mx-auto  items-center justify-start py-8  ">
@@ -331,7 +333,7 @@ export default function Spotify() {
               </p>
             </div>
 
-            <div className="mx-auto flex max-w-4xl flex-col gap-2 py-5 md:flex-row">
+            <div className="mx-auto flex flex-col gap-10 py-5 md:flex-row">
               <div className="basis-1/2">
                 <h4 className="text-lg font-bold py-3">Complexity</h4>
                 <p>
@@ -344,10 +346,14 @@ export default function Spotify() {
               </div>
 
               <div className="basis-1/2 ">
-                <Image src={zoomie} alt="Picture of the author" className="" />
+                <Image
+                  src={mainstream}
+                  alt="Picture of the author"
+                  className=""
+                />
               </div>
             </div>
-            <div className="mx-auto flex max-w-4xl flex-col gap-2 py-5 md:flex-row">
+            <div className="mx-auto flex flex-col gap-10 py-5 md:flex-row">
               <div className="basis-1/2">
                 <h4 className="text-lg font-bold py-3"> Surfaces</h4>
                 <p>
@@ -361,7 +367,7 @@ export default function Spotify() {
                 <Image src={zoomie} alt="Picture of the author" className="" />
               </div>
             </div>
-            <div className="mx-auto flex max-w-4xl flex-col gap-2 py-5 md:flex-row">
+            <div className="mx-auto flex  flex-col gap-10 py-5 md:flex-row">
               <div className="basis-1/2">
                 <h4 className="text-lg font-bold py-3">Iterations</h4>
                 <p>
@@ -374,21 +380,20 @@ export default function Spotify() {
                 <Image src={zoomie} alt="Picture of the author" className="" />
               </div>
             </div>
-            <div className="mx-auto flex max-w-4xl flex-col gap-2 py-5 md:flex-row">
+            <div className="mx-auto flex flex-col gap-10 py-10 md:flex-row">
               <div className="basis-1/2">
-                <h4 className="text-lg font-bold py-3">
-                  {" "}
-                  Not all data is accounted for.
-                </h4>
+                <h4 className="text-lg font-bold py-3">Modularity</h4>
                 <p>
-                  Anniversary dates — fans relationship with artists also exists
-                  outside of the platform. We need to collect that data from the
-                  user. And encourage them to enter it in.
+                  To make things scalable, I first organized the data as
+                  variables connected them to the components so they
+                  auto-populate. The components were built with variables such
+                  as [artist name] and [song title] which pulled directly from
+                  the user’s database to make custom prototypes. 
                 </p>
               </div>
 
               <div className="basis-1/2 ">
-                <Image src={zoomie} alt="Picture of the author" className="" />
+                <Image src={titles} alt="Picture of the author" className="" />
               </div>
             </div>
           </div>
