@@ -4,6 +4,7 @@ import blackpink from "./blackpink-card.png";
 import july from "./july-highlights.gif";
 import zoomie from "./custom-page.png";
 import otherpeople from "./otherpeople.png";
+import sweetbutpsycho from "./sweetbutpsycho.png";
 
 import elements from "./element_grid.png";
 import userflow from "./userflow.png";
@@ -367,8 +368,8 @@ export default function Spotify() {
                 <Image src={zoomie} alt="Picture of the author" className="" />
               </div>
             </div>
-            <div className="mx-auto flex  flex-col gap-10 py-5 md:flex-row">
-              <div className="basis-1/2">
+            <div className="mx-auto   gap-10 py-5 ">
+              <div className=" my-10">
                 <h4 className="text-lg font-bold py-3">Iterations</h4>
                 <p>
                   Simplified Aesthetics for a Japanese audience, retaining only
@@ -376,8 +377,12 @@ export default function Spotify() {
                 </p>
               </div>
 
-              <div className="basis-1/2 ">
-                <Image src={zoomie} alt="Picture of the author" className="" />
+              <div className=" ">
+                <Image
+                  src={sweetbutpsycho}
+                  alt="Picture of the author"
+                  className=""
+                />
               </div>
             </div>
             <div className="mx-auto flex flex-col gap-10 py-10 md:flex-row">
