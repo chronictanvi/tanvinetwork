@@ -123,7 +123,8 @@ export default function Spotify() {
               </p>
               <p className="font-body py-5">
                 “Exclusive” 限定 (gentei) vs “Feeling special” 特別感
-                (tokubetsu-kan). Exclusivity in Japan isn’t limited to content —
+                (tokubetsu-kan).
+              </p><p>Exclusivity in Japan isn’t limited to content —
                 it also taps into the desire for unique and special things. Our
                 goal for the project was to develop a prototype that could test
                 concepts with users about their interest and willingness to pay
@@ -136,36 +137,47 @@ export default function Spotify() {
       <section className="bg-white  px-5 py-16 text-black">
         <div className="mx-auto max-w-3xl items-center justify-start">
           <div className=" max-w-4xl gap-2 ">
-            <div className=" basis-1/2 pb-8 ">
+            <div className=" basis-1/2  ">
               <p className="py-5">FOUNDATIONAL RESEARCH</p>
               <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
                 Why fandom?
               </h1>
-              <p className="py-5">
-                We spoke to a variety of people — including fervent artist or
-                independent devotees, everyday music lovers and active members
-                of fan communities — to understand how fans navigate Japan’s
-                unique music scene. We identified Fandom as the single largest
-                opportunity for Premium Growth for the following reasons:
+              <p className="py-5 ">
+                We spoke to a variety of people — including fervent artist or independent devotees, everyday music lovers and active members of fan communities — to understand how fans navigate Japan’s unique music scene. We identified Fandom as the single largest opportunity for Premium Growth for the following reasons:
               </p>
+            </div>
+            <div className="mx-auto flex max-w-4xl flex-col  gap-10  md:flex-row">
+              <div className="basis-1/2 py-8">
+                <h4 className="text-2xl py-3">
+                  {" "}
+                  Widespread demand
+                </h4>
+                <p>
+                  ● Fandom isn’t a niche interest - it’s deeply ingrained in people’s everyday lives.
+                </p>          <p className="py-5">
+                  ● 62% of Japanese consumers with an audio interest are regularly engaging in
+                  fan activities.
+                </p>
+              </div>
+
+              <div className="basis-1/2 py-8 ">
+                <h4 className="text-2xl py-3">
+                  High willingness to pay
+                </h4>
+                <p>
+                  ● Fans’ willingness to pay (WTP) to strengthen their connection with artists is remarkably high.
+                </p> <p className="py-5">
+
+                  ● Around 90% of participants in our study had one or two artists they passionately support and invest in.
+
+
+                </p>  </div>
             </div>
             <div></div>
-            <div>
-              <p className="py-5">FURTHER UNDERSTANDING</p>
-              <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
-                What needs focus:{" "}
-              </h1>
-              <p className="py-5">
-                We spoke to a variety of people — including fervent artist or
-                independent devotees, everyday music lovers and active members
-                of fan communities — to understand how fans navigate Japan’s
-                unique music scene. We identified Fandom as the single largest
-                opportunity for Premium Growth for the following reasons:
-              </p>
-            </div>
+
           </div>
         </div>
-      </section>
+      </section >
       <section className="mx-auto max-w-3xl  px-5 items-center justify-start  ">
         <div>
           <div className="max-w-3xl pt-10 ">
@@ -175,13 +187,10 @@ export default function Spotify() {
                 Designing with Data
               </h1>
               <p className="py-5">
-                Before I could jump into designing, it was important to
-                understand the data we had access to and what would be feasible
-                to curate. Unlike Wrapped1, the cadence for these data stories
-                would be more frequent, and thus required more data. I partnered
-                with our data scientist and used this framework to investigate
-                what data we had access to. This revealed some gaps in our
-                approach. 1. https://newsroom.spotify.com/2023-wrapped/
+
+                We spoke to a variety of people — including fervent artist or independent devotees, everyday music lovers and active members of fan communities — to understand how fans navigate Japan’s unique music scene. We identified Fandom as the single largest opportunity for Premium Growth for the following reasons:
+
+
               </p>
             </div>
             <div className="mx-auto flex max-w-4xl flex-col gap-10 py-16 md:flex-row">
@@ -230,11 +239,11 @@ export default function Spotify() {
               <div className="basis-1/2">
                 <h4 className="text-lg font-bold py-3">
                   {" "}
-                  Not all data is accounted for.
-                </h4>
-                <p>
                   “Wrapped is too infrequent. How does my listening change over
                   a day? How does it change over seasons? ”
+                </h4>
+                <p>
+                  Listeners want more — There is a strong desire to access their ‘fan narrative’ more frequently.
                 </p>
               </div>
 
@@ -260,8 +269,10 @@ export default function Spotify() {
                 crucial to offer a range of content. Presenting data as a simple
                 statement like "they didn't listen much" may come across as
                 confrontational and lacks the power to inspire further action.
-                Emphasize the narrative and exclude elements that don't
-                captivate interest. Our proposal is modular — It allows for a
+
+              </p> <p>
+                Our proposal is modular — Emphasize the narrative and exclude elements that don't
+                captivate interest. It allows for a
                 curated set of data stories created for specific users.
               </p>
             </div>
@@ -318,10 +329,10 @@ export default function Spotify() {
         <Image src={userflow} alt="Picture of the author" className="" />
       </section>
 
-      <section className="mx-auto max-w-5xl  px-5 items-center justify-start  ">
+      <section className="mx-auto max-w-4xl  px-5 items-center justify-start  ">
         <div>
           <div>
-            <div className="  mx-auto  items-center justify-start py-8  ">
+            <div className=" mx-auto  items-center justify-start py-8  ">
               <p className="py-5 text-zinc-400">PROCESS</p>
               <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
                 How we got there —
@@ -331,6 +342,7 @@ export default function Spotify() {
                 you an opportunity to reminisce and grow. Spotify connects you
                 with your communities, reminds you of the memories you have made
                 and expands your relationships with music.
+              </p><p> This required us to understand the data we had access to and what would be feasible to curate. Here are some of the considerations I made:
               </p>
             </div>
 
@@ -393,7 +405,7 @@ export default function Spotify() {
                   variables connected them to the components so they
                   auto-populate. The components were built with variables such
                   as [artist name] and [song title] which pulled directly from
-                  the user’s database to make custom prototypes. 
+                  the user’s database to make custom prototypes.
                 </p>
               </div>
 
