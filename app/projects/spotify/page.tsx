@@ -6,6 +6,7 @@ import zoomie from "./custom-page.png";
 import otherpeople from "./otherpeople.png";
 import sweetbutpsycho from "./sweetbutpsycho.png";
 
+import keyscreens from "./KEYSCREENS.png";
 import elements from "./element_grid.png";
 import userflow from "./userflow.png";
 import contentflow from "./contentflow.png";
@@ -57,7 +58,7 @@ export default function Spotify() {
         </div>
       </div>
 
-      <section className="mx-auto  px-5 max-w-6xl pb-16 items-center justify-start  ">
+      <section className="mx-auto max-w-7xl  items-center justify-start  ">
         <div className=" my-10 flex flex-col gap-16 md:flex-row">
           <div className="basis-1/2">
             <p className="text-zinc-400 py-3">CONTEXT</p>
@@ -91,7 +92,8 @@ export default function Spotify() {
             </p>
           </div> */}
         </div>
-        <div className="mx-auto flex max-w-9xl flex-col gap-2 pb-2 md:flex-row">
+
+        {/* <div className="mx-auto flex max-w-9xl flex-col gap-2 pb-2 md:flex-row">
           <div className="basis-1/2">
             <Image src={blackpink} alt="Picture of the author" className="" />
           </div>
@@ -106,7 +108,17 @@ export default function Spotify() {
           <div className="basis-1/2 ">
             <Image src={zoomie} alt="Picture of the author" className="" />
           </div>
-        </div>
+        </div> */}   </section>
+
+      <div className="mx-auto  py-5 ">
+        <Image
+          src={keyscreens}
+          alt="Picture of the author"
+          className="pt-5"
+        />
+      </div>
+      <section className="mx-auto  px-5 max-w-6xl pb-16 items-center justify-start  ">
+
         <div className=" ">
           <div className="max-w-3xl ">
             <div className="  pb-8  ">
@@ -133,7 +145,7 @@ export default function Spotify() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
       <section className="bg-white  px-5 py-16 text-black">
         <div className="mx-auto max-w-3xl items-center justify-start">
           <div className=" max-w-4xl gap-2 ">
@@ -321,7 +333,7 @@ export default function Spotify() {
             <p className="py-5">
               In an age where everything is demanding your time, Spotify gives
               you an opportunity to reminisce and grow. Spotify connects you
-              with your communities, reminds you of the memories you have made
+              with your communities, reminds you of the memories yo u have made
               and expands your relationships with music.
             </p>
           </div>
@@ -329,7 +341,7 @@ export default function Spotify() {
         <Image src={userflow} alt="Picture of the author" className="" />
       </section>
 
-      <section className="mx-auto max-w-4xl  px-5 items-center justify-start  ">
+      <section className="mx-auto max-w-5xl  px-5 items-center justify-start  ">
         <div>
           <div>
             <div className=" mx-auto  items-center justify-start py-8  ">
