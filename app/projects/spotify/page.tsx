@@ -68,7 +68,7 @@ export default function Spotify() {
             </p>
           </div>
           <div className="basis-1/2">
-            <p className="text-zinc-400 py-3">ROLE</p>
+            <p className="text-zinc-400 py-3">APPROACH</p>
             <p>
               Uncover insights and translate concepts into features that address
               customer behaviours and motivations.
