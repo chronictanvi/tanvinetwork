@@ -10,7 +10,7 @@ const projectsData = [
     description: `Exploring alternative ways of faciliatating conversation on digital platforms, taking into considertation the fluidity of information exchange and the impact of interpretation on dialogue. 
     for.`,
     imgSrc: '/static/images/comrade-cover.png',
-    href: 'https://www.google.com',
+    href: '/projects/comrade',
   },
   {
     title: 'Spotify',

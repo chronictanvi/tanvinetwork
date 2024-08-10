@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .task-list-item::before {
   @apply hidden;
 }
@@ -48,4 +50,42 @@ input:-webkit-autofill:focus {
 .linkicon {
   display: inline-block;
   vertical-align: middle;
+}
+
+
+.phone-container{
+  display: flex;
+text-align: center;
+background: #fafafa;
+padding: 80px;
+width: auto;
+}
+.phone:first-child{
+}
+.phone{
+width: 240px; 
+height: 520px;
+margin: 0 auto;
+position: relative;
+}
+.phone-content{
+border-radius: 24px;
+height: 520px;
+  overflow-y: scroll;
+position: absolute;
+}
+.pdp-header{
+position: relative;
+top: 0;
+transform: translate(0%, -0%);
+top: 0;
+z-index: 2;
+    border-radius: 24px 24px 0px 0px !important;
+}
+.pdp-footer{ 
+position: absolute;
+bottom: 0;
+transform: translate(-100%, 0%);
+z-index: 2;
+border-radius: 0px 0px 24px 24px !important;
 }
