@@ -31,13 +31,7 @@ const projectsData = [
   },
 
 
-  {
-    title: 'Coming soon: Comrade',
-    description: `Exploring alternative ways of faciliatating conversation on digital platforms, taking into considertation the fluidity of information exchange and the impact of interpretation on dialogue. 
-    for.`,
-    imgSrc: '/static/images/comrade-cover.png',
-    href: '',
-  },
+  
 
 ]
 
