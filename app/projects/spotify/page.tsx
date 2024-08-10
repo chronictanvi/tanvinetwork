@@ -388,9 +388,7 @@ export default function Spotify() {
                 </p>
               </div>
 
-              <div className="basis-1/2 ">
-                <Image src={zoomie} alt="Picture of the author" className="" />
-              </div>
+              <div className="basis-1/2 "></div>
             </div>
             <div className="mx-auto   gap-10 py-5 ">
               <div className=" my-10">
