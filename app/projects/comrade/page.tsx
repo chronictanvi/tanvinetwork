@@ -197,7 +197,7 @@ export default function Comrade() {
             </p>
           </div>
           <div className="basis-1/2">
-            <Image src={v2} alt="Picture of the author" />
+            <Image src={v2} alt="Picture of the author" unoptimized />
           </div>
         </div>
 
@@ -306,16 +306,7 @@ export default function Comrade() {
                 concluded, unless you have a recording of the conversation, it's a little hard to
                 decode what this couldve possibly been about.
               </p>
-              <p className="py-3">
-                {' '}
-                ‘hello are you there?’ <br></br> ‘yeah i am here’{' '}
-              </p>
-              <p>
-                The blackberry bush is made up of teal (User 1) giving me feedback on the project,
-                with me in peach (User 2) asking a few clarifying questions or elaborating on my
-                intention. User 1 talks more, takes up more space, but that's par for the course for
-                the nature of this conversation.
-              </p>
+
               <Image src={figc} alt="Picture of the author" />
               <p>
                 Fig C. Progression of topics within a conversation between 2 people. Here, theres
