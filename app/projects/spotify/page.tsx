@@ -377,10 +377,10 @@ export default function Spotify() {
           </p>
           <Image src={process} alt="Picture of the author" className="py-5" />
         </div>
-        <div className="mx-auto max-w-3xl py-5 justify-items-center">
-          <div className="mx-auto flex flex-col gap-24 py-12 md:flex-row">
+        <div className="mx-auto max-w-3xl py-32 justify-items-center">
+          <div className="mx-auto flex flex-col gap-24 md:flex-row">
             <div className="basis-1/2">
-              <h4 className="text-2xl py-5">Complexity</h4>
+              <h4 className="text-2xl pb-5">Complexity</h4>
               <p>
                 The individual components had to be simple but memorable. For
                 example, this data story is packed with information — there is a
@@ -429,7 +429,7 @@ export default function Spotify() {
             />
           </div> 
         </div>*/}
-          <div className="mx-auto pb-12 gap-24 py-5 ">
+          <div className="mx-auto gap-24 py-32 ">
             <div className=" my-5">
               <h4 className="text-2xl py-3">Iterations</h4>
               <p>
@@ -440,7 +440,7 @@ export default function Spotify() {
               </p>
             </div>
 
-            <div className=" ">
+            <div className=" pt-12">
               <Image
                 src={sweetbutpsycho}
                 alt="Picture of the author"
@@ -465,7 +465,7 @@ export default function Spotify() {
           <Image
             src={modular}
             alt="Picture of the author"
-            className=""
+            className="pt-12"
             unoptimized
           />
         </div>
