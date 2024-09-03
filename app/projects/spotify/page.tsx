@@ -7,7 +7,8 @@ import otherpeople from "./otherpeople.png";
 import takeaway from "./takeaway.png";
 import process from "./process4.png";
 import physical from "./physical.png";
-
+import modular2 from "./Modular2.png";
+import consideration from "./Consideration English.png";
 import sweetbutpsycho from "./sweetbutpsycho.png";
 
 import keyscreens from "./KEYSCREENS.png";
@@ -139,27 +140,25 @@ export default function Spotify() {
               <h1 className="text-4xl font-extrabold leading-9 tracking-tight  md:text-4xl md:leading-10">
                 A Distinct Market
               </h1>
-              <p className="py-5">
-                In Japan, Spotify is regarded as a high-quality audio service
-                for music lovers, yet for many, it is viewed merely as a basic
-                utility with limited offerings. This is becase Japan, the
-                world’s second largest music industry, is distinct from other
-                markets. There is specific cultural value placed on restricted
-                items and the desire to be acknowledged as a fan.
-              </p>
-
+              <p className="py-5 text-xl">
+                In Japan, Spotify is viewed merely as a basic utility with
+                limited offerings.
+              </p>{" "}
               <p className="pb-5">
-                Exclusivity in Japan isn’t limited to content — it also taps
-                into the{" "}
+                {" "}
+                Japan is distinct from other markets. There is specific cultural
+                value placed on restricted items and the desire to be
+                acknowledged as a fan. Exclusivity in Japan isn’t limited to
+                content — it also taps into the{" "}
                 <span className="font-bold">
                   {" "}
                   desire for unique and special things.{" "}
                 </span>
-                To increase our market share, Spotify in Japan needs to be
+                {/* To increase our market share, Spotify in Japan needs to be
                 differentiated to improve product/market fit and attract new
                 subscribers. Our goal for the project was to develop a prototype
                 that could test concepts with users about their interest and
-                willingness to pay by tapping into a sense of feeling special.
+                willingness to pay by tapping into a sense of feeling special. */}
               </p>
               <Image
                 src={physical}
@@ -177,8 +176,12 @@ export default function Spotify() {
                 We conducted research amongst fervent artists, independent
                 devotees, everyday music lovers and active members of fan
                 communities — to understand how fans navigate Japan’s unique
-                music scene. We identified Fandom as the single largest
-                opportunity for Premium Growth for the following reasons:
+                music scene. We identified fandom as the{" "}
+                <span className="font-bold">
+                  {" "}
+                  single largest opportunity for premium growth{" "}
+                </span>{" "}
+                for the following reasons:
               </p>
             </div>
             <div className="mx-auto flex max-w-4xl flex-col  gap-10  md:flex-row">
@@ -207,61 +210,13 @@ export default function Spotify() {
               </div>
             </div>
           </div>
-          <div className="mx-auto max-w-3xl items-center justify-start">
-            <p className="py-5  pt-12">SYNTHESIS</p>
-            <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10 pb-5 ">
-              Identifying Content
-            </h1>
-            <p>
-              Developing special content for Japanese fans required us to
-              understand the data we had access to and what would be feasible to
-              curate. We categorised the curation opportunities as the
-              following:
-            </p>
-          </div>
-          <div className="mx-auto flex max-w-3xl flex-col gap-5 pt-5 md:flex-row">
-            <div className="basis-1/2">
-              <h3 className="  text-xl  pt-5">Infrastructure </h3>
-              <p className=" pt-2">
-                Collect fan memories in one place, tapping into sentimentality
-                and memorabilia.
-              </p>
-            </div>
-
-            <div className="basis-1/2 ">
-              <h3 className="  text-xl  pt-5 ">Platform Content</h3>
-              <p className=" pt-2">
-                Launch an extended version of listening stats that is highly
-                localized and meet local fandom needs
-              </p>
-            </div>
-
-            <div className="basis-1/2">
-              <h3 className=" text-xl   pt-5">Partnership Integration</h3>
-              <p className=" pt-2">
-                By providing exclusive content through partnerships, we can
-                provide value that stretches beyond our platform.
-              </p>
-            </div>
-          </div>{" "}
-          <div className="mx-auto max-w-3xl py-10 ">
-            <Image
-              src={contentflow}
-              alt="Picture of the author"
-              className="py-5"
-            />
-            <figcaption className="italic">
-              An example of a user journey forming the overall story and walking
-              the user through different kinds of components.
-            </figcaption>
-          </div>
         </div>
       </section>
       <section className="mx-auto max-w-3xl px-5 py-32 items-center justify-start  ">
         <div className="  py-8  ">
-          <p className="py-5 ">USER INSIGHTS</p>
+          <p className="py-5 ">FURTHER UNDERSTANDING</p>
           <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
-            Data Stories
+            User Insights
           </h1>
           <p className="py-5">
             We spoke to a variety of people to understand how fans navigate
@@ -340,9 +295,9 @@ export default function Spotify() {
         <div className="mx-auto max-w-3xl items-center justify-start">
           <div className="">
             <div className=" basis-1/2 pb-5 ">
-              <p className="py-5">PROCESS </p>
+              <p className="py-5">STRATEGY </p>
               <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
-                Opportunity
+                Creating Data Stories
               </h1>
               <p className="py-5 pb-24">
                 Compelling data stories require diversity; users are not
@@ -362,22 +317,70 @@ export default function Spotify() {
           </div>
         </div>
         <Image src={userflow} alt="Picture of the author" className="" />
+        <div className="mx-auto max-w-3xl items-center justify-start">
+          <p className="py-5  pt-12">SYNTHESIS</p>
+          <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10 pb-5 ">
+            Content for Fandom
+          </h1>
+          <p>
+            Developing special content for Japanese fans required us to
+            understand the data we had access to and what would be feasible to
+            curate. We categorised the curation opportunities as the following:
+          </p>
+        </div>
+        <div className="mx-auto flex max-w-3xl flex-col gap-5 pt-5 md:flex-row">
+          <div className="basis-1/2">
+            <h3 className="  text-xl  pt-5">Infrastructure </h3>
+            <p className=" pt-2">
+              Collect fan memories in one place, tapping into sentimentality and
+              memorabilia.
+            </p>
+          </div>
 
+          <div className="basis-1/2 ">
+            <h3 className="  text-xl  pt-5 ">Platform Content</h3>
+            <p className=" pt-2">
+              Launch an extended version of listening stats that is highly
+              localized and meet local fandom needs
+            </p>
+          </div>
+
+          <div className="basis-1/2">
+            <h3 className=" text-xl   pt-5">Partnership Integration</h3>
+            <p className=" pt-2">
+              By providing exclusive content through partnerships, we can
+              provide value that stretches beyond our platform.
+            </p>
+          </div>
+        </div>{" "}
+        <div className="mx-auto max-w-3xl py-10 ">
+          <Image
+            src={contentflow}
+            alt="Picture of the author"
+            className="py-5"
+          />
+          <figcaption className="italic text-center">
+            An example of a user journey forming the overall story and walking
+            the user through different kinds of components.
+          </figcaption>
+        </div>
         <div className="mx-auto max-w-3xl pt-12 ">
+          <p className="py-5">PROCESS </p>
           <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
-            Production
+            Iteration
           </h1>
           <p className="py-5">
             {" "}
-            Throughtout the production process, I had to understand the data we
-            had access to and what would be feasible to curate. While fleshing
-            out the content cards from wireframes, some of the considerations I
-            made were around complexity of visual information, layout and
-            modularity.
+            While fleshing out the content cards from wireframes, some of the
+            considerations I made were around complexity of visual information,
+            layout and modularity.
           </p>
           <Image src={process} alt="Picture of the author" className="py-5" />
+          <figcaption className="italic text-center">
+            Going from low fidelity wireframes to high fidelity content cards
+          </figcaption>
         </div>
-        <div className="mx-auto max-w-3xl py-32 justify-items-center">
+        <div className="mx-auto max-w-3xl pt-32 justify-items-center">
           <div className="mx-auto flex flex-col gap-24 md:flex-row">
             <div className="basis-1/2">
               <h4 className="text-2xl pb-5">Complexity</h4>
@@ -401,6 +404,9 @@ export default function Spotify() {
                 alt="Picture of the author"
                 className=""
               />
+              <figcaption className="italic text-center pt-5">
+                This data card is too complex!
+              </figcaption>
             </div>
           </div>
 
@@ -429,9 +435,9 @@ export default function Spotify() {
             />
           </div> 
         </div>*/}
-          <div className="mx-auto gap-24 py-32 ">
+          <div className="mx-auto gap-24 py-12 ">
             <div className=" my-5">
-              <h4 className="text-2xl py-3">Iterations</h4>
+              <h4 className="text-2xl py-3">Variation</h4>
               <p>
                 I explored concepts for simplified aesthetics for a Japanese
                 audience, retaining only the essential information on each data
@@ -446,11 +452,14 @@ export default function Spotify() {
                 alt="Picture of the author"
                 className=""
               />
+              <figcaption className="italic text-center pt-5">
+                Different layout options for the same content
+              </figcaption>
             </div>
           </div>
 
           <div className="mx-auto py-5 ">
-            <h4 className="text-2xl pt-12 py-5">Modularity</h4>
+            <h4 className="text-2xl pt-12 py-5">Prototyping</h4>
             <p className="pb-5">
               To make things scalable, I first organized the data as variables
               connected them to the components so they auto-populate.{" "}
@@ -462,14 +471,57 @@ export default function Spotify() {
               database to make custom prototypes.
             </p>
           </div>
+
           <Image
             src={modular}
             alt="Picture of the author"
             className="pt-12"
             unoptimized
           />
+          <figcaption className="italic text-center pt-5">
+            Framework for building custom content for each user with Figma
+            variables
+          </figcaption>
+          <Image
+            src={modular2}
+            alt="Picture of the author"
+            className="pt-12"
+            unoptimized
+          />
+          <figcaption className="italic text-center pt-5">
+            Application of modular system
+          </figcaption>
         </div>
       </section>
+      <section className="mx-auto max-w-3xl px-5 py-32 items-center justify-start  ">
+        <div className="  py-8  ">
+          <p className="py-5 "></p>
+          <h1 className="text-4xl font-bold  leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
+            Result
+          </h1>
+          <p className="py-5">
+            The final prototype met our goal to uncover insights and translate
+            concepts into features that address customer behaviours and
+            motivations.
+          </p>
+          <Image
+            src={consideration}
+            alt="Picture of the author"
+            className="pt-12"
+            unoptimized
+          />
+          <h1 className="text-4xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
+            What's Next
+          </h1>
+          <p className="py-5">
+            The final prototype was tested with 10 Japanese users and received
+            over all positive feedback. It is now under development.
+          </p>
+        </div>
+      </section>
+      <h1 className="text-5xl text-center pt-5 font-bold leading-9 tracking-tight text-red-100 dark:text-red-400 md:leading-10">
+        ありがとう!
+      </h1>
     </>
   );
 }
