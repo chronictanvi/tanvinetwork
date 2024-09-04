@@ -1,8 +1,8 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: "Tanvi's Portfolio",
-  author: 'Tanvi Sharma',
-  headerTitle: 'Tanvi Sharma',
+  author: 'Tanvi',
+  headerTitle: 'Tanvi',
   description: "Tanvi's design portfolio.",
   language: 'en-us',
   theme: 'system', // system, dark or light

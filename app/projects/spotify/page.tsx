@@ -1,5 +1,4 @@
 import { genPageMetadata } from "app/seo";
-// import spotifyFast from "./spotify-fast.gif";
 import blackpink from "./blackpink-card.png";
 import cover from "./Hero-Image--3.gif";
 import zoomie from "./custom-page.png";
