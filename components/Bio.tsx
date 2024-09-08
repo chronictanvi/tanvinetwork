@@ -51,9 +51,10 @@ export default function Bio() {
       </div>
       {showYuchi && (
         <Image
-          alt="photo of my black cat yuchi laying on his back, nipples out"
+          alt="photo of my black cat yuchi laying on his back, nips out"
           className="max-w-xs"
           src={yuchi}
+          objectFit="contain"
         />
       )}
     </div>

@@ -10,6 +10,7 @@ import physical from "./physical.png";
 import modular2 from "./Modular2.png";
 import consideration from "./Consideration English.png";
 import sweetbutpsycho from "./sweetbutpsycho.png";
+import cover from "./Hero-Image--3.gif";
 
 import keyscreens from "./KEYSCREENS.png";
 import elements from "./element_grid.png";
@@ -28,11 +29,13 @@ export default function Content() {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="relative">
+    <div className="relative mt-5">
       {isRestricted && (
-        <div className="absolute inset-x-[25vw] text-xl bg-black p-10 rounded z-10">
-          Sorry! This is under NDA. If you wish to view it, please enter the
-          password
+        <div className="absolute md:inset-x-[25vw] text-xl bg-black p-10 rounded z-10 flex flex-col">
+          <p className="pb-8">
+            Sorry! This project is under NDA. If you wish to view it, please
+            enter the password:
+          </p>
           <form
             className="text-black flex items-center"
             onSubmit={(e) => {
@@ -48,13 +51,45 @@ export default function Content() {
               name="password"
               type="password"
             />
-            <button className="bg-white p-2 ml-5">Submit</button>
+            <button className="bg-white p-1.5 px-2 ml-5">Submit</button>
           </form>
         </div>
       )}{" "}
       <div
         className={isRestricted ? "blur overflow-y-hidden max-h-screen" : ""}
       >
+        <section className="mx-auto max-w-6xl px-5 py-24 items-center justify-start  ">
+          <Image src={cover} alt="Picture of the author" />
+          <div className=" my-10 py-5 flex flex-col gap-16 md:flex-row">
+            <div className="basis-1/2">
+              <p className="text-sm pb-3 text-zinc-400 tracking-wider">
+                CONTEXT
+              </p>
+              <p className="text-xl">
+                Spotify is looking to differentiate their offering and
+                accelerate stick user growth with new & existing music streamers
+                in Japan.
+              </p>
+            </div>
+
+            <div className=" basis-1/2">
+              <p className="text-sm pb-3 text-zinc-400 tracking-wider">GOAL</p>
+              <p className=" text-xl">
+                Out of the Total Available Market, Spotify only takes up a small
+                fraction of users. Our goal is to increase Subs/Monthly Active
+                Users to 40 in Japan by 2025.
+              </p>
+            </div>
+            {/* <div className="basis-1/2">
+            <p className="text-zinc-400  py-3">TEAM</p>
+            <p>
+              UX Researchers, Content Writers, Localization Specialists for
+              Japanese, Prototypers, Content Strategist and Product Managers and
+              one other Lead Designer.
+            </p>
+          </div> */}
+          </div>
+        </section>
         <section className="bg-white  px-5 py-16 text-black z-0">
           <div className="mx-auto py-5 "></div>
           <div className="mx-auto max-w-3xl items-center justify-start">
@@ -72,7 +107,9 @@ export default function Content() {
           /> */}
             <div className=" max-w-4xl gap-2 ">
               <div className=" basis-1/2 pb-12 ">
-                <p className="py-5  uppercase">The challenge</p>
+                <p className="text-sm pb-3 tracking-wider uppercase">
+                  The challenge
+                </p>
                 <h1 className="text-4xl font-extrabold leading-9 tracking-tight  md:text-4xl md:leading-10">
                   A Distinct Market
                 </h1>
@@ -104,7 +141,9 @@ export default function Content() {
               </div>
 
               <div className=" basis-1/2">
-                <p className="py-5">FOUNDATIONAL RESEARCH</p>
+                <p className="text-sm pb-3 tracking-wider">
+                  FOUNDATIONAL RESEARCH
+                </p>
                 <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
                   Offerings for Fans
                 </h1>
@@ -150,7 +189,9 @@ export default function Content() {
         </section>
         <section className="mx-auto max-w-3xl px-5 py-32 items-center justify-start  ">
           <div className="  py-8  ">
-            <p className="py-5 ">FURTHER UNDERSTANDING</p>
+            <p className="text-sm pb-3  tracking-wider ">
+              FURTHER UNDERSTANDING
+            </p>
             <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
               User Insights
             </h1>
@@ -234,7 +275,7 @@ export default function Content() {
           <div className="mx-auto max-w-3xl items-center justify-start">
             <div className="">
               <div className=" basis-1/2 pb-5 ">
-                <p className="py-5">STRATEGY </p>
+                <p className="text-sm pb-3 tracking-wider">STRATEGY </p>
                 <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
                   Creating Data Stories
                 </h1>
@@ -257,7 +298,7 @@ export default function Content() {
           </div>
           <Image src={userflow} alt="Picture of the author" className="" />
           <div className="mx-auto max-w-3xl items-center justify-start">
-            <p className="py-5  pt-12">SYNTHESIS</p>
+            <p className="text-sm pb-3 tracking-wider pt-12">SYNTHESIS</p>
             <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10 pb-5 ">
               Content for Fandom
             </h1>
@@ -305,7 +346,7 @@ export default function Content() {
             </figcaption>
           </div>
           <div className="mx-auto max-w-3xl pt-12 ">
-            <p className="py-5">PROCESS </p>
+            <p className="text-sm pb-3 tracking-wider">PROCESS </p>
             <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
               Iteration
             </h1>
@@ -450,7 +491,7 @@ export default function Content() {
               className="pt-12"
               unoptimized
             />
-            <h1 className="text-4xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
+            <h1 className="text-4xl font-bold leading-9 pt-32 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
               What's Next
             </h1>
             <p className="py-5">
