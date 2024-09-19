@@ -65,6 +65,8 @@ export const metadata: Metadata = {
   },
 }
 
+import { GoogleTagManager } from '@next/third-parties/google'
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
@@ -82,6 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <body className="bg-white pl-[calc(100vw-100%)] text-black antialiased dark:bg-black dark:text-white">
+        <GoogleTagManager gtmId="G-JNEPSTX4S5" />
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
           <SectionContainer>
