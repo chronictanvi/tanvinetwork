@@ -189,14 +189,14 @@ export default function CharacterViewer() {
   return (
     <div className="min-h-screen p-6">
       {/* Section Header */}
-      <div className="mb-8 text-center">
+      <div className="mb-8 text-center" style={{ fontFamily: 'Euripides' }}>
         <h1 className="text-2xl">Characters</h1>
       </div>
 
       <div className="flex flex-row justify-center">
         {/* Characters Display */}
 
-        <div className="] grid-cols-10 mb-16 grid h-[90vh] max-w-2xl grid-flow-row-dense  gap-4 overflow-y-scroll">
+        <div className="] mb-16 grid h-[90vh] max-w-2xl grid-flow-row-dense grid-cols-10  gap-4 overflow-y-scroll">
           {characters.map((char) => (
             <div
               key={char}
