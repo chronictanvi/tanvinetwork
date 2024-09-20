@@ -1,5 +1,5 @@
 import CharacterViewer from '@/components/CharacterViewer'
-import FontViewer from 'components/FontViewer.tsx'
+import FontViewer from '@/components/FontViewer'
 
 export default function Euripides() {
   return (
