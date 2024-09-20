@@ -213,7 +213,7 @@ export default function CharacterViewer() {
         {/* Circle Element */}
         <div className="sticky mt-24 hidden basis-1/3 justify-center md:flex">
           <div
-            className="mx-24 flex h-[60vh] w-[60vh] items-center justify-center rounded-full border-2 border-slate-100 bg-slate-100 text-[200px] font-bold text-black"
+            className="mx-24 flex h-[70vh] w-[60vh] items-center justify-center rounded-full border-2 border-slate-100 bg-slate-100 text-[200px] font-bold text-black"
             style={{ fontFamily: 'Euripides' }}
           >
             {hoveredChar}
