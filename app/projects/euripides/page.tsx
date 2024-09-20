@@ -4,7 +4,7 @@ import FontViewer from '@/components/FontViewer'
 export default function Euripides() {
   return (
     <div style={{ fontFamily: 'Euripides' }} className="max-w-8xl mx-auto mt-12">
-      <div className="mx-auto mt-12 flex max-w-6xl flex-col gap-16 px-5 md:flex-row">
+      <div className="mx-auto mt-12 flex max-w-6xl flex-row flex-col gap-16 px-5">
         <></>
         <div className="flex basis-2/3 flex-col  pr-16 pt-8 md:space-y-5">
           <p className="pb-3 text-sm tracking-wider text-zinc-400">OVERVIEW</p>{' '}
@@ -41,18 +41,18 @@ export default function Euripides() {
           </div>
         </div>
 
-        <div className="mb-10 flex flex-col md:flex-row">
-          <div className="basis-1/3">
+        <div className=" flex flex-col md:flex-row">
+          <div className=" mb-10 basis-1/3">
             <p className="pb-3 text-sm tracking-wider text-zinc-400">SCOPE</p>
             <ul>
               <li>Type Design</li>
             </ul>
           </div>
-          <div className="my-10 basis-1/3 ">
+          <div className="mb-10 basis-1/3 ">
             <p className="pb-3 text-sm tracking-wider text-zinc-400">TOOLS</p>
             <ul>
               <li>Robofont</li>
-              <li>Proofs made in Adobe InDesign. </li> <li> GitHub for version control. </li>
+              {/* <li>Proofs made in Adobe InDesign. </li> <li> GitHub for version control. </li> */}
             </ul>
           </div>
           <div className="mb-10 basis-1/3 ">
