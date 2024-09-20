@@ -190,7 +190,7 @@ export default function CharacterViewer() {
     <div className="min-h-screen p-6">
       {/* Section Header */}
       <div className="mb-8 text-center" style={{ fontFamily: 'Euripides' }}>
-        <h1 className="text-2xl">Characters</h1>
+        <h1 className="text-2xl tracking-wider text-zinc-400">CHARACTERS</h1>
       </div>
 
       <div className="flex flex-row justify-center">
