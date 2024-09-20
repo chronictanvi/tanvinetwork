@@ -1238,16 +1238,27 @@
   dependencies:
     webpack-bundle-analyzer "4.10.1"
 
-"@next/env@14.2.3":
-  version "14.2.3"
+"@next/env@14.2.12":
+  version "14.2.12"
+  resolved "https://registry.npmjs.org/@next/env/-/env-14.2.12.tgz"
+  integrity sha512-3fP29GIetdwVIfIRyLKM7KrvJaqepv+6pVodEbx0P5CaMLYBtx+7eEg8JYO5L9sveJO87z9eCReceZLi0hxO1Q==
 
 "@next/eslint-plugin-next@14.2.3":
   version "14.2.3"
   dependencies:
     glob "10.3.10"
 
-"@next/swc-darwin-arm64@14.2.3":
-  version "14.2.3"
+"@next/swc-darwin-arm64@14.2.12":
+  version "14.2.12"
+  resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.2.12.tgz"
+  integrity sha512-crHJ9UoinXeFbHYNok6VZqjKnd8rTd7K3Z2zpyzF1ch7vVNKmhjv/V7EHxep3ILoN8JB9AdRn/EtVVyG9AkCXw==
+
+"@next/third-parties@^14.2.12":
+  version "14.2.12"
+  resolved "https://registry.npmjs.org/@next/third-parties/-/third-parties-14.2.12.tgz"
+  integrity sha512-V7iRRie7KISDOK/xWgvHJWvskykrzJeHOdCRy6ArchgaC718Sp0A8Pk9f4XIbrJvWatT8XsCH9q5sPTonJQg0Q==
+  dependencies:
+    third-party-capital "1.0.20"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -4517,10 +4528,12 @@ next-contentlayer2@^0.4.6, next-contentlayer2@0.4.6:
 next-themes@^0.3.0:
   version "0.3.0"
 
-"next@^12 || ^13 || ^14", next@>=13.0.0, next@14.2.3:
-  version "14.2.3"
+"next@^12 || ^13 || ^14", "next@^13.0.0 || ^14.0.0", next@^14.2.12, next@>=13.0.0:
+  version "14.2.12"
+  resolved "https://registry.npmjs.org/next/-/next-14.2.12.tgz"
+  integrity sha512-cDOtUSIeoOvt1skKNihdExWMTybx3exnvbFbb9ecZDIxlvIbREQzt9A5Km3Zn3PfU+IFjyYGsHS+lN9VInAGKA==
   dependencies:
-    "@next/env" "14.2.3"
+    "@next/env" "14.2.12"
     "@swc/helpers" "0.5.5"
     busboy "1.6.0"
     caniuse-lite "^1.0.30001579"
@@ -4528,15 +4541,15 @@ next-themes@^0.3.0:
     postcss "8.4.31"
     styled-jsx "5.1.1"
   optionalDependencies:
-    "@next/swc-darwin-arm64" "14.2.3"
-    "@next/swc-darwin-x64" "14.2.3"
-    "@next/swc-linux-arm64-gnu" "14.2.3"
-    "@next/swc-linux-arm64-musl" "14.2.3"
-    "@next/swc-linux-x64-gnu" "14.2.3"
-    "@next/swc-linux-x64-musl" "14.2.3"
-    "@next/swc-win32-arm64-msvc" "14.2.3"
-    "@next/swc-win32-ia32-msvc" "14.2.3"
-    "@next/swc-win32-x64-msvc" "14.2.3"
+    "@next/swc-darwin-arm64" "14.2.12"
+    "@next/swc-darwin-x64" "14.2.12"
+    "@next/swc-linux-arm64-gnu" "14.2.12"
+    "@next/swc-linux-arm64-musl" "14.2.12"
+    "@next/swc-linux-x64-gnu" "14.2.12"
+    "@next/swc-linux-x64-musl" "14.2.12"
+    "@next/swc-win32-arm64-msvc" "14.2.12"
+    "@next/swc-win32-ia32-msvc" "14.2.12"
+    "@next/swc-win32-x64-msvc" "14.2.12"
 
 no-case@^3.0.4:
   version "3.0.4"
@@ -5804,6 +5817,11 @@ thenify-all@^1.0.0:
 
 thingies@^1.20.0:
   version "1.21.0"
+
+third-party-capital@1.0.20:
+  version "1.0.20"
+  resolved "https://registry.npmjs.org/third-party-capital/-/third-party-capital-1.0.20.tgz"
+  integrity sha512-oB7yIimd8SuGptespDAZnNkzIz+NWaJCu2RMsbs4Wmp9zSDUM8Nhi3s2OOcqYuv3mN4hitXc8DVx+LyUmbUDiA==
 
 through2@^2.0.1:
   version "2.0.5"

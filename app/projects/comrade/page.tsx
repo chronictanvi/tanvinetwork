@@ -1,6 +1,6 @@
 import { genPageMetadata } from 'app/seo'
 import Image from 'next/image'
-import defaultimg from './ocean.jpeg'
+
 import cat from './cat.png'
 import sampleconv from './sampleconversation.png'
 import demo1 from './demo1.png'

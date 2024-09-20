@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 
+@font-face {
+  font-family: 'Euripides';
+  src: url('../public/static/fonts/Euripides.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 .task-list-item::before {
   @apply hidden;
