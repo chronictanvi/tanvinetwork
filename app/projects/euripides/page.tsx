@@ -41,7 +41,7 @@ export default function Euripides() {
           </div>
         </div>
 
-        <div className="mb-10 flex flex-row sm:flex-col">
+        <div className="mb-10 flex flex-col md:flex-row">
           <div className="basis-1/3">
             <p className="pb-3 text-sm tracking-wider text-zinc-400">SCOPE</p>
             <ul>
