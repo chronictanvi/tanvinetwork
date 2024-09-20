@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 const FontViewer = () => {
-  const [previewText, setPreviewText] = useState('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+  const [previewText, setPreviewText] = useState('ABCXYZ')
   const [fontSize, setFontSize] = useState(40)
 
   const handleTextChange = (e) => setPreviewText(e.target.value)
@@ -17,7 +17,7 @@ const FontViewer = () => {
         value={previewText}
         onChange={handleTextChange}
         placeholder="Type to preview..."
-        style={{ padding: '10px', fontSize: '20px' }}
+        style={{ padding: '10px', fontSize: '20px', background: 'none' }}
       />
       <label>
         Font Size:
