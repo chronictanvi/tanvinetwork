@@ -96,7 +96,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 </script>
 
       <body className="bg-white pl-[calc(100vw-100%)] text-black antialiased dark:bg-black dark:text-white">
-        <GoogleTagManager gtmId="G-JNEPSTX4S5" />
+      {process.env.NODE_ENV === "production" ? (
+        <GoogleTagManager gtmId="GTM-PRGXHK3D" />
+      ) : null}
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
           <SectionContainer>
