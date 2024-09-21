@@ -12,7 +12,8 @@ import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
-import { GoogleTagManager } from '@next/third-parties/google'
+// import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalyticsTracking } from '@/components/GoogleAnalytics'
 
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -96,9 +97,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 </script>
 
       <body className="bg-white pl-[calc(100vw-100%)] text-black antialiased dark:bg-black dark:text-white">
-      {process.env.NODE_ENV === "production" ? (
+      {/* {process.env.NODE_ENV === "production" ? (
         <GoogleTagManager gtmId="GTM-PRGXHK3D" />
-      ) : null}
+      ) : null} */}
+        <GoogleAnalyticsTracking />
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
           <SectionContainer>
