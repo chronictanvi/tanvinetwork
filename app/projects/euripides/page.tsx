@@ -77,7 +77,7 @@ export default function Euripides() {
         </div>
       </div>
 
-      {/* <FontViewer /> */}
+      <FontViewer />
       <CharacterViewer />
     </div>
   )

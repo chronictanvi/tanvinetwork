@@ -35,18 +35,18 @@ const FontViewer = () => {
           />
           {fontSize}
         </label>
-        <label className="mr-5 px-5">
+        {/* <label className="mr-5 px-5">
           Tracking:
           <input
             type="range"
-            min="-0.05"
-            max="0.5"
+            min="0"
+            max="5"
             value={trackSize}
             onChange={handleTrackChange}
             className="mx-5"
           />
           {trackSize}
-        </label>
+        </label> */}
       </div>
       <div
         className="character-preview px-5 py-10"
