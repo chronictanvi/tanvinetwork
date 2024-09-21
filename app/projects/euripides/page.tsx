@@ -9,7 +9,7 @@ export default function Euripides() {
         <div className="flex basis-2/3 flex-col  pr-16 pt-8 md:space-y-5">
           <p className="pb-3 text-sm tracking-wider text-zinc-400">OVERVIEW</p>{' '}
           <h1 className="pb-5 text-3xl font-bold leading-9  text-gray-900 dark:text-gray-100 md:leading-9">
-            Euripides is a reverse stress body typeface designed for Anne Carson's Grief Lessons, a
+            Euripidesyarn run build is a reverse stress body typeface designed for Anne Carson's Grief Lessons, a
             translation of Four Plays by Euripides.
           </h1>
           <div className="pb-5">
