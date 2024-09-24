@@ -1,7 +1,7 @@
 import React from 'react'
 import Script from 'next/script'
 
-const GoogleAnalytics = () => {
+export const GoogleAnalytics = () => {
   return (
     <>
       <Script
@@ -22,5 +22,3 @@ const GoogleAnalytics = () => {
     </>
   )
 }
-
-export default GoogleAnalytics
