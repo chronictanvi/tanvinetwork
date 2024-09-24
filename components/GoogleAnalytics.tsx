@@ -1,19 +1,26 @@
+import React from 'react'
 import Script from 'next/script'
 
-export const GoogleAnalyticsTracking = () => {
+const GoogleAnalytics = () => {
   return (
     <>
-      {/* Global site tag (gtag.js) - Google Analytics */}
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-JNEPSTX4S5" />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
+      />
 
-          gtag('config', 'G-JNEPSTX4S5');
-        `}
+      <Script id="" strategy="lazyOnload">
+        {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
+              page_path: window.location.pathname,
+              });
+          `}
       </Script>
     </>
   )
 }
+
+export default GoogleAnalytics
