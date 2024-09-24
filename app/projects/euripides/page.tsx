@@ -1,5 +1,24 @@
+'use client'
+
 import CharacterViewer from '@/components/CharacterViewer'
 import FontViewer from '@/components/FontViewer'
+
+const event = ({ action, category, label, value }: any) => {
+  ;(window as any).gtag('event', action, {
+    event_category: category,
+    event_label: label,
+    value: value,
+  })
+}
+
+const downloadEuripides = () => {
+  event({
+    action: 'dwld_euripides',
+    category: 'ecommerce',
+    label: 'Item dowloaded',
+    value: 'Font',
+  })
+}
 
 export default function Euripides() {
   return (
@@ -9,8 +28,8 @@ export default function Euripides() {
         <div className="flex basis-2/3 flex-col  pr-16 pt-8 md:space-y-5">
           <p className="pb-3 text-sm tracking-wider text-zinc-400">OVERVIEW</p>{' '}
           <h1 className="pb-5 text-3xl font-bold leading-9  text-gray-900 dark:text-gray-100 md:leading-9">
-            Euripidesyarn run build is a reverse stress body typeface designed for Anne Carson's Grief Lessons, a
-            translation of Four Plays by Euripides.
+            Euripidesyarn run build is a reverse stress body typeface designed for Anne Carson's
+            Grief Lessons, a translation of Four Plays by Euripides.
           </h1>
           <div className="pb-5">
             <p className=" pb-2 text-xl font-light">
@@ -22,20 +41,29 @@ export default function Euripides() {
           <div className="flex flex-col gap-4 md:flex-row">
             <div className="mt-8 ">
               <a
-                href="public/static/fonts/Euripides.woff" // Link to the font file in the public folder
+                href="/static/fonts/Euripides.woff" // Link to the font file in the public folder
                 download="Euripides.woff" // Name the file that will be downloaded
-                className="rounded-lg border-2 border-white	 px-4 py-4 text-white hover:bg-red-600"
               >
-                Download .woff
+                <button
+                  className="rounded-lg border-2 border-white	 px-4 py-4 text-white hover:bg-red-600"
+                  onClick={downloadEuripides}
+                >
+                  Download .woff
+                </button>
               </a>
             </div>
             <div className="mt-8 ">
               <a
-                href="public/static/fonts/Euripides.otf" // Link to the font file in the public folder
+                href="/static/fonts/Euripides.otf" // Link to the font file in the public folder
                 download="Euripides.otf" // Name the file that will be downloaded
-                className="rounded-lg border-2 border-white	 px-4 py-4 text-white hover:bg-red-600"
               >
-                Download .otf
+                {' '}
+                <button
+                  className="rounded-lg border-2 border-white	 px-4 py-4 text-white hover:bg-red-600"
+                  onClick={downloadEuripides}
+                >
+                  Download .otf
+                </button>
               </a>
             </div>
           </div>
