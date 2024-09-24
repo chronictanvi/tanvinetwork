@@ -23,17 +23,10 @@ const FontViewer = () => {
           style={{ padding: '10px', fontSize: '20px', background: 'none' }}
           className="mr-5"
         />
-        <label className="mr-5 px-5">
+        <label>
           Font Size:
-          <input
-            type="range"
-            min="10"
-            max="100"
-            value={fontSize}
-            onChange={handleSizeChange}
-            className="mx-5"
-          />
-          {fontSize}
+          <input type="range" min="10" max="100" value={fontSize} onChange={handleSizeChange} />
+          {fontSize}px
         </label>
         {/* <label className="mr-5 px-5">
           Tracking:
@@ -48,10 +41,7 @@ const FontViewer = () => {
           {trackSize}
         </label> */}
       </div>
-      <div
-        className="character-preview px-5 py-10"
-        style={{ letterSpacing: `${trackSize}em`, marginTop: '20px' }}
-      >
+      <div className="character-preview" style={{ fontSize: `${fontSize}px`, marginTop: '20px' }}>
         {previewText.split('').map((char, index) => (
           <span key={index} style={{ marginRight: '10px' }}>
             {char}
