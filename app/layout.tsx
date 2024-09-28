@@ -90,7 +90,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
           <SectionContainer>
-            <div className="px-10md:px-20 flex h-screen flex-col justify-between font-sans">
+            <div className="px-10md:px-20 flex flex-col justify-between font-sans">
               <Header />
               <main className="mb-auto">{children}</main>
               <Footer />

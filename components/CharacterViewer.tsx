@@ -187,36 +187,42 @@ export default function CharacterViewer() {
   const [hoveredChar, setHoveredChar] = useState('/') // Default character is '/'
 
   return (
-    <div className="min-h-screen p-6">
+    <div className="my-auto p-6">
       {/* Section Header */}
-      <div className="mb-8 text-center" style={{ fontFamily: 'Euripides' }}>
-        <h1 className="text-2xl tracking-wider text-zinc-400">CHARACTERS</h1>
-      </div>
+      <div className="mb-8 text-center" style={{ fontFamily: 'Euripides' }}></div>
 
-      <div className="flex flex-row justify-center">
-        {/* Characters Display */}
-
-        <div className="] mb-16 grid h-[90vh] max-w-2xl grid-flow-row-dense grid-cols-10  gap-4 overflow-y-scroll">
-          {characters.map((char) => (
-            <div
-              key={char}
-              className="relative my-4 cursor-pointer text-center text-3xl hover:bg-gray-200"
-              style={{ fontFamily: 'Euripides', width: '48px', height: '48px', lineHeight: '48px' }} // Ensures consistent size
-              onMouseEnter={() => setHoveredChar(char)}
-            >
-              {char}
-              {/* Hover effect with absolutely positioned border */}
-              <div className="absolute inset-0 hidden rounded-full border-2 border-dotted hover:block"></div>
-            </div>
-          ))}
-        </div>
-        {/* Circle Element */}
-        <div className="sticky mt-24 hidden basis-1/3 justify-center md:flex">
+      <div className=" grid w-full grid-cols-2">
+        {/* Circle Element (Left Column - Sticky) */}
+        <div className="sticky top-7 h-min">
+          {/* <h1 className="pb-16 text-center text-2xl tracking-wider text-zinc-400">CHARACTERS</h1> */}
           <div
-            className="mx-24 flex h-[70vh] w-[60vh] items-center justify-center rounded-full border-2 border-slate-100 bg-slate-100 text-[200px] font-bold text-black"
+            className="mx-10 my-10 flex items-center justify-center rounded-full  py-32 text-[250px] font-bold leading-none text-white"
             style={{ fontFamily: 'Euripides' }}
           >
             {hoveredChar}
+          </div>
+        </div>
+
+        {/* Characters Display (Right Column) */}
+        <div className="mb-16">
+          <div className="grid grid-flow-row-dense grid-cols-10 ">
+            {characters.map((char) => (
+              <div
+                key={char}
+                className="relative my-4 cursor-pointer text-center text-3xl hover:bg-gray-200"
+                style={{
+                  fontFamily: 'Euripides',
+                  width: '48px',
+                  height: '48px',
+                  lineHeight: '48px',
+                }}
+                onMouseEnter={() => setHoveredChar(char)}
+              >
+                {char}
+                {/* Hover effect with absolutely positioned border */}
+                <div className="absolute inset-0 hidden rounded-full border-2 border-dotted hover:block"></div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

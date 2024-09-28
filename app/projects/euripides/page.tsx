@@ -22,7 +22,7 @@ const downloadEuripides = () => {
 
 export default function Euripides() {
   return (
-    <div style={{ fontFamily: 'Euripides' }} className="max-w-8xl mx-auto mt-12">
+    <div style={{ fontFamily: 'Euripides' }} className="max-w-8xl mx-auto mt-12 bg-black">
       <div className="mx-auto mt-12 flex max-w-6xl flex-row flex-col gap-16 px-5">
         <></>
         <div className="flex basis-2/3 flex-col  pr-16 pt-8 md:space-y-5">
@@ -103,9 +103,8 @@ export default function Euripides() {
             <p> Design Systems </p>
           </div> */}
         </div>
+        <FontViewer />
       </div>
-
-      <FontViewer />
       <CharacterViewer />
     </div>
   )
