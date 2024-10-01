@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'Euripides';
-  src: url('../public/static/fonts/Euripides.woff') format('woff');
+  src: url('../public/static/fonts/Euripides.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
