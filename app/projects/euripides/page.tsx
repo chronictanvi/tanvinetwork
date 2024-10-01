@@ -41,7 +41,7 @@ export default function Euripides() {
           <div className="flex flex-col gap-4 md:flex-row">
             <div className="mt-8 ">
               <a
-                href="/static/fonts/Euripides.woff" // Link to the font file in the public folder
+                href="/static/fonts/Euripides.woff2" // Link to the font file in the public folder
                 download="Euripides.woff" // Name the file that will be downloaded
               >
                 <button
