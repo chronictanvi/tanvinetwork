@@ -62,7 +62,7 @@ export default function Content() {
           <Image src={cover} alt="Picture of the author" />
           <div className=" my-10 py-5 flex flex-col gap-16 md:flex-row">
             <div className="basis-1/2">
-              <p className="text-sm pb-3 text-zinc-400 tracking-wider">
+              <p className="text-sm pb-3 text-zinc-800 dark:text-zinc-400 tracking-wider">
                 CONTEXT
               </p>
               <p className="text-xl">
@@ -73,7 +73,7 @@ export default function Content() {
             </div>
 
             <div className=" basis-1/2">
-              <p className="text-sm pb-3 text-zinc-400 tracking-wider">GOAL</p>
+              <p className="text-sm pb-3 text-zinc-800 dark:text-zinc-400  tracking-wider">GOAL</p>
               <p className=" text-xl">
                 Out of the Total Available Market, Spotify only takes up a small
                 fraction of users. Our goal is to increase Subs/Monthly Active
@@ -187,89 +187,92 @@ export default function Content() {
             </div>
           </div>
         </section>
-        <section className="mx-auto max-w-3xl px-5 py-32 items-center justify-start  ">
-          <div className="  py-8  ">
-            <p className="text-sm pb-3  tracking-wider ">
-              FURTHER UNDERSTANDING
-            </p>
-            <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
-              User Insights
-            </h1>
-            <p className="py-5">
-              We spoke to a variety of people to understand how fans navigate
-              discovery of new content and reminsce on their listening history.
-              and what can be improved. We focused on data stories as presented
-              in Wrapped — Spotify's annual event for revealing how fan's are
-              interacting with the artists.
-            </p>
-          </div>
-          <div className="mx-auto flex max-w-4xl flex-col gap-10 py-16 md:flex-row">
-            <div className="basis-1/2">
-              <h4 className="text-lg font-bold py-3">
-                {" "}
-                “It would be good to put this in context. Is 40 listens in a
-                year a lot or not?”
-              </h4>
-              <p>
-                Listeners find data stories about things they already know (such
-                as their Top Artist) less interesting. They are interested in
-                diving deeper and ‘getting to know themselves better’.
+        <section className=" bg-black  ">
+
+          <section className="mx-auto max-w-3xl px-5 py-32 items-center bg-black text-gray-100  justify-start  ">
+            <div className="  py-8  ">
+              <p className="text-sm pb-3  tracking-wider ">
+                FURTHER UNDERSTANDING
+              </p>
+              <h1 className="text-4xl font-extrabold leading-9 tracking-tight  md:text-4xl md:leading-10">
+                User Insights
+              </h1>
+              <p className="py-5 ">
+                We spoke to a variety of people to understand how fans navigate
+                discovery of new content and reminsce on their listening history.
+                and what can be improved. We focused on data stories as presented
+                in Wrapped — Spotify's annual event for revealing how fan's are
+                interacting with the artists.
               </p>
             </div>
+            <div className="mx-auto flex max-w-4xl flex-col gap-10 py-16 md:flex-row">
+              <div className="basis-1/2">
+                <h4 className="text-lg font-bold py-3">
+                  {" "}
+                  “It would be good to put this in context. Is 40 listens in a
+                  year a lot or not?”
+                </h4>
+                <p>
+                  Listeners find data stories about things they already know (such
+                  as their Top Artist) less interesting. They are interested in
+                  diving deeper and ‘getting to know themselves better’.
+                </p>
+              </div>
 
-            <div className="basis-1/2 ">
-              <Image
-                src={mins}
-                alt="Picture of the author"
-                className=""
-                unoptimized
-              />
+              <div className="basis-1/2 ">
+                <Image
+                  src={mins}
+                  alt="Picture of the author"
+                  className=""
+                  unoptimized
+                />
+              </div>
             </div>
-          </div>
-          <div className="mx-auto flex max-w-4xl flex-col gap-10  py-16 md:flex-row">
-            <div className="basis-1/2">
-              <h4 className="text-lg font-bold py-3">
-                “Knowing that other people listen to music in another way than
-                me would influence what music I choose to listen to”
-              </h4>
-              <p>
-                Listeners would like to be reminded about what songs they listen
-                to — or might have forgotten about. Recommendations also carry a
-                social component — listeners are curious about songs that other
-                fans are listening to.
-              </p>
+            <div className="mx-auto flex max-w-4xl flex-col gap-10  py-16 md:flex-row">
+              <div className="basis-1/2">
+                <h4 className="text-lg font-bold py-3">
+                  “Knowing that other people listen to music in another way than
+                  me would influence what music I choose to listen to”
+                </h4>
+                <p>
+                  Listeners would like to be reminded about what songs they listen
+                  to — or might have forgotten about. Recommendations also carry a
+                  social component — listeners are curious about songs that other
+                  fans are listening to.
+                </p>
+              </div>
+
+              <div className="basis-1/2 ">
+                <Image
+                  src={otherpeople}
+                  alt="Picture of the author"
+                  className=""
+                />
+              </div>
             </div>
 
-            <div className="basis-1/2 ">
-              <Image
-                src={otherpeople}
-                alt="Picture of the author"
-                className=""
-              />
-            </div>
-          </div>
+            <div className="mx-auto flex max-w-4xl flex-col gap-10 py-16 md:flex-row">
+              <div className="basis-1/2">
+                <h4 className="text-lg font-bold py-3">
+                  {" "}
+                  “Wrapped is too infrequent. How does my listening change over a
+                  day? How does it change over seasons? ”
+                </h4>
+                <p>
+                  Listeners want more — There is a strong desire to access their
+                  ‘fan narrative’ more frequently.
+                </p>
+              </div>
 
-          <div className="mx-auto flex max-w-4xl flex-col gap-10 py-16 md:flex-row">
-            <div className="basis-1/2">
-              <h4 className="text-lg font-bold py-3">
-                {" "}
-                “Wrapped is too infrequent. How does my listening change over a
-                day? How does it change over seasons? ”
-              </h4>
-              <p>
-                Listeners want more — There is a strong desire to access their
-                ‘fan narrative’ more frequently.
-              </p>
+              <div className="basis-1/2 ">
+                <Image
+                  src={eveninglistens}
+                  alt="Picture of the author"
+                  unoptimized
+                />
+              </div>
             </div>
-
-            <div className="basis-1/2 ">
-              <Image
-                src={eveninglistens}
-                alt="Picture of the author"
-                unoptimized
-              />
-            </div>
-          </div>
+          </section>
         </section>
         <section className="bg-white  px-5 py-32 text-black">
           <div className="mx-auto max-w-3xl items-center justify-start">
@@ -474,33 +477,35 @@ export default function Content() {
             </figcaption>
           </div>
         </section>
-        <section className="mx-auto max-w-3xl px-5 py-32 items-center justify-start  ">
-          <div className="  py-8  ">
-            <p className="py-5 "></p>
-            <h1 className="text-4xl font-bold  leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
-              Result
-            </h1>
-            <p className="py-5">
-              The final prototype met our goal to uncover insights and translate
-              concepts into features that address customer behaviours and
-              motivations.
-            </p>
-            <Image
-              src={consideration}
-              alt="Picture of the author"
-              className="pt-12"
-              unoptimized
-            />
-            <h1 className="text-4xl font-bold leading-9 pt-32 tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl md:leading-10">
-              What's Next
-            </h1>
-            <p className="py-5">
-              The final prototype was tested with 10 Japanese users and received
-              over all positive feedback. It is now under development.
-            </p>
-          </div>
+        <section className=" bg-black  ">
+          <section className="mx-auto max-w-3xl px-5 py-32 bg-black items-center justify-start  ">
+            <div className="  py-8  ">
+              <p className="py-5 "></p>
+              <h1 className="text-4xl font-bold  leading-9 tracking-tight  text-gray-100 md:text-4xl md:leading-10">
+                Result
+              </h1>
+              <p className="py-5 text-gray-100">
+                The final prototype met our goal to uncover insights and translate
+                concepts into features that address customer behaviours and
+                motivations.
+              </p>
+              <Image
+                src={consideration}
+                alt="Picture of the author"
+                className="pt-12"
+                unoptimized
+              />
+              <h1 className="text-4xl font-bold leading-9 pt-32 tracking-tight text-gray-100 md:text-4xl md:leading-10">
+                What's Next
+              </h1>
+              <p className="py-5 text-gray-100">
+                The final prototype was tested with 10 Japanese users and received
+                over all positive feedback. It is now under development.
+              </p>
+            </div>
+          </section>
         </section>
-        <h1 className="text-5xl text-center pt-5 font-bold leading-9 tracking-tight text-red-100 dark:text-red-400 md:leading-10">
+        <h1 className="text-5xl bg-black  text-center py-5 pb-12 font-bold leading-9 tracking-tight text-red-100 dark:text-red-400 md:leading-10">
           ありがとう!
         </h1>
       </div>

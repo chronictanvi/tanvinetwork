@@ -9,9 +9,9 @@ export const metadata = genPageMetadata({ title: "Spotify" });
 export default function Spotify() {
   return (
     <>
-      <div className="mx-auto mt-12 flex max-w-6xl flex-col gap-16 px-5 md:flex-row">
+      <div className="mx-auto mt-12 flex max-w-6xl flex-col gap-16 px-5 md:flex-row ">
         <div className="flex basis-2/3 flex-col  pr-16 pt-8 md:space-y-5">
-          <p className="text-sm pb-3 text-zinc-400 tracking-wider">OVERVIEW</p>{" "}
+          <p className="text-sm pb-3 text-zinc-800 tracking-wider">OVERVIEW</p>{" "}
           <h1 className="text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:leading-9 pb-5">
             Japan is the 2nd largest music market in the world. But 63% of
             revenue still comes from physical sales.
@@ -36,7 +36,7 @@ export default function Spotify() {
 
         <div className="my-10 flex flex-row md:flex-col">
           <div className="basis-1/2">
-            <p className="text-sm pb-3 text-zinc-400 tracking-wider">SCOPE</p>
+            <p className="text-sm pb-3 text-zinc-800 dark:text-zinc-400 tracking-wider">SCOPE</p>
             <ul>
               <li>User Research</li>
               <li>Prototyping</li>
@@ -44,7 +44,7 @@ export default function Spotify() {
             </ul>
           </div>
           <div className="basis-1/2">
-            <p className="text-sm pb-3 text-zinc-400 tracking-wider">TOOLS</p>
+            <p className="text-sm pb-3 text-zinc-800 dark:text-zinc-400 tracking-wider">TOOLS</p>
             <ul>
               <li>Figma </li>
               <li>next.js</li>
