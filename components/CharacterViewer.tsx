@@ -559,19 +559,19 @@ export default function CharacterViewer() {
         {/* Circle Element (Left Column - Sticky) */}
         <div className="sticky top-7 h-min">
           <div
-            className="my-2 flex items-center justify-center rounded-full text-sm font-bold leading-none text-white"
+            className="my-2 flex items-center justify-center rounded-full text-sm font-bold leading-none dark:text-white"
             style={{ fontFamily: 'Euripides' }}
           >
             {hoveredChar.unicode}
           </div>
           <div
-            className="flex items-center justify-center rounded-full text-sm font-bold leading-none text-white"
+            className="flex items-center justify-center rounded-full text-sm font-bold leading-none dark:text-white"
             style={{ fontFamily: 'Euripides' }}
           >
             {hoveredChar.title}
           </div>
           <div
-            className="mx-10 my-10 flex items-center justify-center rounded-full py-16 text-[250px] font-bold leading-none text-white"
+            className="mx-10 my-10 flex items-center justify-center rounded-full py-16 text-[250px] font-bold leading-none dark:text-white"
             style={{ fontFamily: 'Euripides' }}
           >
             {hoveredChar.character}
@@ -588,7 +588,7 @@ export default function CharacterViewer() {
                 {characterSets[setName].map(({ character, unicode, title }) => (
                   <div
                     key={unicode}
-                    className="relative my-4 cursor-pointer text-center text-3xl hover:bg-gray-200"
+                    className="relative my-4 cursor-pointer text-center text-3xl hover:bg-red-200"
                     style={{
                       fontFamily: 'Euripides',
                       width: '48px',

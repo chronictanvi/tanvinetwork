@@ -1,4 +1,8 @@
 'use client'
+import Image from 'next/image'
+
+import acaju from './acaju.png'
+import cherry from './cherry.jpg'
 
 import CharacterViewer from '@/components/CharacterViewer'
 import FontViewer from '@/components/FontViewer'
@@ -22,7 +26,7 @@ const downloadEuripides = () => {
 
 export default function Euripides() {
   return (
-    <div style={{ fontFamily: 'Euripides' }} className="max-w-8xl mx-auto mt-12 bg-black">
+    <div style={{ fontFamily: 'Euripides' }} className="max-w-8xl mx-auto  dark:bg-black">
       <div className="mx-auto mt-12 flex max-w-6xl flex-row flex-col gap-16 px-5">
         <></>
         <div className="flex basis-2/3 flex-col  pr-16 pt-8 md:space-y-5">
@@ -107,6 +111,18 @@ export default function Euripides() {
         <FontViewer />
       </div>
       <CharacterViewer />
+      <div className="mx-auto mt-12 flex max-w-6xl flex-row flex-col gap-16 px-5">
+        <p className="pb-3 text-center text-sm tracking-wider text-zinc-400"> IN USE </p>
+        <div className="mx-auto flex max-w-4xl flex-col gap-10 md:flex-row">
+          <div className="basis-1/2">
+            <Image src={acaju} alt="Stamp" className="" unoptimized />
+          </div>
+
+          <div className="basis-1/2 ">
+            <Image src={cherry} alt="Poster" className="" unoptimized />
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

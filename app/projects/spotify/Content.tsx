@@ -1,10 +1,9 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import zoomie from "./custom-page.png";
+
 import otherpeople from "./otherpeople.png";
-import blackpink from "./blackpink-card.png";
-import takeaway from "./takeaway.png";
+
 import process from "./process4.png";
 import physical from "./physical.png";
 import modular2 from "./Modular2.png";
@@ -12,17 +11,12 @@ import consideration from "./Consideration English.png";
 import sweetbutpsycho from "./sweetbutpsycho.png";
 import cover from "./Hero-Image--3.gif";
 
-import keyscreens from "./KEYSCREENS.png";
-import elements from "./element_grid.png";
 import userflow from "./userflow.png";
 import contentflow from "./contentflow.png";
 import mainstream from "./Mainstream.png";
 import eveninglistens from "./eveninglistens.gif";
 import mins from "./53min-t.gif";
 import modular from "./Modular.png";
-import titles from "./titles.gif";
-
-import thedeepend from "./thedeepend.jpg";
 
 export default function Content() {
   const [isRestricted, setIsRestricted] = useState(true);
@@ -73,7 +67,9 @@ export default function Content() {
             </div>
 
             <div className=" basis-1/2">
-              <p className="text-sm pb-3 text-zinc-800 dark:text-zinc-400  tracking-wider">GOAL</p>
+              <p className="text-sm pb-3 text-zinc-800 dark:text-zinc-400  tracking-wider">
+                GOAL
+              </p>
               <p className=" text-xl">
                 Out of the Total Available Market, Spotify only takes up a small
                 fraction of users. Our goal is to increase Subs/Monthly Active
@@ -188,7 +184,6 @@ export default function Content() {
           </div>
         </section>
         <section className=" bg-black  ">
-
           <section className="mx-auto max-w-3xl px-5 py-32 items-center bg-black text-gray-100  justify-start  ">
             <div className="  py-8  ">
               <p className="text-sm pb-3  tracking-wider ">
@@ -199,10 +194,10 @@ export default function Content() {
               </h1>
               <p className="py-5 ">
                 We spoke to a variety of people to understand how fans navigate
-                discovery of new content and reminsce on their listening history.
-                and what can be improved. We focused on data stories as presented
-                in Wrapped — Spotify's annual event for revealing how fan's are
-                interacting with the artists.
+                discovery of new content and reminsce on their listening
+                history. and what can be improved. We focused on data stories as
+                presented in Wrapped — Spotify's annual event for revealing how
+                fan's are interacting with the artists.
               </p>
             </div>
             <div className="mx-auto flex max-w-4xl flex-col gap-10 py-16 md:flex-row">
@@ -213,9 +208,10 @@ export default function Content() {
                   year a lot or not?”
                 </h4>
                 <p>
-                  Listeners find data stories about things they already know (such
-                  as their Top Artist) less interesting. They are interested in
-                  diving deeper and ‘getting to know themselves better’.
+                  Listeners find data stories about things they already know
+                  (such as their Top Artist) less interesting. They are
+                  interested in diving deeper and ‘getting to know themselves
+                  better’.
                 </p>
               </div>
 
@@ -235,10 +231,10 @@ export default function Content() {
                   me would influence what music I choose to listen to”
                 </h4>
                 <p>
-                  Listeners would like to be reminded about what songs they listen
-                  to — or might have forgotten about. Recommendations also carry a
-                  social component — listeners are curious about songs that other
-                  fans are listening to.
+                  Listeners would like to be reminded about what songs they
+                  listen to — or might have forgotten about. Recommendations
+                  also carry a social component — listeners are curious about
+                  songs that other fans are listening to.
                 </p>
               </div>
 
@@ -255,8 +251,8 @@ export default function Content() {
               <div className="basis-1/2">
                 <h4 className="text-lg font-bold py-3">
                   {" "}
-                  “Wrapped is too infrequent. How does my listening change over a
-                  day? How does it change over seasons? ”
+                  “Wrapped is too infrequent. How does my listening change over
+                  a day? How does it change over seasons? ”
                 </h4>
                 <p>
                   Listeners want more — There is a strong desire to access their
@@ -485,9 +481,9 @@ export default function Content() {
                 Result
               </h1>
               <p className="py-5 text-gray-100">
-                The final prototype met our goal to uncover insights and translate
-                concepts into features that address customer behaviours and
-                motivations.
+                The final prototype met our goal to uncover insights and
+                translate concepts into features that address customer
+                behaviours and motivations.
               </p>
               <Image
                 src={consideration}
@@ -499,8 +495,9 @@ export default function Content() {
                 What's Next
               </h1>
               <p className="py-5 text-gray-100">
-                The final prototype was tested with 10 Japanese users and received
-                over all positive feedback. It is now under development.
+                The final prototype was tested with 10 Japanese users and
+                received over all positive feedback. It is now under
+                development.
               </p>
             </div>
           </section>
