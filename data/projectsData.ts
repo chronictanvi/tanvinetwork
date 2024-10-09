@@ -34,8 +34,8 @@ const projectsData = [
 
   {
     title: 'Euripides',
-    description: `Reverse stress typeface inspired by Euripides by Anne Carson`,
-    imgSrc: '/static/images/ERPD.png',
+    description: `Euripides is a reverse stress body typeface designed for Anne Carson's Grief Lessons, a translation of Four Plays by Euripides.    `,
+    imgSrc: '/static/images/ERPD.gif',
     href: '/projects/euripides',
   },
 ]
