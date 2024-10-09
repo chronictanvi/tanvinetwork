@@ -49,7 +49,7 @@ export default function Euripides() {
                 download="Euripides.woff" // Name the file that will be downloaded
               >
                 <button
-                  className="rounded-lg border-2 border-white	 px-4 py-4 text-white hover:bg-red-600"
+                  className="rounded-lg border-2 border-white	 px-4 py-4 text-white hover:bg-red-400"
                   onClick={downloadEuripides}
                 >
                   Download .woff
@@ -63,7 +63,7 @@ export default function Euripides() {
               >
                 {' '}
                 <button
-                  className="rounded-lg border-2 border-white	 px-4 py-4 text-white hover:bg-red-600"
+                  className="rounded-lg border-2 border-white	 px-4 py-4 text-white hover:bg-red-400"
                   onClick={downloadEuripides}
                 >
                   Download .otf
@@ -113,7 +113,7 @@ export default function Euripides() {
       <CharacterViewer />
       <div className="mx-auto mt-12 flex max-w-6xl flex-row flex-col gap-16 px-5">
         <p className="pb-3 text-center text-sm tracking-wider text-zinc-400"> IN USE </p>
-        <div className="mx-auto flex max-w-4xl flex-col gap-10 md:flex-row">
+        <div className="mx-auto flex max-w-4xl flex-col gap-10  md:flex-row">
           <div className="basis-1/2">
             <Image src={acaju} alt="Stamp" className="" unoptimized />
           </div>

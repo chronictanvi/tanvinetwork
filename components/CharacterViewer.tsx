@@ -551,7 +551,7 @@ export default function CharacterViewer() {
   const [hoveredChar, setHoveredChar] = useState(characterSets.basicLatin[0]) // Default character
 
   return (
-    <div className="my-auto p-6">
+    <div className="hidden md:my-auto md:block md:p-6">
       {/* Section Header */}
       <div className="mb-8 text-center" style={{ fontFamily: 'Euripides' }}></div>
 
@@ -588,7 +588,7 @@ export default function CharacterViewer() {
                 {characterSets[setName].map(({ character, unicode, title }) => (
                   <div
                     key={unicode}
-                    className="relative my-4 cursor-pointer text-center text-3xl hover:bg-red-200"
+                    className="relative my-4 cursor-pointer text-center text-3xl hover:bg-red-400"
                     style={{
                       fontFamily: 'Euripides',
                       width: '48px',

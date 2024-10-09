@@ -15,27 +15,31 @@ const FontViewer = () => {
       {/* <p className=" pb-3 text-center text-sm uppercase tracking-wider text-zinc-400">
         Font Preview
       </p> */}
-      <div className="">
-        <input
-          type="text"
-          value={previewText}
-          onChange={handleTextChange}
-          placeholder="Type to preview..."
-          style={{ padding: '10px', fontSize: '20px', background: 'none' }}
-          className="mr-12 "
-        />
-        <label className="">
-          Font Size:
+      <div className="flex flex-col md:flex-row">
+        <div>
           <input
-            type="range"
-            min="10"
-            max="150"
-            value={fontSize}
-            onChange={handleSizeChange}
-            className="mx-4"
+            type="text"
+            value={previewText}
+            onChange={handleTextChange}
+            placeholder="Type to preview..."
+            style={{ padding: '10px', fontSize: '20px', background: 'none' }}
+            className="mr-12 "
           />
-          {fontSize}px
-        </label>
+        </div>
+        <div className="my-5 md:my-0">
+          <label className="">
+            Font Size:
+            <input
+              type="range"
+              min="10"
+              max="150"
+              value={fontSize}
+              onChange={handleSizeChange}
+              className="mx-4"
+            />
+            {fontSize}px
+          </label>
+        </div>
         {/* <label className="mr-5 px-5">
           Tracking:
           <input
