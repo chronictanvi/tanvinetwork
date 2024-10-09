@@ -91,16 +91,17 @@ export default function Euripides() {
             </ul>
           </div>
           <div className="mb-10 basis-1/3 ">
-            <p className="pb-3 text-sm tracking-wider text-zinc-400">VERSION</p>
+            <p className="pb-3 text-sm tracking-wider text-zinc-400">VERSION / LICENSE </p>
             <ul>
-              <li>2.0 — currently under revision!</li>
+              <li>
+                2.0 — currently under revision! Free for Personal Use. Contact me for Commercial
+                uses.
+              </li>
             </ul>
           </div>
           {/* <div className="basis-1/2">
-            <p className="text-sm pb-3 text-zinc-400 tracking-wider">
-              METHODOLOGY
-            </p>
-            <p> Design Systems </p>
+            <p className="pb-3 text-sm tracking-wider text-zinc-400">LICENSE</p>
+            <p> </p>
           </div> */}
         </div>
         <FontViewer />

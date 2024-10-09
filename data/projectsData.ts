@@ -31,6 +31,13 @@ const projectsData = [
     imgSrc: '/static/images/dxd.gif',
     href: 'https://dataxdesign.io',
   },
+
+  {
+    title: 'Euripides',
+    description: `Reverse stress typeface inspired by Euripides by Anne Carson`,
+    imgSrc: '/static/images/ERPD.png',
+    href: '/projects/euripides',
+  },
 ]
 
 export default projectsData
