@@ -204,7 +204,6 @@ export default function Comrade() {
         <div className="mx-auto max-w-5xl items-center justify-start">
           <div className="flex max-w-5xl flex-col gap-2 md:flex-row">
             <div className="basis-1/2 pb-8">
-      
               <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
                 Synthesis
               </h1>
@@ -231,7 +230,7 @@ export default function Comrade() {
         <Image src={final} alt="Picture of the author" className=" py-5" />
       </section>
 
-      <section className="bg-white py-32 text-black">
+      <section className=" py-32 ">
         <div className="mx-auto max-w-5xl items-center justify-start">
           <div className="mx-auto flex flex-col gap-10 py-5 md:flex-row">
             <div className="basis-1/2">
