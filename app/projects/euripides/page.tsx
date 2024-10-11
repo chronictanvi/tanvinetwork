@@ -49,7 +49,7 @@ export default function Euripides() {
                 download="Euripides.woff" // Name the file that will be downloaded
               >
                 <button
-                  className="rounded-lg border-2 border-white	 px-4 py-4 text-white hover:bg-red-400"
+                  className="rounded-lg border-2 border-black	 px-4 py-4 text-black hover:bg-red-400 dark:border-white dark:text-white"
                   onClick={downloadEuripides}
                 >
                   Download .woff
@@ -63,7 +63,7 @@ export default function Euripides() {
               >
                 {' '}
                 <button
-                  className="rounded-lg border-2 border-white	 px-4 py-4 text-white hover:bg-red-400"
+                  className="rounded-lg border-2 border-black	 px-4 py-4 text-black hover:bg-red-400 dark:border-white dark:text-white"
                   onClick={downloadEuripides}
                 >
                   Download .otf
