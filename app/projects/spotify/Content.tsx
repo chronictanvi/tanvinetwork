@@ -25,7 +25,7 @@ export default function Content() {
   return (
     <div className="relative mt-5">
       {isRestricted && (
-        <div className="absolute md:inset-x-[25vw] text-xl bg-black p-10 rounded z-10 flex flex-col text-zinc-800 dark:text-zinc-400 ">
+        <div className="absolute md:inset-x-[25vw] text-xl bg-black p-10 rounded z-10 flex flex-col text-zinc-100 dark:text-zinc-400 ">
           <p className="pb-8">
             Sorry! This project is under NDA. If you wish to view it, please
             enter the password:
