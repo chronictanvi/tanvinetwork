@@ -29,7 +29,7 @@ export default function Bio() {
             Public Policy Lab
           </Link>
           . Previously I was a <br />
-          Design Technologist at Spotify. I live in Brooklyn with my cat{' '}
+          Product Designer at Spotify. I live in Brooklyn with my cat{' '}
           <span
             onMouseLeave={debounce(() => {
               console.log('debounced')
