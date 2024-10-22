@@ -295,7 +295,7 @@ const characterSets = {
     { character: 'ȷ', unicode: 'U+0237', title: 'LATIN SMALL LETTER DOTLESS J' },
     { character: 'ĵ', unicode: 'U+0135', title: 'LATIN SMALL LETTER J WITH CIRCUMFLEX' },
     { character: 'ķ', unicode: 'U+0137', title: 'LATIN SMALL LETTER K WITH CEDILLA' },
-    { character: 'ḳ', unicode: 'U+1E33', title: 'LATIN SMALL LETTER K WITH DOT BELOW' },
+    // { character: 'ḳ', unicode: 'U+1E33', title: 'LATIN SMALL LETTER K WITH DOT BELOW' },
     // { character: 'ĸ', unicode: 'U+0138', title: 'LATIN SMALL LETTER KRA' },
     // { character: 'ƙ', unicode: 'U+0199', title: 'LATIN SMALL LETTER K WITH HOOK' },
     // { character: 'ĺ', unicode: 'U+013A', title: 'LATIN SMALL LETTER L WITH ACUTE' },
