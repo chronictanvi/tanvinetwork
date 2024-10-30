@@ -1,13 +1,27 @@
 'use client'
 
 import Image from 'next/image'
-
 import modular from './Rec.png'
+import process from './process.png'
+import early1 from './Additonal Filter.png'
+import early2 from './Browse by Theme.png'
+import variants from './variants.png'
+import video from './video.gif'
+
+import v1 from './Database.png'
+import proto from './Proto1.png'
+
+import keywords from './1_Keywords.gif'
+import expanded from './5_Expand.gif'
+
+import demographics from './3_Demographics.gif'
+
+import topics from './2_Topics.gif'
 
 export default function PeopleSay() {
   return (
-    <>
-      <section className="mx-auto max-w-6xl items-center justify-start px-5 py-24  ">
+    <div>
+      <section className="mx-auto max-w-6xl items-center justify-start px-5 py-24 ">
         <div className="mx-auto mt-12 flex max-w-6xl flex-col gap-16 px-5 md:flex-row ">
           <div className="flex basis-2/3 flex-col  pr-16 pt-8 md:space-y-5">
             <p className="pb-3 text-sm tracking-wider text-zinc-800  dark:text-zinc-400">
@@ -35,21 +49,21 @@ export default function PeopleSay() {
                 <li>User Interface Design</li>
               </ul>
             </div> */}
-            <div className="basis-1/2">
-              <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">TOOLS</p>
+            <div className="basis-1/2 pb-5 ">
+              <p className=" pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">TOOLS</p>
               <ul>
                 <li>Figma </li>
                 <li>next.js</li>
               </ul>
             </div>
-            <div className="basis-1/2">
-              <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">ROLE</p>
+            <div className="basis-1/2 py-5 ">
+              <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">ROLE</p>
               <ul>
                 <li>Design Lead </li>
               </ul>
             </div>
-            <div className="basis-1/2">
-              <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
+            <div className="basis-1/2 py-3 ">
+              <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
                 DURATION
               </p>
               <ul>
@@ -71,15 +85,18 @@ export default function PeopleSay() {
             <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">CONTEXT</p>
             <p className="text-xl">
               The American population is rapidly aging. Our society needs to prepare for this
-              demographic shift.
+              demographic shift. Health and aging policies and systems are typically designed from
+              the perspective of people who run systems, rather than those who use them. Even when
+              advocates, policymakers, and providers do seek to learn from older adults, those
+              engagements often have significant limitations.
             </p>
           </div>
 
           <div className=" basis-1/2">
             <p className="pb-3 text-sm tracking-wider text-zinc-800  dark:text-zinc-400">GOAL</p>
             <p className=" text-xl">
-              Developing a qualitative data base cataloging the experiences of older adults across
-              America, to inform how policy makers frame the National Plan on Aging.
+              Take data, highlight value of spoken word and qualitative data, make the experiences
+              of older adults across America easily accessible to policy makers
             </p>
           </div>
           {/* <div className="basis-1/2">
@@ -107,15 +124,16 @@ export default function PeopleSay() {
             alt="Picture of the author"
             className="pt-5"
           /> */}
-          <div className=" max-w-4xl gap-2 ">
+          <div className=" max-w-4xl gap-2  ">
             <div className=" basis-1/2 pb-12 ">
               <p className="pb-3 text-sm uppercase tracking-wider">The challenge</p>
               <h1 className="text-4xl font-extrabold leading-9 tracking-tight  md:text-4xl md:leading-10">
                 A Comprehensive Database
               </h1>
               <p className="py-5 text-xl">
-                Take data, highlight value of spoken word and qualitative data, make it easily
-                accessible to policy makers
+                Existing datasets and surveys do not adequately focus on priority populations or
+                capture the lived experience of older adults, and their insights often remain siloed
+                within commissioning organizations and agencies.
               </p>{' '}
               <p className="pb-5">
                 We created a research pool that reflects projections of the demographics of America
@@ -123,115 +141,132 @@ export default function PeopleSay() {
                 residents of rural areas. We also spoke with caregivers, program staff, and
                 subject-matter experts in the aging space.
               </p>
-              <Image src={modular} alt="Picture of the author" className="py-5" />
+              <Image src={process} alt="Picture of the author" className="rounded-xl	" />
             </div>
 
-            <div className=" basis-1/2">
-              <p className="pb-3 text-sm tracking-wider">FOUNDATIONAL RESEARCH</p>
-              <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
-                Offerings for Fans
-              </h1>
-              <p className="py-5 ">
-                We conducted research amongst fervent artists, independent devotees, everyday music
-                lovers and active members of fan communities — to understand how fans navigate
-                Japan’s unique music scene. We identified fandom as the{' '}
-                <span className="font-bold"> single largest opportunity for premium growth </span>{' '}
-                for the following reasons:
-              </p>
-            </div>
-            <div className="mx-auto flex max-w-4xl flex-col  gap-10  md:flex-row">
-              <div className="basis-1/2 py-5">
-                <h4 className="py-3 text-2xl"> Widespread demand</h4>
-                <p>
-                  ● Fandom isn’t a niche interest - it’s deeply ingrained in people’s everyday
-                  lives.
-                </p>{' '}
-                <p className="py-5">
-                  ● 62% of Japanese consumers with an audio interest are regularly engaging in fan
-                  activities.
+            <div className=" flex flex-col md:flex-row">
+              <div className="basis-1/2">
+                {' '}
+                <p className="pb-3 text-sm tracking-wider">FOUNDATIONAL RESEARCH</p>
+                <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
+                  Content Offerings
+                </h1>
+                <p className="py-5 ">
+                  This website revolves around three main ingredients — The Partcipants, The
+                  Database, and the Policy Insights. I started laying the groundwork for the project
+                  by trying to make a filtering system to make the database come to life.
                 </p>
               </div>
-
-              <div className="basis-1/2 py-5 ">
-                <h4 className="py-3 text-2xl">High willingness to pay</h4>
-                <p>
-                  ● Fans’ willingness to pay (WTP) to strengthen their connection with artists is
-                  remarkably high.
-                </p>{' '}
-                <p className="py-5">
-                  ● Around 90% of participants in our study had one or two artists they passionately
-                  support and invest in.
-                </p>{' '}
+              <div>
+                <Image src={video} alt="Picture of the author" className="" unoptimized />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className=" bg-black  ">
-        <section className="mx-auto max-w-3xl items-center justify-start bg-black px-5 py-32  text-gray-100  ">
-          <div className="  py-8  ">
-            <p className="pb-3 text-sm  tracking-wider ">FURTHER UNDERSTANDING</p>
-            <h1 className="text-4xl font-extrabold leading-9 tracking-tight  md:text-4xl md:leading-10">
-              User Insights
-            </h1>
-            <p className="py-5 ">
-              We spoke to a variety of people to understand how fans navigate discovery of new
-              content and reminsce on their listening history. and what can be improved. We focused
-              on data stories as presented in Wrapped — Spotify's annual event for revealing how
-              fan's are interacting with the artists.
-            </p>
-          </div>
-          <div className="mx-auto flex max-w-4xl flex-col gap-10 py-16 md:flex-row">
-            <div className="basis-1/2">
+      <section className=" bg-white">
+        <section className="mx-auto  items-center justify-start  px-5 py-32  text-gray-100 dark:text-gray-900  ">
+          <section className="max-w-xl">
+            <div className="  py-8"></div>
+          </section>
+          <section id="fitlers">
+            <div className="mx-24 mx-auto max-w-xl gap-10 py-5 ">
+              <p className=" pb-3 text-sm tracking-wider ">PROTOTYPE</p>
+              <h1 className=" text-4xl font-extrabold leading-9 tracking-tight  md:text-4xl md:leading-10">
+                The Database
+              </h1>
+              <h2 className="py-5 text-xl ">Filters & Results</h2>
               <h4 className="py-3 text-lg font-bold">
+                <p> What shows on the page when you land?</p>{' '}
+                <p> Is it all the data points or should we start from a clean slate?</p>{' '}
+                <p> What about a curated selection of the top data points?</p>
+              </h4>
+              <p>
+                Through user research, I decided on the flow that when the Search the Database page
+                loads, all ~2,400 data units are visible. You can select items from the menus on the
+                left to narrow down the results. The results are sorted by relevance, in descending
+                order. The top results are data units that have the most matches with the topics
+                you’ve selected. This lead to the focus - how does a user keep track of what filters
+                are activated?{' '}
+              </p>{' '}
+            </div>
+            <div className="mx-auto  max-w-5xl gap-10 py-5 ">
+              <div className="rounded-xl	">
+                <Image
+                  src={topics}
+                  alt="Picture of the author"
+                  className="rounded-xl 	"
+                  unoptimized
+                />
+              </div>
+            </div>
+            <div className="mx-24 mx-auto max-w-xl gap-10 py-5 ">
+              <p>
                 {' '}
-                “It would be good to put this in context. Is 40 listens in a year a lot or not?”
-              </h4>
-              <p>
-                Listeners find data stories about things they already know (such as their Top
-                Artist) less interesting. They are interested in diving deeper and ‘getting to know
-                themselves better’.
+                I developed multiple iterations of what signifiers should be included to convey the
+                filtering mechanism. Ultimately, the team decided that simply showing the number of
+                search results decreasing / increasing on fiddling with the filters is enough of a
+                hint for our users.
               </p>
             </div>
+            <div className=" mx-auto max-w-5xl gap-10 py-16 ">
+              <div className="">
+                <div className="mx-auto flex max-w-6xl flex-col gap-4 py-5  md:flex-row ">
+                  <div className="basis-1/2 ">
+                    <Image src={early2} alt="Poster" className=" rounded- xl" unoptimized />
+                  </div>
+                  <div className="basis-1/2 ">
+                    <Image src={v1} alt="Poster" className="" unoptimized />
+                  </div>
+                </div>
+                <figcaption className="py-3 text-center">
+                  {' '}
+                  Left: v0. early exploration by Petey Routzahn. <br></br>Right: v1. Revised concept
+                  for filters{' '}
+                </figcaption>
+              </div>
 
-            <div className="basis-1/2 ">
-              <Image src={modular} alt="Picture of the author" className="" unoptimized />
+              <div className=" ">
+                {/* show process  of how it evolved?  */}
+
+                {/* 
+              add before and after here for this?  */}
+
+                {/* <Image
+                  src={demographics}
+                  alt="Picture of the author"
+                  className="py-5"
+                  unoptimized
+                /> */}
+              </div>
             </div>
-          </div>
-          <div className="mx-auto flex max-w-4xl flex-col gap-10  py-16 md:flex-row">
-            <div className="basis-1/2">
+          </section>
+          <section id="data unit">
+            <div className="mx-24 mx-auto  max-w-2xl gap-10 py-16 ">
+              <h2 className="py-5 text-xl ">Data Card & Expansion</h2>
               <h4 className="py-3 text-lg font-bold">
-                “Knowing that other people listen to music in another way than me would influence
-                what music I choose to listen to”
+                What information does the data card need? These were tagged with A LOT of meta data.
               </h4>
               <p>
-                Listeners would like to be reminded about what songs they listen to — or might have
-                forgotten about. Recommendations also carry a social component — listeners are
-                curious about songs that other fans are listening to.
-              </p>
+                Through user research, I decided on the flow that when the Search the Database page
+                loads, all ~2,400 data units are visible. You can select items from the menus on the
+                left to narrow down the results. The results are sorted by relevance, in descending
+                order. The top results are data units that have the most matches with the topics
+                you’ve selected. This lead to the focus - how does a user keep track of what filters
+                are activated?{' '}
+              </p>{' '}
             </div>
-
-            <div className="basis-1/2 ">
-              <Image src={modular} alt="Picture of the author" className="" />
+            <Image src={expanded} alt="Picture of the author" className="rounded-xl 	" unoptimized />
+          </section>
+          <div className="">
+            <div className="mx-auto flex max-w-6xl flex-row gap-4 py-5  ">
+              <Image src={proto} alt="Poster" className=" rounded- xl" unoptimized />
             </div>
-          </div>
-
-          <div className="mx-auto flex max-w-4xl flex-col gap-10 py-16 md:flex-row">
-            <div className="basis-1/2">
-              <h4 className="py-3 text-lg font-bold">
-                {' '}
-                “Wrapped is too infrequent. How does my listening change over a day? How does it
-                change over seasons? ”
-              </h4>
-              <p>
-                Listeners want more — There is a strong desire to access their ‘fan narrative’ more
-                frequently.
-              </p>
-            </div>
-
-            <div className="basis-1/2 ">
-              <Image src={modular} alt="Picture of the author" unoptimized />
-            </div>
+            <figcaption className="py-3 text-center">
+              {' '}
+              Left: v0. early exploration by Petey Routzahn. Right: v1. Revised concept for filters{' '}
+            </figcaption>
+            <Image src={variants} alt="Poster" className="" unoptimized />
           </div>
         </section>
       </section>
@@ -255,42 +290,7 @@ export default function PeopleSay() {
             </div>
           </div>
         </div>
-        <Image src={modular} alt="Picture of the author" className="" />
-        <div className="mx-auto max-w-3xl items-center justify-start">
-          <p className="pb-3 pt-12 text-sm tracking-wider">SYNTHESIS</p>
-          <h1 className="pb-5 text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10 ">
-            Content for Fandom
-          </h1>
-          <p>
-            Developing special content for Japanese fans required us to understand the data we had
-            access to and what would be feasible to curate. We categorised the curation
-            opportunities as the following:
-          </p>
-        </div>
-        <div className="mx-auto flex max-w-3xl flex-col gap-5 pt-5 md:flex-row">
-          <div className="basis-1/2">
-            <h3 className="  pt-5  text-xl">Infrastructure </h3>
-            <p className=" pt-2">
-              Collect fan memories in one place, tapping into sentimentality and memorabilia.
-            </p>
-          </div>
 
-          <div className="basis-1/2 ">
-            <h3 className="  pt-5  text-xl ">Platform Content</h3>
-            <p className=" pt-2">
-              Launch an extended version of listening stats that is highly localized and meet local
-              fandom needs
-            </p>
-          </div>
-
-          <div className="basis-1/2">
-            <h3 className=" pt-5   text-xl">Partnership Integration</h3>
-            <p className=" pt-2">
-              By providing exclusive content through partnerships, we can provide value that
-              stretches beyond our platform.
-            </p>
-          </div>
-        </div>{' '}
         <div className="mx-auto max-w-3xl py-10 ">
           <Image src={modular} alt="Picture of the author" className="py-5" />
           <figcaption className="text-center italic">
@@ -410,9 +410,12 @@ export default function PeopleSay() {
               Result
             </h1>
             <p className="py-5 text-gray-100">
-              The final prototype met our goal to uncover insights and translate concepts into
-              features that address customer behaviours and motivations.
+              The People Say, an online platform that publicly shares out findings and insights
+              generated with those older adults regarding their healthcare access and delivery
+              experiences, designed to highlight opportunities for national policy change and
+              nationwide healthcare-systems improvement.{' '}
             </p>
+
             <Image src={modular} alt="Picture of the author" className="pt-12" unoptimized />
             <h1 className="pt-32 text-4xl font-bold leading-9 tracking-tight text-gray-100 md:text-4xl md:leading-10">
               What's Next
@@ -427,6 +430,6 @@ export default function PeopleSay() {
       <h1 className="bg-black py-5  pb-12 text-center text-5xl font-bold leading-9 tracking-tight text-red-100 dark:text-red-400 md:leading-10">
         ありがとう!
       </h1>
-    </>
+    </div>
   )
 }

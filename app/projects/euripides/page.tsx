@@ -111,7 +111,7 @@ export default function Euripides() {
         <FontViewer />
       </div>
       <CharacterViewer />
-      <div className="mx-auto mt-12 flex max-w-6xl flex-row flex-col gap-16 px-5">
+      <div className="mx-auto mt-12 flex max-w-6xl  flex-col gap-16 px-5">
         <p className="pb-3 text-center text-sm tracking-wider text-zinc-400"> IN USE </p>
         <div className="mx-auto flex max-w-4xl flex-col gap-10  md:flex-row">
           <div className="basis-1/2">
