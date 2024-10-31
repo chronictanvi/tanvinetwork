@@ -113,43 +113,55 @@ export default function PeopleSay() {
 
       <section className="z-0  bg-white px-5 py-16 text-black">
         <div className="mx-auto max-w-3xl items-center justify-start">
-          <div className=" max-w-4xl gap-2  ">
+          <div className=" max-w-4xl gap-2  flex flex-col md:flex-row ">
             <div className=" basis-1/2 pb-12 ">
               <p className="pb-3 text-sm uppercase tracking-wider">The challenge</p>
-              <h1 className="text-4xl font-extrabold leading-9 tracking-tight  md:text-4xl md:leading-10">
-                A Comprehensive Database
+              <h1 className="text-xl font-extrabold leading-9 tracking-tight  md:text-2xl md:leading-10">
+                Inaccessible Data
               </h1>
-              <p className="py-5 text-xl">
+              <p className="py-5 text-lg">
                 Existing datasets and surveys do not adequately focus on priority populations or
                 capture the lived experience of older adults, and their insights often remain siloed
                 within commissioning organizations and agencies.
               </p>{' '}
-              <p className="pb-5">
+
+            </div>
+
+            <div className=" basis-1/2 pb-12 ">
+              <p className="pb-3 text-sm uppercase tracking-wider">The Solution</p>
+              <h1 className="text-xl font-extrabold leading-9 tracking-tight  md:text-2xl md:leading-10">
+                A Comprehensive Database
+              </h1>
+              <p className="py-5 text-lg">
                 We created a research pool that reflects projections of the demographics of America
                 in 2040, with a special emphasis on participants who are lower income, of color, or
                 residents of rural areas. We also spoke with caregivers, program staff, and
                 subject-matter experts in the aging space.
+              </p>{' '}
+              <p className="pb-5">
+
               </p>
-              <Image src={process} alt="Picture of the author" className="rounded-xl	" />
             </div>
+          </div><div>
 
             <div className=" flex flex-col gap-5 md:flex-row">
               <div className="basis-2/3">
                 {' '}
-                <p className="pb-3 text-sm tracking-wider">FOUNDATIONAL RESEARCH</p>
+                <p className="pb-3 text-sm tracking-wider">FUNCTIONALITY</p>
                 <h1 className="text-3xl font-medium leading-9 tracking-tight text-gray-800 dark:text-gray-900 md:text-4xl md:leading-10">
                   Content Offerings
                 </h1>
                 <p className="py-5 ">
-                  This website revolves around three main ingredients — The Partcipants, The
-                  Database, and the Policy Insights. I started laying the groundwork for the project
-                  by trying to make a filtering system to make the database come to life.
+                  This website revolves around three main ingredients — The Partcipants, The Database, and the Policy Insights. In short; the data is collected, processed, uploaded to Airtable, and then queried to the website.
+                  This process takes 2800 data units and converts them to easily acccesible content.
                 </p>
               </div>
               <div className="basis-1/3">
                 <Image src={video} alt="Picture of the author" className="" unoptimized />
               </div>
             </div>
+            <Image src={process} alt="Picture of the author" className="rounded-xl	" />
+
           </div>
         </div>
       </section>
@@ -169,6 +181,7 @@ export default function PeopleSay() {
                 <h1 className=" text-4xl font-extrabold leading-9 tracking-tight  md:text-4xl md:leading-10">
                   The Database
                 </h1>
+                <p className='py-3'>  I started laying the groundwork for the project by trying to make a filtering system to make the database come to life.</p>
               </div>
               <div className=" basis-1/2 py-5">
                 <p className=" text-sm uppercase font-bold tracking-wider">1.</p>
