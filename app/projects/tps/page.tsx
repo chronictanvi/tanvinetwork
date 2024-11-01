@@ -1,22 +1,16 @@
 'use client'
 
 import Image from 'next/image'
-import modular from './Rec.png'
 import process from './process.png'
-import early1 from './Additonal Filter.png'
 import early2 from './Browse by Theme.png'
 import variants from './variants.png'
 import video from './video.gif'
 import cover from './cover.png'
 
-
 import v1 from './Database.png'
 import proto from './Proto1.png'
 
-import keywords from './1_Keywords.gif'
 import expanded from './5_Expand.gif'
-
-import demographics from './3_Demographics.gif'
 
 import topics from './2_Topics.gif'
 
@@ -24,7 +18,7 @@ export default function PeopleSay() {
   return (
     <div>
       <section className="mx-auto max-w-6xl items-center justify-start px-5  ">
-        <div className="mx-auto pb-10 flex max-w-3xl flex-col gap-16 md:flex-row ">
+        <div className="mx-auto flex max-w-3xl flex-col gap-16 pb-10 md:flex-row ">
           <div className="flex basis-2/3 flex-col  pr-16 pt-8 md:space-y-5">
             <p className="pb-3 text-sm tracking-wider text-zinc-800  dark:text-zinc-400">
               OVERVIEW
@@ -42,9 +36,7 @@ export default function PeopleSay() {
             </div>
           </div>
 
-          <div className="my-10 flex flex-row md:flex-col gap-8 ">
-
-
+          <div className="my-10 flex flex-row gap-8 md:flex-col ">
             <div className=" ">
               <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">ROLE</p>
               <ul>
@@ -71,30 +63,34 @@ export default function PeopleSay() {
               <p className=" pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">TOOLS</p>
               <ul>
                 <li>Figma </li>
-                <li>Lavarel  </li>
+                <li>Lavarel </li>
                 <li>Tailwind CSS </li>
               </ul>
             </div>
           </div>
-
         </div>
         <Image src={cover} alt="Picture of the author" />
-        <section className='max-w-3xl mx-auto items-center justify-start'>
-          <div className=' pt-20'>
+        <section className="mx-auto max-w-3xl items-center justify-start">
+          <div className=" pt-20">
             <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">CONTEXT</p>
 
             <p className="text-3xl font-bold">
-              The American population is rapidly aging.<br>
-              </br> Our society needs to prepare for this
-              demographic shift.</p></div>
+              The American population is rapidly aging.<br></br> Our society needs to prepare for
+              this demographic shift.
+            </p>
+          </div>
           <div className=" mb-10 flex flex-col gap-16 py-10 md:flex-row">
             <div className="basis-1/2">
-              <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">PROBLEM</p>
+              <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
+                PROBLEM
+              </p>
               <p className="text-xl">
-                Health and aging policies and systems are typically designed from
-                the perspective of people who run systems, rather than those who use them. </p><p className='pt-5'>Even when
-                  advocates, policymakers, and providers do seek to learn from older adults, those
-                  engagements often have significant limitations.
+                Health and aging policies and systems are typically designed from the perspective of
+                people who run systems, rather than those who use them.{' '}
+              </p>
+              <p className="pt-5">
+                Even when advocates, policymakers, and providers do seek to learn from older adults,
+                those engagements often have significant limitations.
               </p>
             </div>
 
@@ -105,7 +101,6 @@ export default function PeopleSay() {
                 of older adults across America easily accessible to policy makers
               </p>
             </div>
-
           </div>
           Graph animated here?
         </section>
@@ -113,7 +108,7 @@ export default function PeopleSay() {
 
       <section className="z-0  bg-white px-5 py-16 text-black">
         <div className="mx-auto max-w-3xl items-center justify-start">
-          <div className=" max-w-4xl gap-2  flex flex-col md:flex-row ">
+          <div className=" flex max-w-4xl  flex-col gap-2 md:flex-row ">
             <div className=" basis-1/2 pb-12 ">
               <p className="pb-3 text-sm uppercase tracking-wider">The challenge</p>
               <h1 className="text-xl font-extrabold leading-9 tracking-tight  md:text-2xl md:leading-10">
@@ -124,7 +119,6 @@ export default function PeopleSay() {
                 capture the lived experience of older adults, and their insights often remain siloed
                 within commissioning organizations and agencies.
               </p>{' '}
-
             </div>
 
             <div className=" basis-1/2 pb-12 ">
@@ -138,12 +132,10 @@ export default function PeopleSay() {
                 residents of rural areas. We also spoke with caregivers, program staff, and
                 subject-matter experts in the aging space.
               </p>{' '}
-              <p className="pb-5">
-
-              </p>
+              <p className="pb-5"></p>
             </div>
-          </div><div>
-
+          </div>
+          <div>
             <div className=" flex flex-col gap-5 md:flex-row">
               <div className="basis-2/3">
                 {' '}
@@ -152,8 +144,10 @@ export default function PeopleSay() {
                   Content Offerings
                 </h1>
                 <p className="py-5 ">
-                  This website revolves around three main ingredients — The Partcipants, The Database, and the Policy Insights. In short; the data is collected, processed, uploaded to Airtable, and then queried to the website.
-                  This process takes 2800 data units and converts them to easily acccesible content.
+                  This website revolves around three main ingredients — The Partcipants, The
+                  Database, and the Policy Insights. In short; the data is collected, processed,
+                  uploaded to Airtable, and then queried to the website. This process takes 2800
+                  data units and converts them to easily acccesible content.
                 </p>
               </div>
               <div className="basis-1/3">
@@ -161,30 +155,26 @@ export default function PeopleSay() {
               </div>
             </div>
             <Image src={process} alt="Picture of the author" className="rounded-xl	" />
-
           </div>
         </div>
       </section>
       <section className=" z-0  bg-white px-5 py-16 text-gray-900 dark:text-gray-100">
         <section className="  mx-auto max-w-3xl items-center justify-start   ">
-
-
-
-
           <section id="filters">
-
-
-
             <div className=" flex flex-col gap-5 md:flex-row">
               <div className=" basis-1/2">
                 <p className="pb-3 text-sm uppercase tracking-wider">PROTOTYPE</p>
                 <h1 className=" text-4xl font-extrabold leading-9 tracking-tight  md:text-4xl md:leading-10">
                   The Database
                 </h1>
-                <p className='py-3'>  I started laying the groundwork for the project by trying to make a filtering system to make the database come to life.</p>
+                <p className="py-3">
+                  {' '}
+                  I started laying the groundwork for the project by trying to make a filtering
+                  system to make the database come to life.
+                </p>
               </div>
               <div className=" basis-1/2 py-5">
-                <p className=" text-sm uppercase font-bold tracking-wider">1.</p>
+                <p className=" text-sm font-bold uppercase tracking-wider">1.</p>
                 <h2 className="py-5 text-xl ">Filters & Results</h2>
                 <h4 className="py-3 text-lg font-bold">
                   <p> What shows on the page when you land?</p>{' '}
@@ -192,12 +182,12 @@ export default function PeopleSay() {
                   <p> What about a curated selection of the top data points?</p>
                 </h4>
                 <p>
-                  Through user research, I decided on the flow that when the Search the Database page
-                  loads, all ~2,400 data units are visible. You can select items from the menus on the
-                  left to narrow down the results. The results are sorted by relevance, in descending
-                  order. The top results are data units that have the most matches with the topics
-                  you’ve selected. This lead to the focus - how does a user keep track of what filters
-                  are activated?{' '}
+                  Through user research, I decided on the flow that when the Search the Database
+                  page loads, all ~2,400 data units are visible. You can select items from the menus
+                  on the left to narrow down the results. The results are sorted by relevance, in
+                  descending order. The top results are data units that have the most matches with
+                  the topics you’ve selected. This lead to the focus - how does a user keep track of
+                  what filters are activated?{' '}
                 </p>{' '}
               </div>
             </div>
@@ -253,43 +243,39 @@ export default function PeopleSay() {
             </div>
           </section>
           <section id="data unit">
-
-
-
             <div className=" flex flex-col gap-5 md:flex-row">
+              <div className=" basis-1/2"></div>
               <div className=" basis-1/2">
-
-              </div>
-              <div className=" basis-1/2">
-                <p className=" text-sm uppercase font-bold tracking-wider">2.</p>
+                <p className=" text-sm font-bold uppercase tracking-wider">2.</p>
                 <h2 className="py-5 text-xl ">Data Card & Expansion</h2>
                 <h4 className="py-3 text-lg font-bold">
-                  What information does the data card need? These were tagged with A LOT of meta data.
+                  What information does the data card need? These were tagged with A LOT of meta
+                  data.
                 </h4>
                 <p>
-                  Through user research, I decided on the flow that when the Search the Database page
-                  loads, all ~2,400 data units are visible. You can select items from the menus on the
-                  left to narrow down the results. The results are sorted by relevance, in descending
-                  order. The top results are data units that have the most matches with the topics
-                  you’ve selected. This lead to the focus - how does a user keep track of what filters
-                  are activated?{' '}
+                  Through user research, I decided on the flow that when the Search the Database
+                  page loads, all ~2,400 data units are visible. You can select items from the menus
+                  on the left to narrow down the results. The results are sorted by relevance, in
+                  descending order. The top results are data units that have the most matches with
+                  the topics you’ve selected. This lead to the focus - how does a user keep track of
+                  what filters are activated?{' '}
                 </p>{' '}
               </div>
             </div>
-            <Image src={expanded} alt="Picture of the author" className="rounded-xl py-10	" unoptimized />
+            <Image
+              src={expanded}
+              alt="Picture of the author"
+              className="rounded-xl py-10	"
+              unoptimized
+            />
           </section>
           <div className="">
             <div className="mx-auto flex max-w-6xl flex-row gap-4 py-5  ">
               <Image src={proto} alt="Poster" className=" rounded- xl" unoptimized />
             </div>
-            <figcaption className="text-center">
-              {' '}
-              Content card with its expanded view
-            </figcaption>
+            <figcaption className="text-center"> Content card with its expanded view</figcaption>
             <Image src={variants} alt="Poster" className="pt-5" unoptimized />
-            <figcaption className="text-center">
-              {' '}
-              Iterations            </figcaption>
+            <figcaption className="text-center"> Iterations </figcaption>
           </div>
         </section>
       </section>
@@ -426,16 +412,14 @@ export default function PeopleSay() {
     </div>
       </section > */}
 
-      < section className=" bg-black  " >
+      <section className=" bg-black  ">
         <section className="mx-auto max-w-3xl items-center justify-start bg-black px-5 py-32  ">
           <div className="  py-8  ">
             <p className="py-5 "></p>
             <h1 className="text-4xl font-bold  leading-9 tracking-tight  text-gray-100 md:text-4xl md:leading-10">
               Result
             </h1>
-            <p className="py-5 text-gray-100">
-              We're live! {' '}
-            </p>
+            <p className="py-5 text-gray-100">We're live! </p>
 
             {/* <Image src={modular} alt="Picture of the author" className="pt-12" unoptimized /> */}
             <h1 className="pt-32 text-4xl font-bold leading-9 tracking-tight text-gray-100 md:text-4xl md:leading-10">
@@ -447,8 +431,7 @@ export default function PeopleSay() {
             </p>
           </div>
         </section>
-      </section >
-
-    </div >
+      </section>
+    </div>
   )
 }
