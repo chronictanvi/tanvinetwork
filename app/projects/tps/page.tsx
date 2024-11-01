@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import process from './process.png'
 import early2 from './Browse by Theme.png'
-import variants from './variants.png'
+import variants from '.app/projects/tps/variants.png'
 import video from './video.gif'
 import cover from './cover.png'
 
@@ -274,7 +274,7 @@ export default function PeopleSay() {
               <Image src={proto} alt="Poster" className=" rounded- xl" unoptimized />
             </div>
             <figcaption className="text-center"> Content card with its expanded view</figcaption>
-            <Image src={variants} alt="Poster" className="pt-5" unoptimized />
+            <Image src={variants} alt="Poster" className="pt-5" />
             <figcaption className="text-center"> Iterations </figcaption>
           </div>
         </section>
