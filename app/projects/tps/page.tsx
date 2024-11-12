@@ -109,19 +109,7 @@ export default function PeopleSay() {
         <div className="mx-auto max-w-3xl items-center justify-start">
           <div className=" flex max-w-4xl  flex-col gap-2 md:flex-row ">
             <div className=" basis-1/2 pb-12 ">
-              <p className="pb-3 text-sm uppercase tracking-wider">The challenge</p>
-              <h1 className="text-xl font-extrabold leading-9 tracking-tight  md:text-2xl md:leading-10">
-                Inaccessible Data
-              </h1>
-              <p className="py-5 text-lg">
-                Existing datasets and surveys do not adequately focus on priority populations or
-                capture the lived experience of older adults, and their insights often remain siloed
-                within commissioning organizations and agencies.
-              </p>{' '}
-            </div>
-
-            <div className=" basis-1/2 pb-12 ">
-              <p className="pb-3 text-sm uppercase tracking-wider">The Solution</p>
+              <p className="pb-3 text-sm uppercase tracking-wider">The Proposal</p>
               <h1 className="text-xl font-extrabold leading-9 tracking-tight  md:text-2xl md:leading-10">
                 A Comprehensive Database
               </h1>
@@ -134,6 +122,19 @@ export default function PeopleSay() {
               <p className="pb-5"></p>
             </div>
           </div>
+
+          <div className=" basis-1/2 pb-12 ">
+            <p className="pb-3 text-sm uppercase tracking-wider">The challenge</p>
+            <h1 className="text-xl font-extrabold leading-9 tracking-tight  md:text-2xl md:leading-10">
+              Inaccessible Data
+            </h1>
+            <p className="py-5 text-lg">
+              The database and taxonomy is extensive. 2,400 units of data, 100 detailed tags, 100
+              hours of media is overwhelming for someone to look at. The people we are dealing with
+              are not data scientists, they are policy makers.
+            </p>{' '}
+          </div>
+
           <div>
             <div className=" flex flex-col gap-5 md:flex-row">
               <div className="basis-2/3">
@@ -143,10 +144,11 @@ export default function PeopleSay() {
                   Content Offerings
                 </h1>
                 <p className="py-5 ">
-                  This website revolves around three main ingredients — The Partcipants, The
-                  Database, and the Policy Insights. In short; the data is collected, processed,
-                  uploaded to Airtable, and then queried to the website. This process takes 2800
-                  data units and converts them to easily acccesible content.
+                  My role was to take this data and present in in a way that is parsable for the
+                  average user. This website revolves around three main ingredients — The
+                  Partcipants, The Database, and the Policy Insights. In short; the data is
+                  collected, processed, uploaded to Airtable, and then queried to the website. This
+                  process takes 2800 data units and converts them to easily acccesible content.
                 </p>
               </div>
               <div className="basis-1/3">
