@@ -23,6 +23,7 @@ export default async function Page() {
           {sortedTags.map((t) => {
             return (
               <div key={t} className="mb-2 mr-5 mt-2">
+                <h1></h1>
                 <Tag text={t} />
                 <Link
                   href={`/tags/${slug(t)}`}
