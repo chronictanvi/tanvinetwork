@@ -18,18 +18,23 @@ import {
   ChartTooltipContent,
 } from '@/components/ui/chart'
 const chartData = [
-  { month: 'January', desktop: 186 },
-  { month: 'February', desktop: 305 },
-  { month: 'March', desktop: 237 },
-  { month: 'April', desktop: 73 },
-  { month: 'May', desktop: 209 },
-  { month: 'June', desktop: 214 },
+  { year: '1950', desktop: 8 },
+  { year: '1960', desktop: 9 },
+  { year: '1970', desktop: 10 },
+  { year: '1980', desktop: 11.3 },
+  { year: '1990', desktop: 12.5 },
+  { year: '1990', desktop: 12.4 },
+  { year: '2000', desktop: 13.1 },
+  { year: '2000', desktop: 16.5 },
+  { year: '2000', desktop: 20.6 },
+  { year: '2000', desktop: 21.6 },
+  { year: '2000', desktop: 22 },
 ]
 
 const chartConfig = {
   desktop: {
-    label: 'Desktop',
-    color: 'hsl(var(--chart-1))',
+    label: 'Older Adults: ',
+    color: 'hsl(var(--chart-2))',
   },
 } satisfies ChartConfig
 
@@ -52,21 +57,21 @@ export default function Component() {
           >
             <CartesianGrid vertical={false} />
             <XAxis
-              dataKey="month"
-              tickLine={false}
-              axisLine={false}
+              dataKey="year"
+              tickLine={true}
+              axisLine={true}
               tickMargin={8}
               tickFormatter={(value) => value.slice(0, 3)}
             />
             <ChartTooltip
-              cursor={false}
+              cursor={true}
               content={<ChartTooltipContent indicator="dot" hideLabel />}
             />
             <Area
               dataKey="desktop"
               type="linear"
               fill="var(--color-desktop)"
-              fillOpacity={0.4}
+              fillOpacity={0.2}
               stroke="var(--color-desktop)"
             />
           </AreaChart>
@@ -78,7 +83,7 @@ export default function Component() {
             <div className="flex items-center gap-2 font-medium leading-none">
               Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
             </div>
-            <div className="text-muted-foreground flex items-center gap-2 leading-none">
+            <div className="flex	items-center gap-2 leading-none text-slate-400 dark:text-slate-200">
               January - June 2024
             </div>
           </div>
