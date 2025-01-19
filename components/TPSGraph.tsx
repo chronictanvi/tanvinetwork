@@ -28,7 +28,7 @@ const chartData = [
   { year: '2000', desktop: 16.5 },
   { year: '2000', desktop: 20.6 },
   { year: '2000', desktop: 21.6 },
-  { year: '2000', desktop: 22 },
+  { year: '2024', desktop: 22 },
 ]
 
 const chartConfig = {
@@ -51,18 +51,12 @@ export default function Component() {
             accessibilityLayer
             data={chartData}
             margin={{
-              left: 12,
+              left: 3,
               right: 12,
             }}
           >
             <CartesianGrid vertical={false} />
-            <XAxis
-              dataKey="year"
-              tickLine={true}
-              axisLine={true}
-              tickMargin={8}
-              tickFormatter={(value) => value.slice(0, 3)}
-            />
+            <XAxis dataKey="year" tickLine={true} axisLine={true} tickMargin={8} tickFormatter="" />
             <ChartTooltip
               cursor={true}
               content={<ChartTooltipContent indicator="dot" hideLabel />}
