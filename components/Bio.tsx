@@ -24,12 +24,8 @@ export default function Bio() {
           hi hi.
         </h1>
         <p className="max-w-2xl text-lg leading-7 text-gray-500 dark:text-gray-400">
-          I'm a Design Fellow at{' '}
-          <Link className="underline" href="https://www.publicpolicylab.org/">
-            Public Policy Lab
-          </Link>
-          . Previously I was a <br />
-          Design Technologist at Spotify. I live in Brooklyn with my cat{' '}
+          I'm a Product Designer based in Brooklyn, NY.{' '}
+          {/*  I live with my cat{' '}
           <span
             onMouseLeave={debounce(() => {
               console.log('debounced')
@@ -37,9 +33,21 @@ export default function Bio() {
             })}
             onMouseEnter={() => setShowYuchi(true)}
           >
-            Yuchi
-          </span>
-          . I also curate the world's largest respository of{' '}
+            Mr. Yuchi.
+          </span>{' '} */}
+          <br></br>
+          Recently I've worked at{' '}
+          <Link className="underline" href="https://www.pentagram.com/">
+            Pentagram,
+          </Link>{' '}
+          <Link className="underline" href="https://www.publicpolicylab.org/">
+            Public Policy Lab
+          </Link>{' '}
+          and{' '}
+          <Link className="underline" href=" https://spotify.design/">
+            Spotify.
+          </Link>{' '}
+          I also curate the world's largest respository of{' '}
           <Link className="underline" href="https://www.are.na/tanvi/frog-based-design ">
             {' '}
             frog based design artifacts.
@@ -51,8 +59,8 @@ export default function Bio() {
       </div>
       {showYuchi && (
         <Image
-          alt="photo of my black cat yuchi laying on his back, nips out"
-          className="max-w-xs"
+          alt="photo of my black cat yuchi laying on his back"
+          className="absolute"
           src={yuchi}
           objectFit="contain"
         />
