@@ -56,7 +56,7 @@ export default function Component() {
             }}
           >
             <CartesianGrid vertical={false} />
-            <XAxis dataKey="year" tickLine={true} axisLine={true} tickMargin={8} tickFormatter="" />
+            <XAxis dataKey="year" tickLine={true} axisLine={true} tickMargin={8} />
             <ChartTooltip
               cursor={true}
               content={<ChartTooltipContent indicator="dot" hideLabel />}
