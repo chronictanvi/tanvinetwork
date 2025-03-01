@@ -2,7 +2,7 @@ import Image from './Image'
 import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
-  <div className="p-10  md:flex ">
+  <div className="px-10 py-3  md:flex ">
     <div className={`${imgSrc && 'h-full'} "md:w-1/2 p-10" overflow-hidden`}>
       {imgSrc &&
         (href ? (
@@ -25,7 +25,7 @@ const Card = ({ title, description, imgSrc, href }) => (
           />
         ))}
     </div>
-    <div className="py-5 md:w-1/2 md:px-8">
+    <div className="py-5 md:w-1/2 md:px-8 md:py-2">
       <h2 className=" text-2xl font-bold leading-8 tracking-tight">
         {href ? (
           <Link href={href} aria-label={`Link to ${title}`}>

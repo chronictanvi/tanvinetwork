@@ -12,7 +12,7 @@ export default function Projects() {
     <>
       <Bio />
       <div className="container py-12">
-        <div className="-m-4 ">
+        <div className="-m-4">
           {projectsData.map((d) => (
             <Card
               key={d.title}
