@@ -33,7 +33,7 @@ const chartData = [
 
 const chartConfig = {
   desktop: {
-    label: 'Older Adults: ',
+    label: 'Older Adults:',
     color: 'hsl(var(--chart-2))',
   },
 } satisfies ChartConfig
@@ -42,8 +42,13 @@ export default function Component() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Area Chart - Linear</CardTitle>
-        <CardDescription>Showing total visitors for the last 6 months</CardDescription>
+        <CardTitle>Percentage of population comprised of older adults </CardTitle>
+        <CardDescription>
+          <p className="mr-16">
+            Adults over the age of 65 are projected to make up more than 20% of the population by
+            2030 and will comprise more than 25% of the population in rural areas by 2040.{' '}
+          </p>
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -71,18 +76,16 @@ export default function Component() {
           </AreaChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter>
-        <div className="flex w-full items-start gap-2 text-sm">
+      {/* <CardFooter> */}
+      {/* <div className="flex w-full items-start gap-2 text-sm">
           <div className="grid gap-2">
             <div className="flex items-center gap-2 font-medium leading-none">
-              Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+              {/* <TrendingUp className="h-4 w-4" /> 
             </div>
-            <div className="flex	items-center gap-2 leading-none text-slate-400 dark:text-slate-200">
-              January - June 2024
-            </div>
+            <div className="flex	items-center gap-2 leading-none text-slate-400 dark:text-slate-200"></div>
           </div>
-        </div>
-      </CardFooter>
+        </div> */}
+      {/* </CardFooter> */}
     </Card>
   )
 }

@@ -18,7 +18,6 @@ export default function PeopleSay() {
   return (
     <div>
       <section className="mx-auto max-w-6xl items-center justify-start px-5  ">
-        <TPSGraph />
         <div className="mx-auto flex max-w-3xl flex-col gap-16 pb-10 md:flex-row ">
           <div className="flex basis-2/3 flex-col  pr-16 pt-8 md:space-y-5">
             <p className="pb-3 text-sm tracking-wider text-zinc-800  dark:text-zinc-400">
@@ -103,7 +102,7 @@ export default function PeopleSay() {
               </p>
             </div>
           </div>
-          Graph animated here?
+          <TPSGraph />
         </section>
       </section>
 
