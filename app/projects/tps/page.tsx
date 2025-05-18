@@ -70,7 +70,7 @@ export default function PeopleSay() {
           </div>
         </div>
         <Image src={cover} alt="Picture of the author" />
-        <section className="mx-auto max-w-3xl items-center justify-start">
+        <section className="mx-auto max-w-3xl items-center justify-start py-10">
           <div className=" pt-20">
             <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">CONTEXT</p>
 
@@ -79,7 +79,7 @@ export default function PeopleSay() {
               this demographic shift.
             </p>
           </div>
-          <div className=" mb-10 flex flex-col gap-16 py-10 md:flex-row">
+          <div className=" mb-10 flex flex-col gap-16 py-5 md:flex-row">
             <div className="basis-1/2">
               <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
                 PROBLEM
@@ -160,7 +160,7 @@ export default function PeopleSay() {
           </div>
         </div>
       </section>
-      <section className=" z-0  bg-white px-5 py-16 text-gray-900 dark:text-gray-100">
+      <section className=" z-0  bg-white px-5 py-16 text-gray-100 dark:text-gray-900">
         <section className="  mx-auto max-w-3xl items-center justify-start   ">
           <section id="filters">
             <div className=" flex flex-col gap-5 md:flex-row">

@@ -2,7 +2,7 @@ import Image from './Image'
 import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
-  <div className="px-10 py-3  md:flex ">
+  <div className=" px-10 py-3 md:flex ">
     <div className={`${imgSrc && 'h-full'} "md:w-1/2 p-10" overflow-hidden`}>
       {imgSrc &&
         (href ? (
