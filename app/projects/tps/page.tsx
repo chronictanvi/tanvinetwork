@@ -70,13 +70,14 @@ export default function PeopleSay() {
         <Image src={cover} alt="Cover of The People Say project" className="rounded-xl" />
 
         <section className="mx-auto max-w-3xl py-10">
-          <div className="pt-20">
+          <div className="py-10">
             <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">CONTEXT</p>
             <p className="text-3xl font-bold">
               The American population is rapidly aging. <br />
               Our society needs to prepare for this demographic shift.
             </p>
           </div>
+          <TPSGraph />
 
           <div className="my-10 flex flex-col gap-16 py-5 md:flex-row">
             <div className="basis-1/2">
@@ -100,8 +101,6 @@ export default function PeopleSay() {
               </p>
             </div>
           </div>
-
-          <TPSGraph />
         </section>
       </section>
 
@@ -127,7 +126,7 @@ export default function PeopleSay() {
             <Image src={airtable} alt="Airtable prototype of database" className="rounded-xl" />
           </div>
 
-          <div className="flex flex-col gap-5 md:flex-row">
+          {/* <div className="flex flex-col gap-5 md:flex-row">
             <div className="basis-1/2 ">
               <p className="pb-3 text-sm tracking-wider">MY GOALS</p>
 
@@ -149,7 +148,7 @@ export default function PeopleSay() {
                 unoptimized
               />
             </div>
-          </div>
+          </div> */}
           <div className="flex max-w-4xl flex-col gap-2 md:flex-row">
             <div className="pb-12">
               <p className="pb-3 text-sm uppercase tracking-wider">FUNCTIONALITY</p>
@@ -162,6 +161,15 @@ export default function PeopleSay() {
                 Airtable, and then queried to the website. This process takes 2800 data units and
                 converts them to easily acccesible content.
               </p>
+              <p className="pb-5 text-xl">
+                My role was to take this data and present it in a way that is parsable for the
+                average user.
+              </p>
+              <ul className="list-disc pl-5">
+                <li>Combine data into a cohesive experience</li>
+                <li>Deliver an MVP that lays the foundation for a scalable system</li>
+                <li>Make data easily accessible but still secure</li>
+              </ul>
             </div>
           </div>
           <Image src={process} alt="Design process diagram" className="mt-10 rounded-xl" />
@@ -171,15 +179,15 @@ export default function PeopleSay() {
       <section className="z-0 bg-white px-5 py-16 text-gray-100 dark:text-gray-900">
         <div className="mx-auto max-w-3xl text-zinc-800 dark:text-zinc-400">
           {/* PROTOTYPE */}
-          <div className="flex flex-col gap-5 md:flex-row">
-            <div className="basis-1/2">
+          <div className=" gap-5 ">
+            <div className="">
               <p className="pb-3 text-sm uppercase tracking-wider">PROTOTYPE</p>
               <h1 className="text-4xl font-extrabold tracking-tight">The Database</h1>
               <p className="py-3">
                 I began by building a filtering system that makes the full dataset accessible.
               </p>
             </div>
-            <div className="basis-1/2 py-5">
+            <div className="py-5">
               <p className="text-sm font-bold uppercase tracking-wider">1.</p>
               <h2 className="py-5 text-xl">Filters & Results</h2>
               <p className="py-3 font-bold">
@@ -254,6 +262,14 @@ export default function PeopleSay() {
             />
           </div>
           <figcaption className="text-center">Content card with expanded view</figcaption>
+
+          <div className="">
+            <p className="pb-3 text-sm uppercase tracking-wider">USERFLOW</p>
+            <h1 className="text-4xl font-extrabold tracking-tight">Building for Security</h1>
+            <p className="py-3">
+              I began by building a filtering system that makes the full dataset accessible.
+            </p>
+          </div>
         </div>
       </section>
 
