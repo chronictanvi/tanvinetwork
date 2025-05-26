@@ -1,19 +1,19 @@
 export default function OtherPortfolio() {
   const items = [
     {
-      title: 'Akademi Mag',
+      title: '--',
       image: '/static/images/DataEcologies.jpg', // replace with your actual path
       link: 'https://example.com/akademi-mag',
     },
     {
-      title: 'The Lab',
-      image: '/static/images/DataEcologies.jpg',
+      title: 'Posters',
+      image: '/static/images/12_AtlantaStudies.png',
       link: 'https://tanvi.network/blog/posters',
     },
     {
-      title: 'Posters',
-      image: '/static/images/DataEcologies.jpg',
-      link: 'https://example.com/posters',
+      title: 'Print',
+      image: '/static/images/TheRosa_Issue2_cover.png',
+      link: 'https://tanvi.network/blog/TheRosa',
     },
   ]
 
@@ -21,8 +21,8 @@ export default function OtherPortfolio() {
     <div className=" mx-auto py-10">
       <hr></hr>
       <p className="container my-6 text-lg sm:text-xl">
-        I‘m inquisitive, and love experimenting with mediums and methods on my own. I also
-        co-founded Akademi Mag. You can find my visual and typographical adventures here:
+        I‘m inquisitive, and love experimenting with media and methods on my own. You can find my
+        visual and typographical adventures here:
       </p>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item, idx) => (
