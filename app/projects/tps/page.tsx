@@ -5,25 +5,81 @@ import Image from 'next/image'
 import process from './process.png'
 import early2 from './Browse by Theme.png'
 import video from './video.gif'
-import cover from './cover.png'
+import cover from './cover1.png'
 import v1 from './Database.png'
 import proto from './Proto1.png'
 import expanded from './5_Expand.gif'
 import airtable from './Airtable.png'
+import results from './UsersSpikes.png'
 import topics from './2_Topics.gif'
 import research from './240619_ThePeopleSay_Graphics.png'
+import pplogo from './PPLogo.png'
 
 import TPSGraph from '@/components/TPSGraph'
 
 export default function PeopleSay() {
   return (
     <div>
+      <section className="py-15 mx-auto max-w-5xl">
+        <div className="mx-auto max-w-3xl  gap-16 ">
+          <div className="flex  flex-col md:space-y-5">
+            <p className=" text-sm tracking-wider text-zinc-800 dark:text-zinc-400">OVERVIEW</p>
+            <h1 className="pb-5 text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:leading-9">
+              The People Say is a web-based qualitative database designed to help policymakers hear
+              the voices of the public when shaping policy.
+            </h1>
+            <p className="pb-2 text-xl font-light">
+              The database features first-hand insights from a diverse group of older adults and
+              caregivers, as well as feedback from subject-matter experts on policies affecting
+              older adults.
+            </p>
+          </div>
+
+          {/* <div className="my-10 flex flex-row gap-8 md:flex-col">
+            <div>
+              <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">ROLE</p>
+              <ul>
+                <li>Design Lead</li>
+              </ul>
+            </div>
+            <div>
+              <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
+                DURATION
+              </p>
+              <ul>
+                <li>April 2024 – January 2025</li>
+              </ul>
+            </div>
+            <div>
+              <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">SCOPE</p>
+              <ul>
+                <li>User Research</li>
+                <li>Prototyping</li>
+                <li>User Interface Design</li>
+              </ul>
+            </div>
+            <div>
+              <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">TOOLS</p>
+              <ul>
+                <li>Figma</li>
+                <li>Laravel</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </div>
+          </div> */}
+        </div>
+        <Image
+          src={cover}
+          alt="Cover of The People Say project"
+          className="rounded-xl py-5 pb-20"
+        />
+      </section>
+
       <section className=" bg-[#1B2840] ">
         <div className="mx-auto flex max-w-3xl flex-col gap-16 py-10 md:flex-row">
           <div className="flex basis-2/3 flex-col pr-16 pt-8 md:space-y-5">
-            <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
-              ABOUT PPL
-            </p>
+            <Image src={pplogo} alt="Cover of The People Say project" className="py-5 pb-20" />
+            <p className=" text-sm tracking-wider text-zinc-800 dark:text-zinc-400">ABOUT PPL</p>
             <h1 className="pb-5 text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:leading-9">
               Public Policy Lab uses human-centered methods to design in and for systems that result
               in improved policies and services for millions of Americans.
@@ -100,62 +156,6 @@ export default function PeopleSay() {
         </section>
       </section>
 
-      <section className="py-15 mx-auto max-w-6xl">
-        <div className="mx-auto flex max-w-3xl flex-col gap-16 md:flex-row">
-          <div className="flex  flex-col md:space-y-5">
-            <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">OVERVIEW</p>
-            <h1 className="pb-5 text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:leading-9">
-              The People Say is a web-based qualitative database designed to help policymakers hear
-              the voices of the public when shaping policy.
-            </h1>
-            <p className="pb-2 text-xl font-light">
-              The database features first-hand insights from a diverse group of older adults and
-              caregivers, as well as feedback from subject-matter experts on policies affecting
-              older adults.
-            </p>
-          </div>
-
-          {/* <div className="my-10 flex flex-row gap-8 md:flex-col">
-            <div>
-              <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">ROLE</p>
-              <ul>
-                <li>Design Lead</li>
-              </ul>
-            </div>
-            <div>
-              <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
-                DURATION
-              </p>
-              <ul>
-                <li>April 2024 – January 2025</li>
-              </ul>
-            </div>
-            <div>
-              <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">SCOPE</p>
-              <ul>
-                <li>User Research</li>
-                <li>Prototyping</li>
-                <li>User Interface Design</li>
-              </ul>
-            </div>
-            <div>
-              <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">TOOLS</p>
-              <ul>
-                <li>Figma</li>
-                <li>Laravel</li>
-                <li>Tailwind CSS</li>
-              </ul>
-            </div>
-          </div> */}
-        </div>
-
-        <Image
-          src={cover}
-          alt="Cover of The People Say project"
-          className="rounded-xl py-5 pb-20"
-        />
-      </section>
-
       <section className="z-0 bg-white px-5 py-16 text-black">
         <div className="mx-auto max-w-3xl">
           <div
@@ -229,7 +229,7 @@ export default function PeopleSay() {
       </section>
 
       <section className="z-0 bg-white px-5 py-16 text-gray-100 dark:text-gray-900">
-        <div className="mx-auto max-w-3xl text-zinc-800 dark:text-zinc-400">
+        <div className="mx-auto max-w-3xl ">
           {/* PROTOTYPE */}
           <div className=" gap-5 ">
             <div className="">
@@ -333,15 +333,16 @@ export default function PeopleSay() {
             </h1>
             <p className="py-5 text-gray-100">
               The final prototype met our goal to uncover insights and translate concepts into
-              features that address customer behaviours and motivations.
+              features that address customer behaviours and motivations. Presented at the Senate..
+              Press coverage by EPIC etc
             </p>
-            <Image src={cover} alt="Picture of the author" className="pt-12" unoptimized />
+            <Image src={results} alt="Picture of the author" className="pt-12" unoptimized />
             <h1 className="pt-32 text-4xl font-bold leading-9 tracking-tight text-gray-100 md:text-4xl md:leading-10">
               What's Next
             </h1>
             <p className="py-5 text-gray-100">
-              The final prototype was tested with 10 Japanese users and received over all positive
-              feedback. It is now under development.
+              Continue to improve the platform's UX to meet the needs of user base and as more
+              research is done support more data.
             </p>
           </div>
         </section>
