@@ -23,11 +23,11 @@ import TPSGraph from '@/components/TPSGraph'
 
 export default function PeopleSay() {
   return (
-    <div>
+    <div className="px-3">
       <section className="py-15 mx-auto max-w-5xl">
         <div className="mx-auto max-w-3xl  gap-16 ">
           <div className="flex  flex-col md:space-y-5">
-            <p className=" text-sm tracking-wider text-zinc-800 dark:text-zinc-400">OVERVIEW</p>
+            <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">OVERVIEW</p>
             <h1 className="pb-5 text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:leading-9">
               The People Say is a web-based qualitative database designed to help policymakers hear
               the voices of the public when shaping policy.
@@ -39,39 +39,63 @@ export default function PeopleSay() {
             </p>
           </div>
 
-          {/* <div className="my-10 flex flex-row gap-8 md:flex-col">
-            <div>
-              <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">ROLE</p>
-              <ul>
-                <li>Design Lead</li>
-              </ul>
+          <div className="my-10 flex flex-row gap-8 md:flex-col">
+            <div className="my-10 flex flex-col gap-8 md:flex-row">
+              <div className="basis-1/2">
+                <div className="pb-5">
+                  <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
+                    ROLE
+                  </p>
+                  <ul>
+                    <li>Design Engineering Fellow</li>
+                  </ul>
+                  <p className="py-3 text-sm text-zinc-400">
+                    See the{' '}
+                    <a className="underline" href="https://thepeoplesay.org/about/about-our-team ">
+                      About Our Team
+                    </a>{' '}
+                    page for a complete list of project collaborators.
+                  </p>
+                </div>
+                <div>
+                  <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
+                    DURATION
+                  </p>
+                  <ul>
+                    Completed in 2024 with the{' '}
+                    <a href="https://www.publicpolicylab.org/"> Public Policy Lab</a> for{' '}
+                    <a href="https://www.thescanfoundation.org/"> The Scan Foundation</a>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="basis-1/2">
+                <div className="pb-5">
+                  <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
+                    SCOPE
+                  </p>
+                  <ul>
+                    <li>User Research</li>
+                    <li>Prototyping</li>
+                    <li>User Interface Design</li>
+                    <li>Product Development</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
+                    TOOLS
+                  </p>
+                  <ul>
+                    <li>Figma</li>
+                    <li>Laravel</li>
+                    <li>Tailwind CSS</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div>
-              <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
-                DURATION
-              </p>
-              <ul>
-                <li>April 2024 – January 2025</li>
-              </ul>
-            </div>
-            <div>
-              <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">SCOPE</p>
-              <ul>
-                <li>User Research</li>
-                <li>Prototyping</li>
-                <li>User Interface Design</li>
-              </ul>
-            </div>
-            <div>
-              <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">TOOLS</p>
-              <ul>
-                <li>Figma</li>
-                <li>Laravel</li>
-                <li>Tailwind CSS</li>
-              </ul>
-            </div>
-          </div> */}
+          </div>
         </div>
+
         <Image
           src={cover}
           alt="Cover of The People Say project"
@@ -231,7 +255,7 @@ export default function PeopleSay() {
         </div>
       </section>
 
-      <section className="z-0 bg-white px-5 py-16 text-gray-100 dark:text-gray-900">
+      <section className="z-0 bg-white px-5 py-16 text-gray-900 dark:text-gray-900">
         <div className="mx-auto max-w-5xl ">
           {/* PROTOTYPE */}
           <div className=" gap-5 ">
@@ -243,7 +267,7 @@ export default function PeopleSay() {
               </p>
             </div>
 
-            <div className="flex flex-row py-5">
+            <div className="flex flex-col py-5  md:flex-row">
               <div className=" basis-2/3 content-center pr-10">
                 <p className="text-sm font-bold uppercase tracking-wider">1.</p>
                 <h2 className="py-5 text-xl">Content Cards</h2>
@@ -292,21 +316,27 @@ export default function PeopleSay() {
                 <Image
                   src={early2}
                   alt="Early theme-based prototype"
-                  className="rounded-xl"
+                  className="border-gray rounded-xl border"
                   unoptimized
                 />
               </div>
               <div className="basis-1/2">
-                <Image src={v1} alt="Revised filter interface" className="rounded-xl" unoptimized />
+                <Image
+                  src={v1}
+                  alt="Revised filter interface"
+                  className="border-gray rounded-xl border"
+                  unoptimized
+                />
               </div>
             </div>
-            <figcaption className="py-3 text-center">
-              Left: early exploration by Petey Routzahn. Right: updated filtering concept.
+            <figcaption className="pt-10 text-center">
+              Left: early exploration by Petey Routzahn.
             </figcaption>
+            <figcaption className="text-center">Right: updated filtering concept.</figcaption>
             <Image
               src={topics}
               alt="Filter design iterations"
-              className="my-10 rounded-xl"
+              className="border-gray my-10 rounded-xl border"
               unoptimized
             />
           </div>
@@ -355,11 +385,9 @@ export default function PeopleSay() {
               Result
             </h1>
             <p className="py-5 text-gray-100">
-              The final prototype met our goal to uncover insights and translate concepts into
-              features that address customer behaviours and motivations. Presented at the Senate..
-              Press coverage by EPIC etc
+              <br></br>The People Say was launched at the US Capitol in July 2024.
             </p>
-            <Image src={results} alt="Picture of the author" className="pt-12" unoptimized />
+            {/* <Image src={results} alt="Picture of the author" className="pt-12" unoptimized /> */}
             {/* <h1 className="pt-32 text-4xl font-bold leading-9 tracking-tight text-gray-100 md:text-4xl md:leading-10">
               What's Next
             </h1>
