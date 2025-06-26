@@ -10,6 +10,10 @@ import v1 from './Database.png'
 import proto from './Proto1.png'
 import expanded from './5_Expand.gif'
 import airtable from './Airtable.png'
+import module1 from './database explore.png'
+import module2 from './de-2.png'
+import module3 from './mobile-de-2.png'
+
 import results from './UsersSpikes.png'
 import topics from './2_Topics.gif'
 import research from './240619_ThePeopleSay_Graphics.png'
@@ -75,7 +79,7 @@ export default function PeopleSay() {
         />
       </section>
 
-      <section className=" bg-[#1B2840] ">
+      {/* <section className=" bg-[#1B2840] ">
         <div className="mx-auto flex max-w-3xl flex-col gap-16 py-10 md:flex-row">
           <div className="flex basis-2/3 flex-col pr-16 pt-8 md:space-y-5">
             <Image src={pplogo} alt="Cover of The People Say project" className="py-5 pb-20" />
@@ -119,7 +123,7 @@ export default function PeopleSay() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section>
         <section className="mx-auto max-w-3xl py-10">
           <div className="py-10">
@@ -213,9 +217,8 @@ export default function PeopleSay() {
                 Airtable, and then queried to the website. This process takes 2800 data units and
                 converts them to easily acccesible content.
               </p>
-              <p className="pb-5 text-xl">
-                My role was to take this data and present it in a way that is parsable for the
-                average user.
+              <p className="pb-5 text-lg">
+                My role was to take this data and present it in a way that is easily parsable:
               </p>
               <ul className="list-disc pl-5">
                 <li>Combine data into a cohesive experience</li>
@@ -229,7 +232,7 @@ export default function PeopleSay() {
       </section>
 
       <section className="z-0 bg-white px-5 py-16 text-gray-100 dark:text-gray-900">
-        <div className="mx-auto max-w-3xl ">
+        <div className="mx-auto max-w-5xl ">
           {/* PROTOTYPE */}
           <div className=" gap-5 ">
             <div className="">
@@ -239,22 +242,40 @@ export default function PeopleSay() {
                 I began by building a filtering system that makes the full dataset accessible.
               </p>
             </div>
-            <div className="py-5">
-              <p className="text-sm font-bold uppercase tracking-wider">1.</p>
-              <h2 className="py-5 text-xl">Filters & Results</h2>
-              <p className="py-3 font-bold">
-                What should appear when the page loads? All data? A curated subset?
-              </p>
-              <p>
-                Based on user research, we decided the full dataset (~2,400 units) loads by default.
-                Filters on the left narrow results, sorted by relevance. A key focus was clearly
-                indicating which filters are active.
-              </p>
+
+            <div className="flex flex-row py-5">
+              <div className=" basis-2/3 content-center pr-10">
+                <p className="text-sm font-bold uppercase tracking-wider">1.</p>
+                <h2 className="py-5 text-xl">Content Cards</h2>
+                <p className="py-3 font-bold">
+                  What should appear when the page loads? All data? A curated subset?
+                </p>
+                <p>
+                  Based on user research, we decided the full dataset (~2,400 units) loads by
+                  default. Filters on the left narrow results, sorted by relevance. A key focus was
+                  clearly indicating which filters are active.
+                </p>
+              </div>
+              <div className="basis-1/3">
+                <Image
+                  src={module3}
+                  alt="Filter design iterations"
+                  className="my-10 rounded-xl"
+                  unoptimized
+                />
+              </div>
             </div>
           </div>
 
           <Image
-            src={topics}
+            src={module1}
+            alt="Filter design iterations"
+            className="my-10 rounded-xl"
+            unoptimized
+          />
+
+          <Image
+            src={module2}
             alt="Filter design iterations"
             className="my-10 rounded-xl"
             unoptimized
@@ -282,45 +303,47 @@ export default function PeopleSay() {
             <figcaption className="py-3 text-center">
               Left: early exploration by Petey Routzahn. Right: updated filtering concept.
             </figcaption>
+            <Image
+              src={topics}
+              alt="Filter design iterations"
+              className="my-10 rounded-xl"
+              unoptimized
+            />
           </div>
 
           {/* DATA UNIT */}
-          <div className="flex flex-col gap-5 md:flex-row">
+          {/* <div className="flex flex-col gap-5 md:flex-row">
             <div className="">
               <p className="text-sm font-bold uppercase tracking-wider">2.</p>
               <h2 className="py-5 text-xl">Data Card & Expansion</h2>
               <p className="py-3 font-bold">What metadata should each card show?</p>
               <p>
                 Users needed to track filter state and interpret richly tagged results. We made each
-                card expandable to reveal relevant details based on context and user flow.
+                card expandable to reveal relevant details based on context and user flow. Data Card
+                & Expansion What metadata should each card show? Users needed to track filter state
+                and interpret richly tagged results. We made each card expandable to reveal relevant
+                details based on context and user flow.
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <Image
+          {/* <Image
             src={expanded}
             alt="Expanded data card example"
             className="my-10 rounded-xl"
             unoptimized
-          />
+          /> */}
 
-          <div className="mx-auto flex max-w-6xl flex-row gap-4 py-5">
-            <Image
-              src={proto}
-              alt="Prototype: expanded data card"
-              className="rounded-xl"
-              unoptimized
-            />
-          </div>
+          <div className="mx-auto flex max-w-6xl flex-row gap-4 py-5"></div>
           <figcaption className="text-center">Content card with expanded view</figcaption>
 
-          <div className="">
+          {/* <div className="">
             <p className="pb-3 text-sm uppercase tracking-wider">USERFLOW</p>
             <h1 className="text-4xl font-extrabold tracking-tight">Accounts</h1>
             <p className="py-3">
               I began by building a filtering system that makes the full dataset accessible.
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -337,13 +360,13 @@ export default function PeopleSay() {
               Press coverage by EPIC etc
             </p>
             <Image src={results} alt="Picture of the author" className="pt-12" unoptimized />
-            <h1 className="pt-32 text-4xl font-bold leading-9 tracking-tight text-gray-100 md:text-4xl md:leading-10">
+            {/* <h1 className="pt-32 text-4xl font-bold leading-9 tracking-tight text-gray-100 md:text-4xl md:leading-10">
               What's Next
             </h1>
             <p className="py-5 text-gray-100">
               Continue to improve the platform's UX to meet the needs of user base and as more
               research is done support more data.
-            </p>
+            </p> */}
           </div>
         </section>
       </section>
