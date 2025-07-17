@@ -1,7 +1,7 @@
 import Image from './Image'
 import Link from './Link'
 
-const Card = ({ title, description, imgSrc, href }) => (
+const Card = ({ title, description, calltoaction, imgSrc, href }) => (
   <div className=" px-10 py-3 md:flex ">
     <div className={`${imgSrc && 'h-full'} "md:w-1/2 p-10" overflow-hidden`}>
       {imgSrc &&
@@ -42,7 +42,7 @@ const Card = ({ title, description, imgSrc, href }) => (
           className="text-base font-medium leading-6 text-primary-400 hover:text-red-600 dark:hover:text-primary-300"
           aria-label={`Link to ${title}`}
         >
-          Learn more &rarr;
+          {calltoaction} &rarr;
         </Link>
       )}
     </div>
