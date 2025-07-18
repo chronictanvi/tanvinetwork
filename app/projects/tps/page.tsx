@@ -4,6 +4,8 @@ import Image from 'next/image'
 
 import process from './process.png'
 import early2 from './Browse by Theme.png'
+import screen1 from './screen1.png'
+
 import video from './video.gif'
 import cover from './cover1.png'
 import v1 from './Database.png'
@@ -16,6 +18,8 @@ import module3 from './mobile-de-2.png'
 
 import results from './UsersSpikes.png'
 import topics from './2_Topics.gif'
+import keywords from './1_Keywords.gif'
+
 import research from './240619_ThePeopleSay_Graphics.png'
 import pplogo from './PPLogo.png'
 
@@ -23,26 +27,24 @@ import TPSGraph from '@/components/TPSGraph'
 
 export default function PeopleSay() {
   return (
-    <div className="bg-blue-100 px-3">
-      <section className="py-15 mx-auto max-w-6xl ">
+    <div className="">
+      <section className="sm:  z-0 bg-blue-100  px-3 px-5 py-20 text-black">
         {/* <Image
           src={cover}
           alt="Cover of The People Say project"
           className="border-1 rounded-2xl "
         /> */}
 
-        <div className=" gap-5 ">
+        <div className="  mx-auto max-w-6xl">
           <div className=""></div>
 
           <div className="flex flex-col py-5  md:flex-row">
             <div className=" basis-3/4 content-center pr-10">
               <div className="mx-auto max-w-6xl  py-5 pt-20 ">
-                <div className=" prose flex flex-col dark:prose-invert">
-                  <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
-                    OVERVIEW
-                  </p>
+                <div className=" prose flex flex-col ">
+                  <p className="pb-3 text-sm tracking-wider text-zinc-800 ">OVERVIEW</p>
 
-                  <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 ">
+                  <h1 className="text-gray-00 text-3xl font-bold tracking-tight ">
                     The People Say is a web-based qualitative database designed to help policymakers
                     hear the voices of the public when shaping policy.
                   </h1>
@@ -57,10 +59,8 @@ export default function PeopleSay() {
                   <div className="my-10 flex flex-col gap-8 md:flex-row">
                     <div className="basis-1/2">
                       <div className="pb-5">
-                        <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
-                          ROLE
-                        </p>
-                        <ul className=" text-sm">
+                        <p className="pb-2 text-sm tracking-wider text-zinc-800 ">ROLE</p>
+                        <ul className=" text-sm  text-zinc-800 ">
                           <li>Design Engineering Fellow</li>
                         </ul>
                         <p className="py-3 text-sm text-zinc-500">
@@ -75,15 +75,13 @@ export default function PeopleSay() {
                         </p>
                       </div>
                       <div>
-                        <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
-                          DURATION
-                        </p>
-                        <ul className=" text-sm">
+                        <p className="pb-2 text-sm tracking-wider text-zinc-800 ">DURATION</p>
+                        <ul className=" text-sm  text-zinc-800 ">
                           Completed in 2024 with the{' '}
                           <a href="https://www.publicpolicylab.org/"> Public Policy Lab</a> for{' '}
                           <a className="underline" href="https://www.thescanfoundation.org/">
                             {' '}
-                            The Scan Foundation
+                            The SCAN Foundation
                           </a>
                         </ul>
                       </div>
@@ -91,20 +89,16 @@ export default function PeopleSay() {
 
                     <div className="basis-1/2">
                       <div className="pb-5">
-                        <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
-                          SCOPE
-                        </p>
-                        <ul className=" text-sm">
+                        <p className="pb-3 text-sm tracking-wider text-zinc-800 ">SCOPE</p>
+                        <ul className=" text-sm  text-zinc-800 ">
                           <li>User Research</li>
                           <li>User Interface Design</li>
                           <li>Product Development</li>
                         </ul>
                       </div>
                       <div>
-                        <p className="pb-2 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
-                          TOOLS
-                        </p>
-                        <ul className=" text-sm">
+                        <p className="pb-2 text-sm tracking-wider text-zinc-800 ">TOOLS</p>
+                        <ul className="  text-sm  text-zinc-800">
                           <li>Figma</li>
                           <li>Laravel</li>
                           <li>Tailwind CSS</li>
@@ -127,8 +121,8 @@ export default function PeopleSay() {
         </div>
       </section>
 
-      <section className="bg-white text-black">
-        <section className="mx-auto max-w-5xl py-10">
+      <section className="sm: bg-white px-3  text-black">
+        <section className="mx-auto max-w-6xl py-10">
           <div className="py-10">
             <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">CONTEXT</p>
             <p
@@ -166,8 +160,8 @@ export default function PeopleSay() {
         </section>
       </section>
 
-      <section className="z-0  bg-blue-100 px-5 py-20 text-black">
-        <div className="  mx-auto max-w-5xl">
+      <section className="sm:  z-0 bg-blue-100  px-3 px-5 py-20 text-black">
+        <div className="  mx-auto max-w-6xl">
           <div id="The Solution" className="  py-24">
             <div
               className="
@@ -219,8 +213,11 @@ export default function PeopleSay() {
             </div>
           </div> */}
           <div>
-            <div className="flex max-w-5xl flex-col  md:flex-row">
-              <div className="">
+            <div className=" flex max-w-6xl flex-col  md:flex-row">
+              <div
+                className="mx-auto max-w-[65ch] items-center
+ text-center"
+              >
                 <p className="pb-3 text-sm uppercase tracking-wider">FUNCTIONALITY</p>
                 <h1 className="text-xl font-extrabold  tracking-tight md:text-2xl md:leading-10">
                   Content Offerings{' '}
@@ -241,15 +238,19 @@ export default function PeopleSay() {
               </div>
             </div>
 
-            <div>
-              <Image src={process} alt="Design process diagram" className="mt-10 rounded-xl" />
+            <div className="place-items-center">
+              <Image
+                src={process}
+                alt="Design process diagram"
+                className=" mt-10 rounded-xl md:max-w-3xl"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="z-0 bg-white px-5 py-16 text-gray-900 dark:text-gray-900">
-        <div className="mx-auto max-w-5xl ">
+      <section className="sm: z-0 bg-white  px-3 px-5 py-16 text-gray-900 dark:text-gray-900">
+        <div className="mx-auto max-w-6xl ">
           {/* PROTOTYPE */}
           <div className=" gap-5 pb-20">
             <div className=""></div>
@@ -287,8 +288,8 @@ export default function PeopleSay() {
 
               <div>
                 <p className="text-sm">
-                  Add gradients, charts, icons, animations, and more with plugins. Edit images and
-                  import files to expand your design options.
+                  This module on the homepage gives a easy way to discover what topics the data is
+                  sorted by without overwhelming the user.
                 </p>
               </div>
             </div>
@@ -300,14 +301,14 @@ export default function PeopleSay() {
 
               <div>
                 <p className="text-sm">
-                  Add gradients, charts, icons, animations, and more with plugins. Edit images and
-                  import files to expand your design options.
+                  On clicking a data point the content is arranged with meta data on the left and
+                  main content from the interview on the right.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="mx-auto max-w-5xl py-16">
+          {/* <div className="mx-auto max-w-6xl py-16">
             <div className="mx-auto flex flex-col gap-4 md:flex-row">
               <div className="basis-1/2">
                 <Image
@@ -335,8 +336,8 @@ export default function PeopleSay() {
               alt="Filter design iterations"
               className="border-gray my-10 rounded-xl border"
               unoptimized
-            /> */}
-          </div>
+            /> 
+          </div> */}
 
           {/* DATA UNIT */}
           {/* <div className="flex flex-col gap-5 md:flex-row">
@@ -361,9 +362,6 @@ export default function PeopleSay() {
             unoptimized
           /> */}
 
-          <div className="mx-auto flex max-w-6xl flex-row gap-4 py-5"></div>
-          <figcaption className="text-center">Content card with expanded view</figcaption>
-
           {/* <div className="">
             <p className="pb-3 text-sm uppercase tracking-wider">USERFLOW</p>
             <h1 className="text-4xl font-extrabold tracking-tight">Accounts</h1>
@@ -374,34 +372,22 @@ export default function PeopleSay() {
         </div>
       </section>
 
-      <Image src={module2} alt="Picture of the author" className="" />
-
       <section className="z-0 bg-white px-5 py-16 text-gray-900 dark:text-gray-900">
-        <div className="mx-auto max-w-5xl ">
+        <div className="mx-auto max-w-6xl ">
           {/* PROTOTYPE */}
           <div className=" gap-5 ">
             <div className=""></div>
 
-            <div className="flex flex-col py-5  md:flex-row">
-              <div className=" basis-2/3 content-center pr-10">
-                <p className="pb-3 text-sm uppercase tracking-wider">PROTOTYPE / THE DATABASE </p>
-                <h1 className="text-4xl font-extrabold tracking-tight">
-                  Display content as a cohesive experience
-                </h1>
-                <p className="py-3">
+            <div className="flex-col5 prose flex md:flex-row">
+              <div className="">
+                <p className=" text-sm uppercase tracking-wider">PROTOTYPE / THE DATABASE </p>
+                <h1 className="text-4xl font-extrabold tracking-tight">Searching for Content </h1>
+                <p className="">
                   I began by building a filtering system that makes the full dataset accessible.
                   Based on user research, we decided the full dataset (~2,400 units) loads by
                   default. Filters on the left narrow results, sorted by relevance. A key focus was
                   clearly indicating which filters are active.
                 </p>
-              </div>
-              <div className="basis-1/3">
-                {/* <Image
-                  src={module3}
-                  alt="Filter design iterations"
-                  className="my-10 rounded-xl"
-                  unoptimized
-                /> */}
               </div>
             </div>
           </div>
@@ -409,53 +395,130 @@ export default function PeopleSay() {
             className="flex  flex-col gap-10 py-20
           "
           >
-            <div className="flex flex-col gap-5  md:flex-row">
-              <div>
-                <Image src={module1} alt="Filter design iterations" className="" unoptimized />
+            <div className="flex flex-col  gap-5 md:flex-row">
+              <div className="basis-3/4">
+                <Image
+                  src={topics}
+                  alt="Filter design iterations"
+                  className="rounded-xl border-2"
+                  unoptimized
+                />
               </div>
 
-              <div>
+              <div className="basis-1/4">
                 <p className="text-sm">
-                  Add gradients, charts, icons, animations, and more with plugins. Edit images and
-                  import files to expand your design options.
+                  I began by building a filtering system that makes the full dataset accessible.
                 </p>
               </div>
             </div>
-
             <div className="flex flex-col  gap-5 md:flex-row">
-              <div className="basis-1/3">
-                <Image src={module3} alt="Filter design iterations" className=" " unoptimized />
+              <div className="basis-3/4">
+                <Image
+                  src={expanded}
+                  alt="Filter design iterations"
+                  className="rounded-xl border-2"
+                  unoptimized
+                />
               </div>
 
-              <div className="basis-1/3"></div>
-
-              <div className="basis-1/3">
+              <div className="basis-1/4">
                 <p className="text-sm">
-                  Add gradients, charts, icons, animations, and more with plugins. Edit images and
-                  import files to expand your design options.
+                  Clicking on a tag on a data point leads to a filtered data base.
                 </p>
               </div>
             </div>
           </div>
-
-          <Image
-            src={expanded}
-            alt="Expanded data card example"
-            className="my-10 rounded-xl"
-            unoptimized
-          />
-          <div className="mx-auto flex max-w-6xl flex-row gap-4 py-5"></div>
-          <figcaption className="text-center">Content card with expanded view</figcaption>
-          {/* <div className="">
-            <p className="pb-3 text-sm uppercase tracking-wider">USERFLOW</p>
-            <h1 className="text-4xl font-extrabold tracking-tight">Accounts</h1>
-            <p className="py-3">
-              I began by building a filtering system that makes the full dataset accessible.
-            </p>
-          </div> */}
         </div>
       </section>
 
+      <section className="z-0 bg-white px-5 py-16 text-gray-900 dark:text-gray-900">
+        <div className="mx-auto max-w-6xl ">
+          {/* PROTOTYPE */}
+          <div className=" gap-5 ">
+            <div className=""></div>
+
+            <div className="flex-col5 prose flex md:flex-row">
+              <div className="">
+                <p className=" text-sm uppercase tracking-wider"> v2.</p>
+                <h1 className="text-4xl font-extrabold tracking-tight">Laying out the Content </h1>
+                <p className="">
+                  The layout of the content cards themselves went under many revisions, even after
+                  launch.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="flex  flex-col gap-10 py-20
+          "
+          >
+            <div className="flex flex-col  gap-5 md:flex-row">
+              <div>
+                <Image src={module2} alt="Filter design iterations" className=" " unoptimized />
+              </div>
+
+              <div>
+                <p className="text-sm">
+                  On clicking a data point the content is arranged with meta data on the left and
+                  main content from the interview on the right.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#E4E4E4] text-black">
+        <div className="  mx-auto flex max-w-6xl flex-col   gap-12 px-24 py-12 md:flex-row">
+          <div className="flex   flex-col gap-5">
+            <div>
+              <Image src={screen1} alt="Filter design iterations" className=" " unoptimized />
+            </div>
+
+            <div>
+              <p className="text-sm">
+                On clicking a data point the content is arranged with meta data on the left and main
+                content from the interview on the right.
+              </p>
+            </div>
+          </div>
+          <div className=" flex w-auto  flex-col gap-5">
+            <div>
+              <Image src={screen1} alt="Filter design iterations" className=" " unoptimized />
+            </div>
+
+            <div>
+              <p className="text-sm">
+                On clicking a data point the content is arranged with meta data on the left and main
+                content from the interview on the right.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div>
+              <Image src={module3} alt="Filter design iterations" className=" " unoptimized />
+            </div>
+
+            <div>
+              <p className="text-sm">
+                On clicking a data point the content is arranged with meta data on the left and main
+                content from the interview on the right.
+              </p>
+            </div>
+          </div>
+          <div className="flex   flex-col gap-5">
+            <div>
+              <Image src={screen1} alt="Filter design iterations" className=" " unoptimized />
+            </div>
+
+            <div>
+              <p className="text-sm">
+                On clicking a data point the content is arranged with meta data on the left and main
+                content from the interview on the right.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="results and testing" className=" bg-black  ">
         <section className="mx-auto max-w-3xl items-center justify-start bg-black px-5 py-32  ">
           <div className="  py-8  ">
