@@ -303,16 +303,17 @@ export default function PeopleSay() {
 
           <div className="flex  flex-col gap-10">
             <div className="flex flex-col gap-5 md:flex-row">
-              <div className=" h-auto w-[2354px] bg-[#E4E4E4]">
-                <Image
-                  src={explore}
-                  alt="Filter design iterations"
-                  className="mx-20 my-20 max-w-2xl items-center rounded-xl"
-                  unoptimized
-                />
+              <div className="basis-3/4">
+                <div className=" bg-[#E4E4E4]">
+                  <Image
+                    src={explore}
+                    alt="Filter design iterations"
+                    className="items-center rounded-xl px-20 py-20"
+                  />
+                </div>
               </div>
 
-              <div>
+              <div className="basis-1/4">
                 <p className="text-sm">
                   This module on the homepage gives a easy way to discover what topics the data is
                   sorted by without overwhelming the user.
@@ -321,11 +322,11 @@ export default function PeopleSay() {
             </div>
 
             <div className="flex flex-col  gap-5 md:flex-row">
-              <div>
+              <div className="basis-3/4">
                 <Image src={module2} alt="Filter design iterations" className=" " unoptimized />
               </div>
 
-              <div>
+              <div className="basis-1/4">
                 <p className="text-sm">
                   On clicking a data point the content is arranged with meta data on the left and
                   main content from the interview on the right.

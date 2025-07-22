@@ -13,7 +13,7 @@ export default function Projects() {
     <>
       <Bio />
       <div className="  overflow-x-hidden py-12">
-        <div className="container m-4">
+        <div className="container ">
           {projectsData.map((d) => (
             <Card
               key={d.title}
@@ -25,7 +25,7 @@ export default function Projects() {
             />
           ))}
         </div>
-        <div className="m-4 px-12 py-3 ">
+        <div className="m-4 px-5 py-3 md:px-10 ">
           <OtherPortfolio />
         </div>
       </div>
