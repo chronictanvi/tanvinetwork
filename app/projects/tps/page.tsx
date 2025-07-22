@@ -47,7 +47,7 @@ export default function PeopleSay() {
           <div className="flex flex-col py-5  md:flex-row">
             <div className=" basis-3/4 content-center pr-10">
               <div className="mx-auto max-w-6xl  py-5 pt-20 ">
-                <div className=" prose flex flex-col ">
+                <div className=" flex max-w-[65ch] flex-col ">
                   <p className="pb-3 text-sm tracking-wider text-zinc-800 ">OVERVIEW</p>
 
                   <h1 className="text-gray-00 text-3xl font-bold tracking-tight ">
@@ -305,11 +305,9 @@ export default function PeopleSay() {
             <div className="flex flex-col gap-5 md:flex-row">
               <div className="basis-3/4">
                 <div className=" bg-[#E4E4E4]">
-                  <Image
-                    src={explore}
-                    alt="Filter design iterations"
-                    className="items-center rounded-xl px-20 py-20"
-                  />
+                  <div className="items-center md:px-20 md:py-20">
+                    <Image src={explore} alt="Filter design iterations" className="rounded-xl" />
+                  </div>
                 </div>
               </div>
 
