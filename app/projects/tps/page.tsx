@@ -5,16 +5,22 @@ import Image from 'next/image'
 import process from './process.png'
 import early2 from './Browse by Theme.png'
 import screen1 from './screen1.png'
+import screen2 from './screen2.png'
+
+import screen3 from './screen3.png'
+
+import screen4 from './screen4.png'
 
 import video from './video.gif'
-import cover from './cover1.png'
-import v1 from './Database.png'
+import cover from './output.gif'
+import module2 from './1.2.png'
 import proto from './Proto1.png'
 import expanded from './5_Expand.gif'
 import airtable from './Airtable.png'
 import module1 from './database explore.png'
-import module2 from './de-2.png'
+
 import module3 from './mobile-de-2.png'
+import module4 from './3.1.png'
 
 import results from './UsersSpikes.png'
 import topics from './2_Topics.gif'
@@ -121,6 +127,8 @@ export default function PeopleSay() {
         </div>
       </section>
 
+      {/* graph section */}
+
       <section className="sm: bg-white px-3  text-black">
         <section className="mx-auto max-w-6xl py-10">
           <div className="py-10">
@@ -165,7 +173,7 @@ export default function PeopleSay() {
           <div id="The Solution" className="  py-24">
             <div
               className="
- prose  content-center "
+   max-w-[65ch] content-center pb-12 "
             >
               <p
                 className="
@@ -176,11 +184,39 @@ export default function PeopleSay() {
               <h1 className="text-xl font-extrabold tracking-tight md:text-2xl md:leading-10">
                 A Platform for Experiences
               </h1>
-              <p className="py-3 ">TK ++</p>
+              <p className="py-3 ">
+                {' '}
+                Visitors can search and filter the database, read curated insight pages with
+                accompanying video playlists, view participant profiles, read about our research
+                methodology, and more. The content of the qualitative research database was
+                collected from 66 older adults from around the country, seven caregivers and staff,
+                and 13 subject-matter experts from government agencies, policy think tanks, research
+                organizations, and academia.
+              </p>
             </div>
 
-            <div>
-              <Image src={cover} alt="Airtable prototype of database" className="rounded-xl pb-5" />
+            <div className="flex flex-col gap-5 md:flex-row">
+              <div className="">
+                <Image
+                  src={cover}
+                  alt="Filter design iterations"
+                  className="rounded-2xl"
+                  unoptimized
+                />
+              </div>
+
+              <div>
+                <p className="text-sm">Homepage, www.thepeoplesay.org</p>
+              </div>
+            </div>
+
+            <div className="py-12">
+              <Image
+                src={cover}
+                alt="Airtable prototype of database"
+                className=" border-gray mx-auto rounded-2xl border-2 md:max-w-6xl"
+                unoptimized
+              />
             </div>
           </div>
           {/* 
@@ -249,14 +285,13 @@ export default function PeopleSay() {
         </div>
       </section>
 
+      {/* section 1 */}
+
       <section className="sm: z-0 bg-white  px-3 px-5 py-16 text-gray-900 dark:text-gray-900">
         <div className="mx-auto max-w-6xl ">
-          {/* PROTOTYPE */}
-          <div className=" gap-5 pb-20">
-            <div className=""></div>
-
+          <div className=" gap-5 pb-12">
             <div className="flex flex-col py-5  md:flex-row">
-              <div className=" basis-2/3 content-center pr-10">
+              <div className="  max-w-[65ch] pr-10">
                 <p className="pb-3 text-sm uppercase tracking-wider">PROTOTYPE / THE DATABASE </p>
                 <h1 className="text-4xl font-extrabold tracking-tight">Accessing the data </h1>
                 <p className="py-3">
@@ -266,21 +301,10 @@ export default function PeopleSay() {
                   clearly indicating which filters are active.
                 </p>
               </div>
-              <div className="basis-1/3">
-                {/* <Image
-                  src={module3}
-                  alt="Filter design iterations"
-                  className="my-10 rounded-xl"
-                  unoptimized
-                /> */}
-              </div>
             </div>
           </div>
 
-          <div
-            className="flex  flex-col gap-10
-          "
-          >
+          <div className="flex  flex-col gap-10">
             <div className="flex flex-col gap-5 md:flex-row">
               <div>
                 <Image src={module1} alt="Filter design iterations" className="" unoptimized />
@@ -307,82 +331,19 @@ export default function PeopleSay() {
               </div>
             </div>
           </div>
-
-          {/* <div className="mx-auto max-w-6xl py-16">
-            <div className="mx-auto flex flex-col gap-4 md:flex-row">
-              <div className="basis-1/2">
-                <Image
-                  src={early2}
-                  alt="Early theme-based prototype"
-                  className="border-gray rounded-xl border"
-                  unoptimized
-                />
-              </div>
-              <div className="basis-1/2">
-                <Image
-                  src={v1}
-                  alt="Revised filter interface"
-                  className="border-gray rounded-xl border"
-                  unoptimized
-                />
-              </div>
-            </div>
-            <figcaption className="pt-10 text-center">
-              Left: early exploration by Petey Routzahn.
-            </figcaption>
-            <figcaption className="text-center">Right: updated filtering concept.</figcaption>
-            {/* <Image
-              src={topics}
-              alt="Filter design iterations"
-              className="border-gray my-10 rounded-xl border"
-              unoptimized
-            /> 
-          </div> */}
-
-          {/* DATA UNIT */}
-          {/* <div className="flex flex-col gap-5 md:flex-row">
-            <div className="">
-              <p className="text-sm font-bold uppercase tracking-wider">2.</p>
-              <h2 className="py-5 text-xl">Data Card & Expansion</h2>
-              <p className="py-3 font-bold">What metadata should each card show?</p>
-              <p>
-                Users needed to track filter state and interpret richly tagged results. We made each
-                card expandable to reveal relevant details based on context and user flow. Data Card
-                & Expansion What metadata should each card show? Users needed to track filter state
-                and interpret richly tagged results. We made each card expandable to reveal relevant
-                details based on context and user flow.
-              </p>
-            </div>
-          </div> */}
-
-          {/* <Image
-            src={expanded}
-            alt="Expanded data card example"
-            className="my-10 rounded-xl"
-            unoptimized
-          /> */}
-
-          {/* <div className="">
-            <p className="pb-3 text-sm uppercase tracking-wider">USERFLOW</p>
-            <h1 className="text-4xl font-extrabold tracking-tight">Accounts</h1>
-            <p className="py-3">
-              I began by building a filtering system that makes the full dataset accessible.
-            </p>
-          </div> */}
         </div>
       </section>
 
+      {/* section 2 */}
+
       <section className="z-0 bg-white px-5 py-16 text-gray-900 dark:text-gray-900">
         <div className="mx-auto max-w-6xl ">
-          {/* PROTOTYPE */}
-          <div className=" gap-5 ">
-            <div className=""></div>
-
-            <div className="flex-col5 prose flex md:flex-row">
-              <div className="">
-                <p className=" text-sm uppercase tracking-wider">PROTOTYPE / THE DATABASE </p>
+          <div className=" gap-5 pb-12">
+            <div className="flex flex-col py-5  md:flex-row">
+              <div className="  max-w-[65ch] pr-10">
+                <p className="pb-3 text-sm uppercase tracking-wider">PROTOTYPE / THE DATABASE </p>
                 <h1 className="text-4xl font-extrabold tracking-tight">Searching for Content </h1>
-                <p className="">
+                <p className="py-3">
                   I began by building a filtering system that makes the full dataset accessible.
                   Based on user research, we decided the full dataset (~2,400 units) loads by
                   default. Filters on the left narrow results, sorted by relevance. A key focus was
@@ -391,16 +352,14 @@ export default function PeopleSay() {
               </div>
             </div>
           </div>
-          <div
-            className="flex  flex-col gap-10 py-20
-          "
-          >
+
+          <div className="flex  flex-col gap-10 ">
             <div className="flex flex-col  gap-5 md:flex-row">
               <div className="basis-3/4">
                 <Image
                   src={topics}
                   alt="Filter design iterations"
-                  className="rounded-xl border-2"
+                  className=" border-2"
                   unoptimized
                 />
               </div>
@@ -416,7 +375,7 @@ export default function PeopleSay() {
                 <Image
                   src={expanded}
                   alt="Filter design iterations"
-                  className="rounded-xl border-2"
+                  className="border-2"
                   unoptimized
                 />
               </div>
@@ -431,17 +390,16 @@ export default function PeopleSay() {
         </div>
       </section>
 
+      {/* section 3 */}
+
       <section className="z-0 bg-white px-5 py-16 text-gray-900 dark:text-gray-900">
         <div className="mx-auto max-w-6xl ">
-          {/* PROTOTYPE */}
-          <div className=" gap-5 ">
-            <div className=""></div>
-
-            <div className="flex-col5 prose flex md:flex-row">
-              <div className="">
-                <p className=" text-sm uppercase tracking-wider"> v2.</p>
+          <div className=" gap-5 pb-12">
+            <div className="flex flex-col py-5  md:flex-row">
+              <div className="  max-w-[65ch] pr-10">
+                <p className="pb-3 text-sm uppercase tracking-wider">PROTOTYPE / THE DATABASE </p>
                 <h1 className="text-4xl font-extrabold tracking-tight">Laying out the Content </h1>
-                <p className="">
+                <p className="py-3">
                   The layout of the content cards themselves went under many revisions, even after
                   launch.
                 </p>
@@ -449,12 +407,12 @@ export default function PeopleSay() {
             </div>
           </div>
           <div
-            className="flex  flex-col gap-10 py-20
+            className="flex  flex-col gap-10 
           "
           >
             <div className="flex flex-col  gap-5 md:flex-row">
               <div>
-                <Image src={module2} alt="Filter design iterations" className=" " unoptimized />
+                <Image src={module4} alt="Filter design iterations" className=" " unoptimized />
               </div>
 
               <div>
@@ -467,15 +425,18 @@ export default function PeopleSay() {
           </div>
         </div>
       </section>
+
+      {/* full width section */}
+
       <section className="bg-[#E4E4E4] text-black">
-        <div className="  mx-auto flex max-w-6xl flex-col   gap-12 px-24 py-12 md:flex-row">
+        <div className="  mx-auto flex max-w-6xl flex-col   gap-12 px-24 py-32 md:flex-row">
           <div className="flex   flex-col gap-5">
             <div>
               <Image src={screen1} alt="Filter design iterations" className=" " unoptimized />
             </div>
 
             <div>
-              <p className="text-sm">
+              <p className="pl-3 text-xs">
                 On clicking a data point the content is arranged with meta data on the left and main
                 content from the interview on the right.
               </p>
@@ -483,11 +444,11 @@ export default function PeopleSay() {
           </div>
           <div className=" flex w-auto  flex-col gap-5">
             <div>
-              <Image src={screen1} alt="Filter design iterations" className=" " unoptimized />
+              <Image src={screen2} alt="Filter design iterations" className=" " unoptimized />
             </div>
 
             <div>
-              <p className="text-sm">
+              <p className="pl-3 text-xs">
                 On clicking a data point the content is arranged with meta data on the left and main
                 content from the interview on the right.
               </p>
@@ -495,11 +456,11 @@ export default function PeopleSay() {
           </div>
           <div className="flex flex-col gap-5">
             <div>
-              <Image src={module3} alt="Filter design iterations" className=" " unoptimized />
+              <Image src={screen3} alt="Filter design iterations" className=" " unoptimized />
             </div>
 
             <div>
-              <p className="text-sm">
+              <p className="pl-3 text-xs">
                 On clicking a data point the content is arranged with meta data on the left and main
                 content from the interview on the right.
               </p>
@@ -507,11 +468,11 @@ export default function PeopleSay() {
           </div>
           <div className="flex   flex-col gap-5">
             <div>
-              <Image src={screen1} alt="Filter design iterations" className=" " unoptimized />
+              <Image src={screen3} alt="Filter design iterations" className=" " unoptimized />
             </div>
 
             <div>
-              <p className="text-sm">
+              <p className="pl-3 text-xs">
                 On clicking a data point the content is arranged with meta data on the left and main
                 content from the interview on the right.
               </p>
@@ -519,6 +480,9 @@ export default function PeopleSay() {
           </div>
         </div>
       </section>
+
+      {/* conclusion */}
+
       <section id="results and testing" className=" bg-black  ">
         <section className="mx-auto max-w-3xl items-center justify-start bg-black px-5 py-32  ">
           <div className="  py-8  ">

@@ -40,7 +40,7 @@ const chartConfig = {
 
 export default function Component() {
   return (
-    <Card>
+    <Card className="dark:bg-invert dark:text-invert">
       <CardHeader>
         <CardTitle>Percentage of population comprised of older adults </CardTitle>
         <CardDescription>

@@ -19,8 +19,8 @@ export default function OtherPortfolio() {
 
   return (
     <div className=" mx-auto py-10">
-      <hr></hr>
-      <p className="container my-6 text-lg sm:text-xl">
+      {/* <hr></hr> */}
+      <p className=" container my-6 max-w-[59ch] py-12 text-lg text-gray-500 dark:text-gray-400 ">
         I‘m inquisitive, and love experimenting with media and methods on my own. You can find my
         visual and typographical adventures here:
       </p>
