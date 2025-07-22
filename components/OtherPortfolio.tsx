@@ -21,7 +21,7 @@ export default function OtherPortfolio() {
     <div className=" py-10 md:max-w-6xl">
       {/* <hr></hr> */}
       <p className=" container my-6 max-w-[59ch] py-12 text-lg text-gray-500 dark:text-gray-400 ">
-        Other work:
+        Other projects:
       </p>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item, idx) => (
