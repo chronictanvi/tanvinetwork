@@ -19,14 +19,6 @@ const projectsData = [
     href: '/projects/tps',
     calltoaction: 'Case Study',
   },
-  {
-    title: 'Comrade',
-    description: `Exploring alternative ways of faciliatating conversation on digital platforms, taking into considertation the fluidity of information exchange and the impact of interpretation on dialogue. 
-    for.`,
-    imgSrc: '/static/images/comrade-cover.png',
-    href: '/projects/comrade',
-    calltoaction: 'Case Study',
-  },
 
   {
     title: 'Data by Design',
@@ -41,6 +33,14 @@ const projectsData = [
     description: `Euripides is a reverse stress body typeface designed for Anne Carson's Grief Lessons, a translation of Four Plays by Euripides.    `,
     imgSrc: '/static/images/ERPD.gif',
     href: '/projects/euripides',
+    calltoaction: 'Case Study',
+  },
+  {
+    title: 'Comrade',
+    description: `Exploring alternative ways of faciliatating conversation on digital platforms, taking into considertation the fluidity of information exchange and the impact of interpretation on dialogue. 
+    for.`,
+    imgSrc: '/static/images/comrade-cover.png',
+    href: '/projects/comrade',
     calltoaction: 'Case Study',
   },
 ]

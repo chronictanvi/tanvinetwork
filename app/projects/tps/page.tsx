@@ -11,7 +11,7 @@ import screen3 from './screen3.png'
 
 import screen4 from './screen4.png'
 
-import video from './video.gif'
+import explore from './explore.gif'
 import cover from './output.gif'
 import module2 from './1.2.png'
 import proto from './Proto1.png'
@@ -303,8 +303,13 @@ export default function PeopleSay() {
 
           <div className="flex  flex-col gap-10">
             <div className="flex flex-col gap-5 md:flex-row">
-              <div>
-                <Image src={module1} alt="Filter design iterations" className="" unoptimized />
+              <div className=" h-auto w-[2354px] bg-[#E4E4E4]">
+                <Image
+                  src={explore}
+                  alt="Filter design iterations"
+                  className="mx-20 my-20 max-w-2xl items-center rounded-xl"
+                  unoptimized
+                />
               </div>
 
               <div>

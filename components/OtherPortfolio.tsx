@@ -10,11 +10,11 @@ export default function OtherPortfolio() {
       image: '/static/images/posters.png',
       link: 'https://tanvi.network/blog/posters',
     },
-    {
-      title: 'Print',
-      image: '/static/images/TheRosa_Issue2_cover.png',
-      link: 'https://tanvi.network/blog/TheRosa',
-    },
+    //   {
+    //     title: 'Print',
+    //     image: '/static/images/TheRosa_Issue2_cover.png',
+    //     link: 'https://tanvi.network/blog/TheRosa',
+    //   },
   ]
 
   return (
