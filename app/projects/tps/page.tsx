@@ -320,6 +320,18 @@ export default function PeopleSay() {
                 <Image src={module2} alt="Filter design iterations" className=" " unoptimized />
               </div>
 
+              <div className="aspect-w-16 aspect-h-9">
+                <iframe
+                  title="vimeo-player"
+                  src="https://player.vimeo.com/video/823111497?h=9a60ec7769"
+                  width="640"
+                  height="360"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
               <div>
                 <p className="text-sm">
                   On clicking a data point the content is arranged with meta data on the left and
