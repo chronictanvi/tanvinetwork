@@ -1,13 +1,13 @@
 export default function OtherPortfolio() {
   const items = [
     {
-      title: '--',
-      image: '/static/images/DataEcologies.jpg', // replace with your actual path
-      link: 'https://example.com/akademi-mag',
+      title: 'Pentagram',
+      image: '/static/images/pentagram.png', // replace with your actual path
+      link: 'https://www.pentagram.com/work/gates-foundation-25th-anniversary',
     },
     {
       title: 'Posters',
-      image: '/static/images/12_AtlantaStudies.png',
+      image: '/static/images/posters.png',
       link: 'https://tanvi.network/blog/posters',
     },
     {
@@ -18,13 +18,12 @@ export default function OtherPortfolio() {
   ]
 
   return (
-    <div className=" mx-auto py-10">
+    <div className=" py-10 md:max-w-6xl">
       {/* <hr></hr> */}
       <p className=" container my-6 max-w-[59ch] py-12 text-lg text-gray-500 dark:text-gray-400 ">
-        I‘m inquisitive, and love experimenting with media and methods on my own. You can find my
-        visual and typographical adventures here:
+        Other work:
       </p>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item, idx) => (
           <a
             key={idx}
@@ -33,11 +32,7 @@ export default function OtherPortfolio() {
             rel="noopener noreferrer"
             className="group flex flex-col transition hover:opacity-90"
           >
-            <img
-              src={item.image}
-              alt={item.title}
-              className="h-auto w-full rounded-md object-cover shadow-md"
-            />
+            <img src={item.image} alt={item.title} className="h-96 w-96 object-cover shadow-md" />
             <h3 className="mt-2 text-sm text-gray-800 group-hover:underline dark:text-gray-100">
               {item.title}
             </h3>

@@ -16,8 +16,8 @@ const projectsData = [
     title: 'The People Say',
     description: `A public platform to help policymakers and systems leaders better incorporate older Americans’ needs and preferences into social-scale programs. `,
     imgSrc: '/static/images/time-machine.png',
-    href: 'https://thepeoplesay.org/',
-    calltoaction: 'Website Link',
+    href: '/projects/tps',
+    calltoaction: 'Case Study',
   },
   {
     title: 'Comrade',
@@ -32,7 +32,7 @@ const projectsData = [
     title: 'Data by Design',
     description: `Leading product design for a digital book chronicling the history of data visualisation.`,
     imgSrc: '/static/images/dxd.gif',
-    href: 'https://dataxdesign.io',
+    href: 'https://dev.dataxdesign.io',
     calltoaction: 'Website Link',
   },
 

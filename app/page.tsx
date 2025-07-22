@@ -25,9 +25,9 @@ export default function Projects() {
             />
           ))}
         </div>
-        {/* <div className="m-4 px-12 py-3 ">
+        <div className="m-4 px-12 py-3 ">
           <OtherPortfolio />
-        </div> */}
+        </div>
       </div>
     </>
   )

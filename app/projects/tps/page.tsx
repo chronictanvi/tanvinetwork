@@ -209,7 +209,7 @@ export default function PeopleSay() {
                 <p className="text-sm">Homepage, www.thepeoplesay.org</p>
               </div>
             </div>
-
+            {/* 
             <div className="py-12">
               <Image
                 src={cover}
@@ -217,7 +217,7 @@ export default function PeopleSay() {
                 className=" border-gray mx-auto rounded-2xl border-2 md:max-w-6xl"
                 unoptimized
               />
-            </div>
+            </div> */}
           </div>
           {/* 
           <div id="The Challenge" className="   prose py-24">
@@ -250,10 +250,7 @@ export default function PeopleSay() {
           </div> */}
           <div>
             <div className=" flex max-w-6xl flex-col  md:flex-row">
-              <div
-                className="mx-auto max-w-[65ch] items-center
- text-center"
-              >
+              <div className="max-w-[65ch] ">
                 <p className="pb-3 text-sm uppercase tracking-wider">FUNCTIONALITY</p>
                 <h1 className="text-xl font-extrabold  tracking-tight md:text-2xl md:leading-10">
                   Content Offerings{' '}
