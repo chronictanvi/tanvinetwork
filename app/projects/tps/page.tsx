@@ -22,6 +22,9 @@ import module1 from './database explore.png'
 import module3 from './mobile-de-2.png'
 import module4 from './3.1.png'
 
+import filter1 from './datafilter-v1.png'
+import filter2 from './datafilter-v3.png'
+
 import results from './UsersSpikes.png'
 import topics from './2_Topics.gif'
 import keywords from './1_Keywords.gif'
@@ -54,7 +57,7 @@ export default function PeopleSay() {
                     The People Say is a web-based qualitative database designed to help policymakers
                     hear the voices of the public when shaping policy.
                   </h1>
-                  <p className="mt-0 text-xl font-light ">
+                  <p className="mt-5 text-xl font-light ">
                     The database features first-hand insights from a diverse group of older adults
                     and caregivers, as well as feedback from subject-matter experts on policies
                     affecting older adults.
@@ -337,7 +340,7 @@ export default function PeopleSay() {
 
       {/* section 2 */}
 
-      <section className="z-0 bg-white px-5 py-16 text-gray-900 dark:text-gray-900">
+      <section className="z-0 bg-[#E4E4E4] px-5 py-16 text-gray-900 dark:text-gray-900">
         <div className="mx-auto max-w-6xl ">
           <div className=" gap-5 pb-12">
             <div className="flex flex-col py-5  md:flex-row">
@@ -354,7 +357,7 @@ export default function PeopleSay() {
             </div>
           </div>
 
-          <div className="flex  flex-col gap-10 ">
+          {/* <div className="flex  flex-col gap-10 ">
             <div className="flex flex-col  gap-5 md:flex-row">
               <div className="basis-3/4">
                 <Image
@@ -386,6 +389,31 @@ export default function PeopleSay() {
                   Clicking on a tag on a data point leads to a filtered data base.
                 </p>
               </div>
+            </div>
+          </div> */}
+        </div>
+      </section>
+      <section className="bg-[#E4E4E4] text-black">
+        <div className="  mx-auto flex max-w-6xl flex-col gap-5  pb-32 md:flex-row">
+          <div className="flex  basis-1/2 flex-col gap-5">
+            <div>
+              <Image src={filter1} alt="Filter design iterations" className=" " unoptimized />
+            </div>
+
+            <div>
+              <p className="pl-3 text-xs">Before.</p>
+            </div>
+          </div>
+
+          <div className=" flex  basis-1/2 flex-col gap-5">
+            <div>
+              <Image src={filter2} alt="Filter design iterations" className=" " unoptimized />
+            </div>
+
+            <div>
+              <p className="pl-3 text-xs">
+                After. Filters are more integrated in the design and take up less visual space.
+              </p>
             </div>
           </div>
         </div>
@@ -437,10 +465,7 @@ export default function PeopleSay() {
             </div>
 
             <div>
-              <p className="pl-3 text-xs">
-                On clicking a data point the content is arranged with meta data on the left and main
-                content from the interview on the right.
-              </p>
+              <p className="pl-3 text-xs">Before</p>
             </div>
           </div>
           <div className=" flex w-auto  flex-col gap-5">
@@ -449,10 +474,7 @@ export default function PeopleSay() {
             </div>
 
             <div>
-              <p className="pl-3 text-xs">
-                On clicking a data point the content is arranged with meta data on the left and main
-                content from the interview on the right.
-              </p>
+              <p className="pl-3 text-xs">After</p>
             </div>
           </div>
           <div className="flex flex-col gap-5">
