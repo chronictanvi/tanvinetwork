@@ -162,10 +162,19 @@ export default function PeopleSay() {
             </div>
             <div className="basis-1/2">
               <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">GOAL</p>
-              <p className="text-xl">
-                Highlight the value of spoken word and qualitative data. Make the experiences of
-                older adults across America easily accessible to policymakers.
-              </p>
+              <p className="text-xl">We designed The People Say to: </p>
+              <ul
+                className="list-disc gap-3 pt-3
+"
+              >
+                <li> Make qualitative interview data explorable and searchable </li>
+
+                <li>Translate lived experience into actionable policy insights</li>
+
+                <li>Offer thematic and intuitive ways to browse</li>
+
+                <li>Prioritize accessibility and clarity</li>
+              </ul>
             </div>
           </div>
         </section>
@@ -182,20 +191,29 @@ export default function PeopleSay() {
                 className="
  pb-3 text-sm uppercase tracking-wider"
               >
-                THE SOLUTION
+                THE CHALLENGE
               </p>
               <h1 className="text-xl font-extrabold tracking-tight md:text-2xl md:leading-10">
                 A Platform for Experiences
               </h1>
               <p className="py-3 ">
                 {' '}
-                Visitors can search and filter the database, read curated insight pages with
-                accompanying video playlists, view participant profiles, read about our research
-                methodology, and more. The content of the qualitative research database was
-                collected from 66 older adults from around the country, seven caregivers and staff,
-                and 13 subject-matter experts from government agencies, policy think tanks, research
-                organizations, and academia.
+                The SCAN Foundation commissioned a landmark qualitative study with 100+ interviews
+                of older adults, caregivers, and frontline workers. While rich in insight, the raw
+                transcripts and codebook were difficult to explore—especially for non-researchers
+                like policymakers and funders.{' '}
+              </p>{' '}
+              <p>
+                {' '}
+                We were tasked with translating this research into a digital product that would:{' '}
               </p>
+              <ul className="list-disc gap-3 py-3">
+                <li> Preserve the nuance of lived experience</li>
+                <li>Make quotes explorable by topic,</li>
+                population, and context
+                <li> Encourage engagement, not overwhelm</li>
+                <li> Drive usage and understanding among busy public systems leaders</li>
+              </ul>
             </div>
 
             <div className="flex flex-col gap-5 md:flex-row">
@@ -254,23 +272,18 @@ export default function PeopleSay() {
           <div>
             <div className=" flex max-w-6xl flex-col  md:flex-row">
               <div className="max-w-[65ch] ">
-                <p className="pb-3 text-sm uppercase tracking-wider">FUNCTIONALITY</p>
-                <h1 className="text-xl font-extrabold  tracking-tight md:text-2xl md:leading-10">
-                  Content Offerings{' '}
-                </h1>
-                <p className="py-3 ">
-                  This website revolves around three main ingredients — The Partcipants, The
-                  Database, and the Policy Insights. The data is collected, processed, uploaded to
-                  Airtable, and then queried to the website.
-                </p>
+                <p className="pb-3 text-sm uppercase tracking-wider"> My Role</p>
+
                 <p className="pb-5 ">
-                  My role was to take this data and present it in a way that is easily parsable:
+                  I led end-to-end UX and front-end implementation, including: :
                 </p>
-                {/* <ul className="list-disc pl-5">
-                  <li>Combine data into a cohesive experience</li>
+                <ul className="list-disc pl-5">
+                  <li>Synthesis of qualitative codes into content strategy</li>
+                  <li> IA and navigation design</li>
+                  <li> Responsive, accessible interface using Tailwind CSS</li>
+
                   <li>Deliver an MVP that lays the foundation for a scalable system</li>
-                  <li>Make data easily accessible but still secure</li>
-                </ul> */}
+                </ul>
               </div>
             </div>
 
@@ -292,7 +305,7 @@ export default function PeopleSay() {
           <div className=" gap-5 pb-12">
             <div className="flex flex-col py-5  md:flex-row">
               <div className="  max-w-[65ch] pr-10">
-                <p className="pb-3 text-sm uppercase tracking-wider">PROTOTYPE / THE DATABASE </p>
+                <p className="pb-3 text-sm uppercase tracking-wider">DESIGN DECISIONS </p>
                 <h1 className="text-4xl font-extrabold tracking-tight">Accessing the data </h1>
                 <p className="py-3">
                   I began by building a filtering system that makes the full dataset accessible.
@@ -340,7 +353,7 @@ export default function PeopleSay() {
 
       {/* section 2 */}
 
-      <section className="z-0 bg-[#E4E4E4] px-5 py-16 text-gray-900 dark:text-gray-900">
+      <section className="z-0 bg-[#E4E4E4] px-5 pt-16 text-gray-900 dark:text-gray-900">
         <div className="mx-auto max-w-6xl ">
           <div className=" gap-5 pb-12">
             <div className="flex flex-col py-5  md:flex-row">
@@ -392,8 +405,7 @@ export default function PeopleSay() {
             </div>
           </div> */}
         </div>
-      </section>
-      <section className="bg-[#E4E4E4] text-black">
+        e
         <div className="  mx-auto flex max-w-6xl flex-col gap-5  pb-32 md:flex-row">
           <div className="flex  basis-1/2 flex-col gap-5">
             <div>
@@ -429,8 +441,23 @@ export default function PeopleSay() {
                 <p className="pb-3 text-sm uppercase tracking-wider">PROTOTYPE / THE DATABASE </p>
                 <h1 className="text-4xl font-extrabold tracking-tight">Laying out the Content </h1>
                 <p className="py-3">
-                  The layout of the content cards themselves went under many revisions, even after
-                  launch.
+                  <h4> Original version:</h4>
+                  <p>displayed long quotes with ambiguous filtering</p>
+                </p>{' '}
+                <p>
+                  <h4> Revised version:</h4>
+                  <ul className="list-disc">
+                    <li> Introduced concise, scannable quote excerpts</li>
+                    <li> Moved theme and population tags to the top for quick relevance</li>
+                    <li> Added one-click access to full quote context and transcript location </li>
+                    <li> Improved visual hierarchy to emphasize voice over metadata </li>
+                  </ul>
+                </p>{' '}
+                <p>
+                  <br></br>
+                  <h4 className=""> Why:</h4>
+                  Testing showed that information overload decreased engagement. A simpler card with
+                  clear entry points drove 2× more click-throughs.
                 </p>
               </div>
             </div>
@@ -513,9 +540,37 @@ export default function PeopleSay() {
             <h1 className="text-4xl font-bold  leading-9 tracking-tight  text-gray-100 md:text-4xl md:leading-10">
               Result
             </h1>
-            <p className="py-5 text-gray-100">
-              <br></br>The People Say was launched at the US Capitol in July 2024.
+
+            <p className="mb-6 text-lg ">
+              <strong>The People Say</strong> is now featured as a core tool in The SCAN
+              Foundation’s advocacy and funding efforts. It has:
             </p>
+            <ul className="mb-8 list-inside list-disc space-y-3 text-base  md:text-lg">
+              <li>
+                Informed policy briefs used at the <strong>state and federal level</strong>
+              </li>
+              <li>
+                Been featured in public presentations to{' '}
+                <strong>health systems leaders and funders</strong>
+              </li>
+              <li>
+                Supported <strong>journalists, aging researchers, and nonprofit advocates</strong>{' '}
+                in centering lived experience in their work
+              </li>
+              <li>
+                Helped shape a broader narrative around <strong>equity in aging policy</strong>
+              </li>
+            </ul>
+
+            <blockquote className="border-l-4 border-teal-500 pl-4 text-lg italic ">
+              “We believe this platform can help systems leaders hear what matters most to older
+              adults—and build systems that reflect those values.”
+              <br />
+              <span className="mt-2 block font-medium not-italic text-teal-700">
+                — The SCAN Foundation
+              </span>
+            </blockquote>
+
             {/* <Image src={results} alt="Picture of the author" className="pt-12" unoptimized /> */}
             {/* <h1 className="pt-32 text-4xl font-bold leading-9 tracking-tight text-gray-100 md:text-4xl md:leading-10">
               What's Next

@@ -1,7 +1,7 @@
 export default function OtherPortfolio() {
   const items = [
     {
-      title: 'Pentagram',
+      title: 'Pentagram ↗',
       image: '/static/images/pentagram.png', // replace with your actual path
       link: 'https://www.pentagram.com/work/gates-foundation-25th-anniversary',
     },
