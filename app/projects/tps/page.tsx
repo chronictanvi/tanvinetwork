@@ -275,7 +275,7 @@ export default function PeopleSay() {
                 <p className="pb-3 text-sm uppercase tracking-wider"> My Role</p>
 
                 <p className="pb-5 ">
-                  I led end-to-end UX and front-end implementation, including: :
+                  I led end-to-end UX and front-end implementation, including:
                 </p>
                 <ul className="list-disc pl-5">
                   <li>Synthesis of qualitative codes into content strategy</li>
