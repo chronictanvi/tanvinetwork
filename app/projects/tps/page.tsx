@@ -537,7 +537,7 @@ export default function PeopleSay() {
         <section className="mx-auto max-w-3xl items-center justify-start bg-black px-5 py-32  ">
           <div className="  py-8  ">
             <p className="py-5 "></p>
-            <h1 className="text-4xl font-bold  leading-9 tracking-tight  text-gray-100 md:text-4xl md:leading-10">
+            <h1 className="pb-3 text-4xl  font-bold leading-9 tracking-tight  text-gray-100 md:text-4xl md:leading-10">
               Result
             </h1>
 
