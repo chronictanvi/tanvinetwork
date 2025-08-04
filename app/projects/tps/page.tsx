@@ -6,13 +6,14 @@ import process from './process.png'
 import early2 from './Browse by Theme.png'
 import screen1 from './screen1.png'
 import screen2 from './screen2.png'
-
+import sitemap from './SiteMap.png'
 import screen3 from './screen3.png'
 
 import screen4 from './screen4.png'
 
 import explore from './explore.gif'
 import cover from './output.gif'
+import cover2 from './cover1.png'
 import module2 from './1.2.png'
 import proto from './Proto1.png'
 import expanded from './5_Expand.gif'
@@ -37,209 +38,162 @@ import TPSGraph from '@/components/TPSGraph'
 export default function PeopleSay() {
   return (
     <div className="">
-      <section className="sm:  z-0 bg-blue-100  px-3 px-5 py-20 text-black">
-        {/* <Image
-          src={cover}
-          alt="Cover of The People Say project"
-          className="border-1 rounded-2xl "
-        /> */}
+      <section className="z-0 items-center bg-blue-300 p-2 text-center text-black">
+        <h1> ⚒️ This page is under construction. ⚒️ </h1>
+      </section>
 
-        <div className="  mx-auto max-w-6xl">
-          <div className=""></div>
+      <section className="z-0 bg-blue-50 px-5 py-32 text-black">
+        <div className="mx-auto max-w-6xl">
+          <div className="flex flex-col pb-12 md:flex-row">
+            {/* Left Column: Overview Text */}
+            <div className="basis-3/4 pr-10">
+              <div className="max-w-[65ch] py-5 pt-20">
+                <p className="pb-3 text-sm tracking-wider text-zinc-800">OVERVIEW</p>
 
-          <div className="flex flex-col py-5  md:flex-row">
-            <div className=" basis-3/4 content-center pr-10">
-              <div className="mx-auto max-w-6xl  py-5 pt-20 ">
-                <div className=" flex max-w-[65ch] flex-col ">
-                  <p className="pb-3 text-sm tracking-wider text-zinc-800 ">OVERVIEW</p>
+                <h1 className="text-3xl font-bold tracking-tight text-gray-900">
+                  The People Say is a web-based qualitative database designed to help policymakers
+                  hear the voices of the public when shaping policy.
+                </h1>
 
-                  <h1 className="text-gray-00 text-3xl font-bold tracking-tight ">
-                    The People Say is a web-based qualitative database designed to help policymakers
-                    hear the voices of the public when shaping policy.
-                  </h1>
-                  <p className="mt-5 text-xl font-light ">
-                    The database features first-hand insights from a diverse group of older adults
-                    and caregivers, as well as feedback from subject-matter experts on policies
-                    affecting older adults.
+                <p className="mt-5 text-xl font-light">
+                  The database features first-hand insights from a diverse group of older adults and
+                  caregivers, as well as feedback from subject-matter experts on policies affecting
+                  older adults.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Column: Role, Duration, Scope, Tools */}
+            <div className="basis-1/4">
+              <div className="my-12 flex flex-col gap-5">
+                <div>
+                  <p className="pb-2 text-sm tracking-wider text-zinc-800">ROLE</p>
+                  <ul className="text-sm text-zinc-800">
+                    <li>Design Engineering Fellow</li>
+                  </ul>
+                  <p className="py-3 text-sm text-zinc-500">
+                    See the{' '}
+                    <a className="underline" href="https://thepeoplesay.org/about/about-our-team">
+                      About Our Team
+                    </a>{' '}
+                    page for a complete list of project collaborators.
                   </p>
                 </div>
 
-                <div className="my-10 flex flex-row  gap-8 md:flex-col">
-                  <div className="my-10 flex flex-col gap-8 md:flex-row">
-                    <div className="basis-1/2">
-                      <div className="pb-5">
-                        <p className="pb-2 text-sm tracking-wider text-zinc-800 ">ROLE</p>
-                        <ul className=" text-sm  text-zinc-800 ">
-                          <li>Design Engineering Fellow</li>
-                        </ul>
-                        <p className="py-3 text-sm text-zinc-500">
-                          See the{' '}
-                          <a
-                            className="underline"
-                            href="https://thepeoplesay.org/about/about-our-team "
-                          >
-                            About Our Team
-                          </a>{' '}
-                          page for a complete list of project collaborators.
-                        </p>
-                      </div>
-                      <div>
-                        <p className="pb-2 text-sm tracking-wider text-zinc-800 ">DURATION</p>
-                        <ul className=" text-sm  text-zinc-800 ">
-                          Completed in 2024 with the{' '}
-                          <a href="https://www.publicpolicylab.org/"> Public Policy Lab</a> for{' '}
-                          <a className="underline" href="https://www.thescanfoundation.org/">
-                            {' '}
-                            The SCAN Foundation
-                          </a>
-                        </ul>
-                      </div>
-                    </div>
+                <div>
+                  <p className="pb-2 text-sm tracking-wider text-zinc-800">DURATION</p>
+                  <ul className="text-sm text-zinc-800">
+                    <li>
+                      Completed in 2024 with the{' '}
+                      <a className="underline" href="https://www.publicpolicylab.org/">
+                        Public Policy Lab
+                      </a>{' '}
+                      for{' '}
+                      <a className="underline" href="https://www.thescanfoundation.org/">
+                        The SCAN Foundation
+                      </a>
+                    </li>
+                  </ul>
+                </div>
 
-                    <div className="basis-1/2">
-                      <div className="pb-5">
-                        <p className="pb-3 text-sm tracking-wider text-zinc-800 ">SCOPE</p>
-                        <ul className=" text-sm  text-zinc-800 ">
-                          <li>User Research</li>
-                          <li>User Interface Design</li>
-                          <li>Product Development</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <p className="pb-2 text-sm tracking-wider text-zinc-800 ">TOOLS</p>
-                        <ul className="  text-sm  text-zinc-800">
-                          <li>Figma</li>
-                          <li>Laravel</li>
-                          <li>Tailwind CSS</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                {/* <div>
+                  <p className="pb-2 text-sm tracking-wider text-zinc-800">SCOPE</p>
+                  <ul className="text-sm text-zinc-800">
+                    <li>User Research</li>
+                    <li>User Interface Design</li>
+                    <li>Product Development</li>
+                  </ul>
+                </div> */}
+
+                <div>
+                  <p className="pb-2 text-sm tracking-wider text-zinc-800">TOOLS</p>
+                  <ul className="text-sm text-zinc-800">
+                    <li>Figma</li>
+                    <li>Laravel</li>
+                    <li>Tailwind CSS</li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div className="basis-1/4 content-center ">
-              <Image
-                src={module3}
-                alt="Filter design iterations"
-                className="my-10 rounded-xl"
-                unoptimized
-              />
-            </div>
           </div>
+          <Image src={module4} alt="Cover of The People Say project" className=" " />
         </div>
       </section>
 
       {/* graph section */}
 
       <section className="sm: bg-white px-3  text-black">
-        <section className="mx-auto max-w-6xl py-10">
-          <div className="py-10">
-            <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">CONTEXT</p>
-            <p
-              className="text-3xl font-bold
- tracking-tight"
-            >
-              The American population is rapidly aging. <br />
-              Our society needs to prepare for this demographic shift.
+        <section className="mx-auto max-w-6xl py-32">
+          <div
+            className=" mx-auto items-center  
+ py-12 text-center "
+          >
+            <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
+              THE CORE CHALLENGE
             </p>
-          </div>
-          <TPSGraph />
-
-          <div className="my-10 flex flex-col gap-16 py-5 md:flex-row">
-            <div className="basis-1/2">
-              <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
-                PROBLEM
-              </p>
-              <p className="text-xl">
-                Health and aging policies and systems are typically designed from the perspective of
-                people who run systems, rather than those who use them.
-              </p>
-              <p className="pt-5">
-                Even when advocates, policymakers, and providers do seek to learn from older adults,
-                those engagements often have significant limitations.
-              </p>
-            </div>
-            <div className="basis-1/2">
-              <p className="pb-3 text-sm tracking-wider text-zinc-800 dark:text-zinc-400">GOAL</p>
-              <p className="text-xl">We designed The People Say to: </p>
-              <ul
-                className="list-disc gap-3 pt-3
-"
+            <div className="mx-auto max-w-[65ch]">
+              <p
+                className=" text-3xl font-bold 
+ tracking-tight"
               >
-                <li> Make qualitative interview data explorable and searchable </li>
-
-                <li>Translate lived experience into actionable policy insights</li>
-
-                <li>Offer thematic and intuitive ways to browse</li>
-
-                <li>Prioritize accessibility and clarity</li>
-              </ul>
+                How can we make data accessible for busy policymakers who need to understand lived
+                experiences of older adults?
+              </p>
+              <div className="py-10 ">
+                <blockquote className="border-l-4 border-teal-500 pl-4 text-lg italic">
+                  “Including things real constituents have said would make any policy proposal
+                  stronger and more believable"
+                  <br />
+                  <span className="mt-2 block font-medium not-italic text-teal-700">
+                    — Marc A. Cohen, PhD,
+                  </span>
+                  <span className="mt-2 block font-medium not-italic text-teal-600">
+                    Co-Director LeadingAge LTSS Center, UMASS Boston
+                  </span>
+                </blockquote>
+              </div>
             </div>
           </div>
+          <div className="my-10">
+            <p className=" py-5  text-sm tracking-wider text-zinc-800 dark:text-zinc-400">
+              THE PROBLEM SPACE
+            </p>
+
+            <div className=" flex flex-row gap-12  ">
+              <div className="basis-1/2">
+                <h1 className="text-lg font-extrabold tracking-tight  md:leading-10">
+                  Demographics Challenge
+                </h1>
+
+                <p>
+                  By 2030, adults over 65 will represent 20% of the US population—25% in rural areas
+                  by 2040. Yet our health and aging policies are designed from the perspective of
+                  system operators, not the people who actually use these systems.
+                </p>
+              </div>
+              <div className="basis-1/2">
+                <h1 className="text-lg font-extrabold tracking-tight md:leading-10">
+                  Research Challenge
+                </h1>
+                <p>
+                  Even when policymakers try to include older adult voices, engagement is limited
+                  and insights remain buried in academic reports.
+                </p>
+                <p className="pt-5">
+                  The SCAN Foundation had commissioned 100+ in-depth interviews with older adults,
+                  caregivers, and frontline workers—but the rich insights were trapped in
+                  transcripts and codebooks that policymakers couldn't easily access or explore.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="  ">{/* <TPSGraph /> */}</div>
         </section>
       </section>
 
       <section className="sm:  z-0 bg-blue-100  px-3 px-5 py-20 text-black">
         <div className="  mx-auto max-w-6xl">
-          <div id="The Solution" className="  py-24">
-            <div
-              className="
-   max-w-[65ch] content-center pb-12 "
-            >
-              <p
-                className="
- pb-3 text-sm uppercase tracking-wider"
-              >
-                THE CHALLENGE
-              </p>
-              <h1 className="text-xl font-extrabold tracking-tight md:text-2xl md:leading-10">
-                A Platform for Experiences
-              </h1>
-              <p className="py-3 ">
-                {' '}
-                The SCAN Foundation commissioned a landmark qualitative study with 100+ interviews
-                of older adults, caregivers, and frontline workers. While rich in insight, the raw
-                transcripts and codebook were difficult to explore—especially for non-researchers
-                like policymakers and funders.{' '}
-              </p>{' '}
-              <p>
-                {' '}
-                We were tasked with translating this research into a digital product that would:{' '}
-              </p>
-              <ul className="list-disc gap-3 py-3">
-                <li> Preserve the nuance of lived experience</li>
-                <li>Make quotes explorable by topic,</li>
-                population, and context
-                <li> Encourage engagement, not overwhelm</li>
-                <li> Drive usage and understanding among busy public systems leaders</li>
-              </ul>
-            </div>
-
-            <div className="flex flex-col gap-5 md:flex-row">
-              <div className="">
-                <Image
-                  src={cover}
-                  alt="Filter design iterations"
-                  className="rounded-2xl"
-                  unoptimized
-                />
-              </div>
-
-              <div>
-                <p className="text-sm">Homepage, www.thepeoplesay.org</p>
-              </div>
-            </div>
-            {/* 
-            <div className="py-12">
-              <Image
-                src={cover}
-                alt="Airtable prototype of database"
-                className=" border-gray mx-auto rounded-2xl border-2 md:max-w-6xl"
-                unoptimized
-              />
-            </div> */}
-          </div>
           {/* 
           <div id="The Challenge" className="   prose py-24">
             <div
@@ -271,29 +225,25 @@ export default function PeopleSay() {
           </div> */}
           <div>
             <div className=" flex max-w-6xl flex-col  md:flex-row">
-              <div className="max-w-[65ch] ">
-                <p className="pb-3 text-sm uppercase tracking-wider"> My Role</p>
+              <div className=" max-w-[65ch]">
+                <p className="pb-3 text-sm uppercase tracking-wider"> STRATEGY</p>
 
                 <p className="pb-5 ">
-                  I led end-to-end UX and front-end implementation, including:
+                  We categorized the site into three parts: the people, the data and the analysis.{' '}
+                  <br></br>
                 </p>
-                <ul className="list-disc pl-5">
-                  <li>Synthesis of qualitative codes into content strategy</li>
-                  <li> IA and navigation design</li>
-                  <li> Responsive, accessible interface using Tailwind CSS</li>
-
-                  <li>Deliver an MVP that lays the foundation for a scalable system</li>
-                </ul>
               </div>
             </div>
 
-            <div className="place-items-center">
+            <div className="">
               <Image
                 src={process}
                 alt="Design process diagram"
                 className=" mt-10 rounded-xl md:max-w-3xl"
               />
             </div>
+
+            <Image src={sitemap} alt="Cover of The People Say project" className=" " />
           </div>
         </div>
       </section>
