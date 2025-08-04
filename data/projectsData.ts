@@ -16,8 +16,8 @@ const projectsData = [
     title: 'The People Say',
     description: `A public platform to help policymakers and systems leaders better incorporate older Americans’ needs and preferences into social-scale programs. `,
     imgSrc: '/static/images/time-machine.png',
-    href: '/projects/tps',
-    calltoaction: 'Case Study',
+    href: 'https://thepeoplesay.org/',
+    calltoaction: 'Website Link',
   },
 
   {

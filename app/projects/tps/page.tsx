@@ -144,10 +144,10 @@ export default function PeopleSay() {
                   “Including things real constituents have said would make any policy proposal
                   stronger and more believable"
                   <br />
-                  <span className="mt-2 block font-medium not-italic text-teal-700">
+                  <span className="mt-2 block text-base font-medium not-italic text-teal-700">
                     — Marc A. Cohen, PhD,
                   </span>
-                  <span className="mt-2 block font-medium not-italic text-teal-600">
+                  <span className="mt-2 block text-base font-medium not-italic text-teal-600">
                     Co-Director LeadingAge LTSS Center, UMASS Boston
                   </span>
                 </blockquote>
