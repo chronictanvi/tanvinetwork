@@ -188,7 +188,7 @@ export default function PeopleSay() {
 
       {/* Strategy Section */}
       <section className="z-0 bg-blue-50 px-5 py-20 text-black">
-        <div className="mx-auto max-w-xl ">
+        <div className="mx-auto max-w-6xl ">
           <div
             id="Creating a bridge between lived experience and policy decisions
 "
@@ -243,12 +243,20 @@ export default function PeopleSay() {
             <div className="flex flex-col py-5 md:flex-row">
               <div className="max-w-[65ch] pr-10">
                 <p className="pb-3 text-sm uppercase tracking-wider">DESIGN DECISIONS</p>
-                <h2 className="text-4xl font-extrabold tracking-tight">Accessing the data</h2>
+                <h2 className="text-3xl font-extrabold tracking-tight">
+                  Content Strategy: From Codes to Stories{' '}
+                </h2>
                 <p className="py-3">
-                  I began by building a filtering system that makes the full dataset accessible.
-                  Based on user research, we decided the full dataset (~2,400 units) loads by
-                  default. Filters on the left narrow results, sorted by relevance. A key focus was
-                  clearly indicating which filters are active.
+                  Challenge: Academic research codes don't match how policymakers think about
+                  problems. than academic frameworks.
+                </p>
+                <p>
+                  Solution: I synthesized qualitative codes into intuitive themes that aligned with
+                  policy areas and real-world applications. than academic frameworks.
+                </p>
+                <p className="py-3">
+                  Impact: Users could find relevant insights using their own mental models rather
+                  than academic frameworks.
                 </p>
               </div>
             </div>
@@ -277,8 +285,8 @@ export default function PeopleSay() {
               </div>
               <div className="basis-1/4">
                 <p className="text-sm">
-                  On clicking a data point the content is arranged with meta data on the left and
-                  main content from the interview on the right.
+                  The content cards are tagged with the topics and also organised by themes in the
+                  insight section. This cross linkage encourages serendipitous discovery.
                 </p>
               </div>
             </div>
@@ -292,13 +300,19 @@ export default function PeopleSay() {
           <div className="gap-5 pb-12">
             <div className="flex flex-col py-5 md:flex-row">
               <div className="max-w-[65ch] pr-10">
-                <p className="pb-3 text-sm uppercase tracking-wider">PROTOTYPE / THE DATABASE</p>
-                <h2 className="text-4xl font-extrabold tracking-tight">Searching for Content</h2>
+                <p className="pb-3 text-sm uppercase tracking-wider">DESIGN DECISIONS II</p>
+                <h2 className="text-3xl font-extrabold tracking-tight">
+                  Navigation: Balancing Discovery & Depth
+                </h2>
                 <p className="py-3">
-                  I began by building a filtering system that makes the full dataset accessible.
-                  Based on user research, we decided the full dataset (~2,400 units) loads by
-                  default. Filters on the left narrow results, sorted by relevance. A key focus was
-                  clearly indicating which filters are active.
+                  Challenge: 2,400+ data points could overwhelm users, but hiding content reduces
+                  discoverability.{' '}
+                </p>{' '}
+                <p> Decision: Load the full dataset by default with progressive filtering. </p>{' '}
+                <p className="py-3">
+                  {' '}
+                  Rationale: User research showed that seeing the scope of data increased trust,
+                  while robust filtering prevented information overload.
                 </p>
               </div>
             </div>
@@ -311,7 +325,11 @@ export default function PeopleSay() {
               <Image src={filter1} alt="Filter design - before iteration" />
             </div>
             <div>
-              <p className="pl-3 text-xs">Before.</p>
+              <p className="pl-3 text-xs">
+                Before. The visual focus is on the filters, as they take up more real estate. the
+                user has to first know what themes they want to explore before viewing the juicy
+                data.
+              </p>
             </div>
           </div>
 
@@ -321,7 +339,9 @@ export default function PeopleSay() {
             </div>
             <div>
               <p className="pl-3 text-xs">
-                After. Filters are more integrated in the design and take up less visual space.
+                After. Filters are more integrated in the design and take up less visual space,
+                allowing for more of the dataset to be visible, shifting the focus on the data
+                itself.
               </p>
             </div>
           </div>
@@ -334,8 +354,10 @@ export default function PeopleSay() {
           <div className="gap-5 pb-12">
             <div className="flex flex-col py-5 md:flex-row">
               <div className="max-w-[65ch] pr-10">
-                <p className="pb-3 text-sm uppercase tracking-wider">PROTOTYPE / THE DATABASE</p>
-                <h2 className="text-4xl font-extrabold tracking-tight">Laying out the Content</h2>
+                <p className="pb-3 text-sm uppercase tracking-wider">DESIGN INSIGHTS III</p>
+                <h2 className="text-3xl font-extrabold tracking-tight">
+                  Content Cards: Optimizing for Engagement
+                </h2>
                 <div className="py-3">
                   <h3 className="font-semibold">Original version:</h3>
                   <p>displayed long quotes with ambiguous filtering</p>
