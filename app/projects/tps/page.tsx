@@ -10,8 +10,14 @@ import sitemap from './SiteMap.png'
 import screen3 from './screen3.png'
 import screen4 from './screen3.png'
 import explore from './explore.gif'
-import cover from './output.gif'
-import cover2 from './cover1.png'
+import before3 from './Before3.png'
+import after4 from './After4.png'
+
+import before5 from './Before5.png'
+import after6 from './After6.png'
+
+import cover from './video-homepage-2.gif'
+
 import module2 from './1.2.png'
 import proto from './Proto1.png'
 import expanded from './5_Expand.gif'
@@ -38,15 +44,15 @@ export default function PeopleSay() {
       </section>
 
       {/* Hero Section */}
-      <section className="z-0 bg-blue-50 px-5 py-32 text-black">
+      <section className="z-0 bg-cyan-950 px-5 py-32 text-white">
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-col pb-12 md:flex-row">
             {/* Left Column: Overview Text */}
             <div className="basis-3/4 pr-10">
               <div className="max-w-[65ch] py-5 pt-20">
-                <p className="pb-3 text-sm tracking-wider text-zinc-800">OVERVIEW</p>
+                <p className="pb-3 text-sm tracking-wider text-zinc-300">OVERVIEW</p>
 
-                <h1 className="text-3xl font-bold tracking-tight text-gray-900">
+                <h1 className="text-3xl font-bold tracking-tight text-gray-100">
                   The People Say is a web-based qualitative database designed to help policymakers
                   hear the voices of the public when shaping policy.
                 </h1>
@@ -63,11 +69,11 @@ export default function PeopleSay() {
             <div className="basis-1/4">
               <div className="my-12 flex flex-col gap-5">
                 <div>
-                  <p className="pb-2 text-sm tracking-wider text-zinc-800">ROLE</p>
-                  <ul className="text-sm text-zinc-800">
+                  <p className="pb-2 text-sm tracking-wider text-zinc-300">ROLE</p>
+                  <ul className="text-sm text-zinc-200">
                     <li>Design Engineering Fellow</li>
                   </ul>
-                  <p className="py-3 text-sm text-zinc-500">
+                  <p className="py-3 text-sm text-zinc-400">
                     See the{' '}
                     <a
                       className="underline"
@@ -82,8 +88,8 @@ export default function PeopleSay() {
                 </div>
 
                 <div>
-                  <p className="pb-2 text-sm tracking-wider text-zinc-800">DURATION</p>
-                  <ul className="text-sm text-zinc-800">
+                  <p className="pb-2 text-sm tracking-wider text-zinc-300">DURATION</p>
+                  <ul className="text-sm text-zinc-200">
                     <li>
                       Completed in 2024 with the{' '}
                       <a
@@ -108,8 +114,8 @@ export default function PeopleSay() {
                 </div>
 
                 <div>
-                  <p className="pb-2 text-sm tracking-wider text-zinc-800">TOOLS</p>
-                  <ul className="text-sm text-zinc-800">
+                  <p className="pb-2 text-sm tracking-wider text-zinc-300">TOOLS</p>
+                  <ul className="text-sm text-zinc-200">
                     <li>Figma</li>
                     <li>Laravel</li>
                     <li>Tailwind CSS</li>
@@ -118,7 +124,7 @@ export default function PeopleSay() {
               </div>
             </div>
           </div>
-          <Image src={module4} alt="Cover of The People Say project" />
+          <Image src={cover} alt="Cover of The People Say project" className="rounded-2xl" />
         </div>
       </section>
 
@@ -134,8 +140,8 @@ export default function PeopleSay() {
               </p>
               <div className="py-10">
                 <blockquote className="border-l-4 border-teal-500 pl-4 text-lg italic">
-                  "Including things real constituents have said would make any policy proposal
-                  stronger and more believable"
+                  Including things real constituents have said would make any policy proposal
+                  stronger and more believable
                   <br />
                   <span className="mt-2 block text-base font-medium not-italic text-teal-700">
                     — Marc A. Cohen, PhD,
@@ -187,8 +193,8 @@ export default function PeopleSay() {
       </section>
 
       {/* Strategy Section */}
-      <section className="z-0 bg-blue-50 px-5 py-20 text-black">
-        <div className="mx-auto max-w-6xl ">
+      <section className="z-0 bg-neutral-50 px-5 py-20 text-black">
+        <div className="mx-auto max-w-3xl ">
           <div
             id="Creating a bridge between lived experience and policy decisions
 "
@@ -227,13 +233,13 @@ export default function PeopleSay() {
               accommodating different research approaches and time constraints.
             </p>{' '}
           </div>
-          <Image src={sitemap} alt="Site map of The People Say project" />{' '}
-          <p className="text-center text-sm">
-            Our site architecture balances comprehensive access to data with intuitive navigation
-            for busy policymakers. The structure reflects our three-part framework while
-            accommodating different research approaches and time constraints.
-          </p>
         </div>
+        <Image src={sitemap} alt="Site map of The People Say project" />{' '}
+        <p className="text-center text-sm">
+          Our site architecture balances comprehensive access to data with intuitive navigation for
+          busy policymakers. The structure reflects our three-part framework while accommodating
+          different research approaches and time constraints.
+        </p>
       </section>
 
       {/* Design Decisions Section 1 */}
@@ -354,23 +360,11 @@ export default function PeopleSay() {
           <div className="gap-5 pb-12">
             <div className="flex flex-col py-5 md:flex-row">
               <div className="max-w-[65ch] pr-10">
-                <p className="pb-3 text-sm uppercase tracking-wider">DESIGN INSIGHTS III</p>
+                <p className="pb-3 text-sm uppercase tracking-wider">DESIGN DECISIONS III</p>
                 <h2 className="text-3xl font-extrabold tracking-tight">
                   Content Cards: Optimizing for Engagement
                 </h2>
                 <div className="py-3">
-                  <h3 className="font-semibold">Original version:</h3>
-                  <p>displayed long quotes with ambiguous filtering</p>
-
-                  <h3 className="mt-4 font-semibold">Revised version:</h3>
-                  <ul className="list-disc pl-5">
-                    <li>Introduced concise, scannable quote excerpts</li>
-                    <li>Moved theme and population tags to the top for quick relevance</li>
-                    <li>Added one-click access to full quote context and transcript location</li>
-                    <li>Improved visual hierarchy to emphasize voice over metadata</li>
-                  </ul>
-
-                  <h3 className="mt-4 font-semibold">Why:</h3>
                   <p>
                     Testing showed that information overload decreased engagement. A simpler card
                     with clear entry points drove 2× more click-throughs.
@@ -380,16 +374,22 @@ export default function PeopleSay() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-10">
-            <div className="flex flex-col gap-5 md:flex-row">
+          <div className="mx-auto flex flex-row gap-3">
+            <div className="flex  basis-1/2 flex-col gap-2">
               <div>
-                <Image src={module4} alt="Content layout design" />
+                <Image src={before5} alt="Filter design - before iteration" />
               </div>
               <div>
-                <p className="text-sm">
-                  On clicking a data point the content is arranged with meta data on the left and
-                  main content from the interview on the right.
-                </p>
+                <p className="pl-3 text-center">Before.</p>
+              </div>
+            </div>
+
+            <div className="flex basis-1/2 flex-col gap-5">
+              <div>
+                <Image src={after6} alt="Filter design - after iteration" />
+              </div>
+              <div>
+                <p className="pl-3 text-center ">After.</p>
               </div>
             </div>
           </div>
@@ -404,7 +404,7 @@ export default function PeopleSay() {
               <Image src={screen1} alt="Design iteration - screen 1" />
             </div>
             <div>
-              <p className="pl-3 text-xs">Before</p>
+              <p className="pl-3 text-xs">-</p>
             </div>
           </div>
 
@@ -413,7 +413,7 @@ export default function PeopleSay() {
               <Image src={screen2} alt="Design iteration - screen 2" />
             </div>
             <div>
-              <p className="pl-3 text-xs">After</p>
+              <p className="pl-3 text-xs">-</p>
             </div>
           </div>
 
@@ -422,10 +422,7 @@ export default function PeopleSay() {
               <Image src={screen3} alt="Design iteration - screen 3" />
             </div>
             <div>
-              <p className="pl-3 text-xs">
-                On clicking a data point the content is arranged with meta data on the left and main
-                content from the interview on the right.
-              </p>
+              <p className="pl-3 text-xs">-</p>
             </div>
           </div>
 
@@ -434,9 +431,7 @@ export default function PeopleSay() {
               <Image src={screen4} alt="Design iteration - screen 4" />
             </div>
             <div>
-              <p className="pl-3 text-xs">
-                Final iteration showing improved content organization and user flow.
-              </p>
+              <p className="pl-3 text-xs">-</p>
             </div>
           </div>
         </div>
