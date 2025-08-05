@@ -373,24 +373,23 @@ export default function PeopleSay() {
               </div>
             </div>
           </div>
-
-          <div className="mx-auto flex flex-row gap-3">
-            <div className="flex  basis-1/2 flex-col gap-2">
-              <div>
-                <Image src={before5} alt="Filter design - before iteration" />
-              </div>
-              <div>
-                <p className="pl-3 text-center">Before.</p>
-              </div>
+        </div>
+        <div className="mx-auto flex flex-col gap-3  md:flex-row">
+          <div className="flex  basis-1/2 flex-col gap-2">
+            <div>
+              <Image src={before5} alt="Filter design - before iteration" />
             </div>
+            <div>
+              <p className="pl-3 text-center">Before.</p>
+            </div>
+          </div>
 
-            <div className="flex basis-1/2 flex-col gap-5">
-              <div>
-                <Image src={after6} alt="Filter design - after iteration" />
-              </div>
-              <div>
-                <p className="pl-3 text-center ">After.</p>
-              </div>
+          <div className="flex basis-1/2 flex-col gap-5">
+            <div>
+              <Image src={after6} alt="Filter design - after iteration" />
+            </div>
+            <div>
+              <p className="pl-3 text-center ">After.</p>
             </div>
           </div>
         </div>
