@@ -12,7 +12,7 @@ import screen4 from './screen3.png'
 import explore from './explore.gif'
 import before3 from './Before3.png'
 import after4 from './After4.png'
-
+import card1 from './motioncard.gif'
 import before5 from './Before5.png'
 import after6 from './After6.png'
 
@@ -39,9 +39,7 @@ export default function PeopleSay() {
   return (
     <div>
       {/* Construction Notice */}
-      <section className="z-0 items-center bg-blue-300 p-2 text-center text-black">
-        <h1>⚒️ This page is under construction. ⚒️</h1>
-      </section>
+      {/* s */}
 
       {/* Hero Section */}
       <section className="z-0 bg-cyan-950 px-5 py-32 text-white">
@@ -235,11 +233,11 @@ export default function PeopleSay() {
           </div>
         </div>
         <Image src={sitemap} alt="Site map of The People Say project" />{' '}
-        <p className="text-center text-sm">
+        {/* <p className="text-center text-sm">
           Our site architecture balances comprehensive access to data with intuitive navigation for
           busy policymakers. The structure reflects our three-part framework while accommodating
           different research approaches and time constraints.
-        </p>
+        </p> */}
       </section>
 
       {/* Design Decisions Section 1 */}
@@ -395,8 +393,15 @@ export default function PeopleSay() {
         </div>
       </section>
 
+      {/* Random Animation Section */}
+      <section className="bg-[#DFDFDF] text-black">
+        <div className="mx-auto flex  flex-col gap-12 px-24  md:flex-row">
+          <Image src={card1} alt="Filter design - after iteration" />
+        </div>
+      </section>
+
       {/* Design Iterations Section */}
-      <section className="bg-[#E4E4E4] text-black">
+      {/* <section className="bg-[#E4E4E4] text-black">
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-24 py-32 md:flex-row">
           <div className="flex flex-col gap-5">
             <div>
@@ -434,7 +439,7 @@ export default function PeopleSay() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Results Section */}
       <section id="results-and-testing" className="bg-black">
