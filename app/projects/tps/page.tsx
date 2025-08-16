@@ -395,7 +395,7 @@ export default function PeopleSay() {
 
       {/* Random Animation Section */}
       <section className="bg-[#DFDFDF] text-black">
-        <div className="mx-auto flex  flex-col gap-12 px-24  md:flex-row">
+        <div className="flex flex-col  gap-12 md:mx-auto md:flex-row  md:px-24">
           <Image src={card1} alt="Filter design - after iteration" />
         </div>
       </section>
