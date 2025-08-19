@@ -21,10 +21,11 @@ export default function Bio() {
     <div className="flex justify-between divide-y divide-gray-200 px-5 dark:divide-gray-700 md:px-10">
       <div className="space-y-2 pb-8 pt-6 md:space-y-5">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-          hi hi.
+          {/* hi hi. */}
         </h1>
         <p className="max-w-2xl text-lg leading-7 text-gray-500 dark:text-gray-400">
-          I'm a Product Designer based in Brooklyn, NY.{' '}
+          Product Designer based in Brooklyn, NY. Specializing in cross-cultural user experiences
+          and design systems.{' '}
           {/*  I live with my cat{' '}
           <span
             onMouseLeave={debounce(() => {
@@ -36,18 +37,19 @@ export default function Bio() {
             Mr. Yuchi.
           </span>{' '} */}
           <br></br>
-          Recently I've worked at{' '}
+          I've led strategic design initiatives at{' '}
+          <Link className="underline" href=" https://spotify.design/">
+            Spotify,
+          </Link>{' '}
           <Link className="underline" href="https://www.pentagram.com/">
             Pentagram,
-          </Link>{' '}
+          </Link>
+          , and{' '}
           <Link className="underline" href="https://www.publicpolicylab.org/">
             Public Policy Lab
           </Link>{' '}
-          and{' '}
-          <Link className="underline" href=" https://spotify.design/">
-            Spotify.
-          </Link>{' '}
-          I also curate the world's largest respository of{' '}
+          — from scaling music discovery for Japanese audiences to designing policy platforms
+          serving millions of older Americans. I also curate the world's largest respository of{' '}
           <Link className="underline" href="https://www.are.na/tanvi/frog-based-design ">
             {' '}
             frog based design artifacts.
