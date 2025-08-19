@@ -37,7 +37,7 @@ const projectsData = [
   },
   {
     title: 'Comrade',
-    description: `Exploring alternative ways of faciliatating conversation on digital platforms, taking into consideration the fluidity of information exchange and the impact of interpretation on dialogue. 
+    description: `Exploring alternative ways of facilitating conversation on digital platforms, taking into consideration the fluidity of information exchange and the impact of interpretation on dialogue. 
     for.`,
     imgSrc: '/static/images/comrade-cover.png',
     href: '/projects/comrade',
