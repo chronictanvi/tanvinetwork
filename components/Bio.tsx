@@ -47,7 +47,7 @@ export default function Bio() {
           <Link className="underline" href=" https://spotify.design/">
             Spotify.
           </Link>{' '}
-          I also curate the world's largest respository of{' '}
+          I also curate the world's largest repository of{' '}
           <Link className="underline" href="https://www.are.na/tanvi/frog-based-design ">
             {' '}
             frog based design artifacts.
