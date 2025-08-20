@@ -20,10 +20,10 @@ export default function OtherPortfolio() {
   return (
     <div className=" py-10 md:max-w-6xl">
       {/* <hr></hr> */}
-      <p className=" container my-6 max-w-[59ch] py-12 text-lg text-gray-500 dark:text-gray-400 ">
+      <p className="max-w-2xl py-5 leading-7 tracking-tighter text-gray-500 dark:text-gray-300 md:text-lg">
         Other projects:
       </p>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item, idx) => (
           <a
             key={idx}

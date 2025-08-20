@@ -25,7 +25,7 @@ export default function Projects() {
             />
           ))}
         </div>
-        <div className="m-4 px-5 py-3 md:px-10 ">
+        <div className="m-4 px-3 py-3 md:px-5  ">
           <OtherPortfolio />
         </div>
       </div>

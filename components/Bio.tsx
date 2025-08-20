@@ -21,9 +21,9 @@ export default function Bio() {
     <div className="flex justify-between divide-y divide-gray-200 px-5 dark:divide-gray-700 md:px-10">
       <div className="space-y-2 pb-8 pt-6 md:space-y-5">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-          hi hi.
+          Hello, I'm Tanvi.
         </h1>
-        <p className="max-w-2xl text-lg leading-7 text-gray-500 dark:text-gray-400">
+        <p className="max-w-2xl leading-7 tracking-tighter text-gray-500 dark:text-gray-300 md:text-lg">
           I'm a Product Designer based in Brooklyn, NY.{' '}
           {/*  I live with my cat{' '}
           <span
@@ -47,13 +47,14 @@ export default function Bio() {
           <Link className="underline" href=" https://spotify.design/">
             Spotify.
           </Link>{' '}
-          I also curate the world's largest repository of{' '}
+          <br></br>I also curate the world's largest repository of{' '}
           <Link className="underline" href="https://www.are.na/tanvi/frog-based-design ">
             {' '}
             frog based design artifacts.
           </Link>
         </p>
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+        <p className="hidden max-w-2xl leading-7 tracking-tighter text-gray-500 dark:text-gray-300 md:visible md:text-lg">
+          {' '}
           Here's some work I've done recently:
         </p>
       </div>
