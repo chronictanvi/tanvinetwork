@@ -24,7 +24,6 @@ const InteractiveTextEffects = () => {
     '--aqua': '#fca5a5',
     '--blue': '#ef4444',
   }
-
   useEffect(() => {
     // Apply CSS variables to document root
     Object.entries(cssVariables).forEach(([property, value]) => {
@@ -40,11 +39,11 @@ const InteractiveTextEffects = () => {
       return (
         <span
           key={index}
-          className="effect--span"
+          className="effect--span text-gray-900 dark:text-white"
           data-original={char}
           onMouseOver={effectsEnabled ? (e) => handleMouseOver(e, index) : undefined}
           style={{
-            transition: ' 0.3s ease',
+            transition: 'color 0.3s ease',
           }}
         >
           {char}
@@ -68,94 +67,15 @@ const InteractiveTextEffects = () => {
 
     setTimeout(() => {
       span.innerText = originalChar
-      span.style.color = 'var(--white)'
+      span.style.color = ''
+      span.className = 'effect--span text-gray-900 dark:text-white'
     }, 1000)
   }
 
-  const containerStyle = {
-    transition: 'all 0.3s ease',
-  }
-
-  const switchStyle = {
-    margin: '0 1rem',
-    cursor: 'pointer',
-  }
-
-  //   const headerStyle = {
-  //     fontSize: '2rem',
-  //     marginBottom: '2rem',
-  //     fontWeight: 'bold',
-  //   }
-
-  //   const controlsStyle = {
-  //     marginBottom: '2rem',
-  //     display: 'flex',
-  //     flexWrap: 'wrap',
-  //     gap: '1rem',
-  //     alignItems: 'center',
-  //   }
-
-  //   const labelStyle = {
-  //     display: 'flex',
-  //     alignItems: 'center',
-  //     gap: '0.5rem',
-  //     cursor: 'pointer',
-  //   }
-
-  //   const demoTextStyle = {
-  //     fontSize: '1.5rem',
-  //     lineHeight: '1.6',
-  //     maxWidth: '800px',
-  //   }
-
-  //   if (!stylesEnabled) {
-  //     return (
-  //       <div style={{ padding: '2rem', fontFamily: 'monospace' }}>
-  //         <div style={controlsStyle}>
-  //           <label style={labelStyle}>
-  //             <input
-  //               type="checkbox"
-  //               checked={stylesEnabled}
-  //               onChange={(e) => setStylesEnabled(e.target.checked)}
-  //               style={switchStyle}
-  //             />
-  //             Enable Styles
-  //           </label>
-  //         </div>
-  //         <div>
-  //         </div>
-  //       </div>
-  //     );
-  //   }
-
   return (
-    <div style={containerStyle}>
-      {/* <div style={controlsStyle}>        
-        <label style={labelStyle}>
-          <input
-            type="checkbox"
-            checked={effectsEnabled}
-            onChange={(e) => setEffectsEnabled(e.target.checked)}
-            style={switchStyle}
-          />
-          Enable Effects
-        </label>
-        
-        <label style={labelStyle}>
-          <input
-            type="checkbox"
-            checked={stylesEnabled}
-            onChange={(e) => setStylesEnabled(e.target.checked)}
-            style={switchStyle}
-          />
-          Enable Styles
-        </label>
-      </div> */}
-
-      <h1 className="text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-        {wrapTextInSpans("Hello, I'm Tanvi.")}
-      </h1>
-    </div>
+    <h1 className="text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+      {wrapTextInSpans("Hello, I'm Tanvi.")}
+    </h1>
   )
 }
 
