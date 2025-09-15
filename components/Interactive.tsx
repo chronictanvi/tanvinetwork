@@ -5,8 +5,8 @@ const InteractiveTextEffects = () => {
   const [stylesEnabled, setStylesEnabled] = useState(true)
   const textRef = useRef(null)
 
-  const colors = ['#FF4500', '#ff0000', '#f87171', '#fecaca', '#fca5a5', '#ef4444']
-  const stars = ['❋', '✦', '✺', '✹', '✤']
+  const colors = ['#ff0000', '#f87171', '#fecaca', '#fca5a5', '#ef4444']
+  const stars = ['❋', '✦', '⁕', '✺', '✹', '✤', '✿', '❉']
   const colorArray = ['red', 'orange', 'green', 'aqua', 'blue']
 
   const [currentColorIndex, setCurrentColorIndex] = useState(-1)
