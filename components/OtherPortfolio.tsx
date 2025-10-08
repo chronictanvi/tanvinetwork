@@ -33,9 +33,11 @@ export default function OtherPortfolio() {
             className="group flex flex-col transition hover:opacity-90"
           >
             <img src={item.image} alt={item.title} className="h-96 w-96 object-cover shadow-md" />
-            <h3 className="mt-2 text-sm text-gray-800 group-hover:underline dark:text-gray-100  hover:decoration-primary-400
-            underline-offset-4
-            ">
+            <h3
+              className="mt-2 text-sm text-gray-800 underline-offset-4 hover:decoration-primary-400  group-hover:underline
+            dark:text-gray-100
+            "
+            >
               {item.title}
             </h3>
           </a>

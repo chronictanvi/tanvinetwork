@@ -14,6 +14,7 @@ import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
 import { GoogleTagManager } from '@next/third-parties/google'
 import { GoogleAnalytics } from '@/components/GoogleAnalytics'
+import CustomCursor from '@/components/CustomCursor'
 
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -88,6 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {process.env.NODE_ENV === 'production' ? <GoogleTagManager gtmId="GTM-PRGXHK3D" /> : null}
         <GoogleAnalytics />
         <ThemeProviders>
+          <CustomCursor />
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
           <SectionContainer>
             <div className="px-10md:px-20 flex flex-col justify-between font-sans">
