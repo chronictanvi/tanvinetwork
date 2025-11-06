@@ -442,8 +442,8 @@ export default function PeopleSay() {
       </section> */}
 
       {/* Results Section */}
-      <section id="results-and-testing" className="bg-black">
-        <div className="mx-auto max-w-3xl items-center justify-start bg-black px-5 py-32">
+      <section id="results-and-testing" className="bg-cyan-950">
+        <div className="mx-auto max-w-3xl items-center justify-start  text-white px-5 py-32">
           <div className="py-8">
             <h2 className="pb-3 text-4xl font-bold leading-9 tracking-tight text-gray-100 md:text-4xl md:leading-10">
               Result
