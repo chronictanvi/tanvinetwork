@@ -471,8 +471,7 @@ export default function PeopleSay() {
             </ul>
 
             <blockquote className="border-l-4 border-teal-500 pl-4 text-lg italic text-gray-100">
-              "We believe this platform can help systems leaders hear what matters most to older
-              adults—and build systems that reflect those values."
+            “We believe this platform can help systems leaders hear what matters most to older adults—and build systems that reflect those values.”
               <br />
               <span className="mt-2 block font-medium not-italic text-teal-700">
                 — The SCAN Foundation
