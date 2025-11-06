@@ -450,8 +450,9 @@ export default function PeopleSay() {
             </h2>
 
             <p className="mb-6 text-lg text-gray-100">
-            The People Say has been used as a data source to inform <a href="https://thepeoplesay.org/storage/media/The-Growing-Cost-of-Inaction-A-Practical-Framework-for-Addressing--the-Long-Term-Care-Financing-Challenge.pdf">reports </a> and policy proposals and decisions.
-
+              <strong>The People Say</strong> is now featured as a core tool in The SCAN
+              Foundation's advocacy and funding efforts. It has:
+            </p>
 
             <ul className="mb-8 list-inside list-disc space-y-3 text-base text-gray-100 md:text-lg">
               <li>
