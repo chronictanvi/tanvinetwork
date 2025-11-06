@@ -442,40 +442,84 @@ export default function PeopleSay() {
       </section> */}
 
       {/* Results Section */}
-      <section id="results-and-testing" className="bg-black">
-        <div className="mx-auto max-w-3xl items-center justify-start bg-black px-5 py-32">
+      <section id="results-and-testing" className=" bg-cyan-950">
+        <div className="mx-auto max-w-3xl items-center justify-start px-5 py-32">
           <div className="py-8">
             <h2 className="pb-3 text-4xl font-bold leading-9 tracking-tight text-gray-100 md:text-4xl md:leading-10">
               Result
             </h2>
 
-            <p className="mb-6 text-lg text-gray-100">
-              <strong>The People Say</strong> is now featured as a core tool in The SCAN
-              Foundation's advocacy and funding efforts. It has:
-            </p>
-
-            <ul className="mb-8 list-inside list-disc space-y-3 text-base text-gray-100 md:text-lg">
+            <ul className="mb-8  space-y-3 text-base text-gray-100 md:text-lg">
               <li>
-                Informed policy briefs used at the <strong>state and federal level</strong>
+                The People Say has informed{' '}
+                <a
+                  className="underline"
+                  href="https://atiadvisory.com/resources/wp-content/uploads/2025/07/ATI_Advancing-Beneficiary-Choice-in-Medicare-Advantage_Shaping-Future-of-Nonmedical-Benefits.pdf"
+                >
+                  policy{' '}
+                </a>
+                <a
+                  className="underline"
+                  href="https://thepeoplesay.org/storage/media/The-Growing-Cost-of-Inaction-A-Practical-Framework-for-Addressing--the-Long-Term-Care-Financing-Challenge.pdf"
+                >
+                  {' '}
+                  briefs
+                </a>{' '}
+                used at the <strong>state and federal level. </strong>
               </li>
               <li>
-                Been featured in public presentations to{' '}
-                <strong>health systems leaders and funders</strong>
+                The platform has also been featured in public presentations to health systems
+                leaders and funders, including{' '}
+                <a
+                  className="underline"
+                  href="https://www.gih.org/restricted/?redirect_to=%2Fevent%2F2025-gih-annual-conference-on-health-philanthropy%2F"
+                >
+                  GrantMakers in Health,
+                </a>{' '}
+                <a className="underline" href="https://www.ncoa.org/article/age-action-2025/">
+                  National Council on Aging
+                </a>{' '}
+                and{' '}
+                <a
+                  className="underline"
+                  href="https://medicaiddirectors.org/events/2024-fall-conference/"
+                >
+                  National Association of Medicaid Directors.
+                </a>
               </li>
               <li>
-                Supported <strong>journalists, aging researchers, and nonprofit advocates</strong>{' '}
-                in centering lived experience in their work
-              </li>
-              <li>
-                Helped shape a broader narrative around <strong>equity in aging policy</strong>
+                It has recevied press and support from{' '}
+                <a
+                  className="underline"
+                  href="https://datastories.aarp.org/the-lived-experience-of-adults-50-plus/factors/overview/index.html"
+                >
+                  {' '}
+                  AARP,
+                </a>{' '}
+                <a
+                  className="underline"
+                  href="https://www.commonwealthfund.org/blog/2025/how-us-and-world-can-help-address-loneliness-and-mental-health-older-people?utm_campaign=Improving%20Health%20Care%20Quality&utm_medium=email&_hsenc=p2ANqtz-_Ty7VWqsotyguXEsvAoJzWKQVtguPIxREaVC4cbpELC-xTrJzGZzW_4yopByhuydynDr-n5Y_Kbns-I3TwJv2AC0a4rA&_hsmi=357029158&utm_source=alert"
+                >
+                  {' '}
+                  The Commonwealth Fund
+                </a>{' '}
+                and
+                <a
+                  className="underline"
+                  href="https://www.healthaffairs.org/content/forefront/elevating-beneficiary-perspectives-promise-and-pitfalls-medicare-advantage-supplemental"
+                >
+                  {' '}
+                  Health Affairs
+                </a>{' '}
+                for helping shape a broader narrative around equity in aging policy.
               </li>
             </ul>
 
-            <blockquote className="border-l-4 border-teal-500 pl-4 text-lg italic text-gray-100">
-              "We believe this platform can help systems leaders hear what matters most to older
-              adults—and build systems that reflect those values."
+            <blockquote className="border-l-4 border-teal-500 pl-4 text-lg  text-gray-100">
+              We believe this platform can help systems leaders hear what matters most to older
+              adults—and build systems that reflect those values.
               <br />
-              <span className="mt-2 block font-medium not-italic text-teal-700">
+              <span className="mt-2 block font-medium not-italic text-teal-500">
                 — The SCAN Foundation
               </span>
             </blockquote>
