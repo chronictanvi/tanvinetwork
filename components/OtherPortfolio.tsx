@@ -12,7 +12,7 @@ export default function OtherPortfolio() {
     },
       {
         title: 'Print',
-        image: '/static/images/TheRosa_Issue2_cover.png',
+        image: '/static/images/TheRosa_Issue3_cover.png',
         link: 'https://tanvi.network/blog/TheRosa',
       },
   ]
