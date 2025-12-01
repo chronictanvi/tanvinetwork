@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Portfolio</title>
+      <link>https://tanvi.network/blog</link>
+      <description>Tanvi&#39;s design portfolio.</description>
+      <language>en-us</language>
+      <managingEditor>chronictanvi@gmail.com (Tanvi)</managingEditor>
+      <webMaster>chronictanvi@gmail.com (Tanvi)</webMaster>
+      <lastBuildDate>Fri, 28 Feb 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://tanvi.network/tags/ai/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tanvi.network/blog/TheRosa</guid>
+    <title>The Rosa</title>
+    <link>https://tanvi.network/blog/TheRosa</link>
+    <description>Collection of my posters for AIAI Network</description>
+    <pubDate>Fri, 28 Feb 2025 00:00:00 GMT</pubDate>
+    <author>chronictanvi@gmail.com (Tanvi)</author>
+    <category>ai</category>
+  </item>
+
+  <item>
+    <guid>https://tanvi.network/blog/posters</guid>
+    <title>Posters</title>
+    <link>https://tanvi.network/blog/posters</link>
+    <description>Collection of my posters for AIAI Network</description>
+    <pubDate>Fri, 28 Feb 2025 00:00:00 GMT</pubDate>
+    <author>chronictanvi@gmail.com (Tanvi)</author>
+    <category>ai</category>
+  </item>
+
+    </channel>
+  </rss>
