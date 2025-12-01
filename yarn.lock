@@ -4940,10 +4940,10 @@ p-locate@^5.0.0:
   dependencies:
     p-limit "^3.0.2"
 
-p5@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.npmjs.org/p5/-/p5-2.0.5.tgz"
-  integrity sha512-JeBIHvxmCK2TcKZiyqe0z6rPcSiSID1tbeFwo5FDBiwrmiGtAvLXRLjWtTDGEVHcr/EICe8hEmNwWIQ+xIzKeQ==
+p5@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/p5/-/p5-2.1.1.tgz"
+  integrity sha512-10pxJO/iUCJJ1aTAJJoH4zUhGuu9buxXBvI8mDL62HYfDRSUCWTNGAvxLXTZwfpTpWi+RyTk+Ys50JU1YxBy7Q==
   dependencies:
     "@davepagurek/bezier-path" "^0.0.2"
     "@japont/unicode-range" "^1.0.0"
