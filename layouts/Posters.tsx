@@ -22,7 +22,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
   return (
     <SectionContainer>
       <ScrollTopAndComment />
-      <article className="px-5 md:px-20">
+      <article className="px-1 md:px-20">
         <div>
           <header>
             <div className="space-y-1 ">
@@ -47,7 +47,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
               </div>
             )} */}
             <footer>
-              <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">
+              <div className="flex flex-col text-sm font-medium px-4 sm:flex-row sm:justify-between sm:text-base">
                 {prev && prev.path && (
                   <div className="pt-4 xl:pt-8">
                     <Link
