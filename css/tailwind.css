@@ -93,6 +93,15 @@ input:-webkit-autofill:focus {
   z-index: 2;
   border-radius: 0px 0px 24px 24px !important;
 }
+/* Details arrow rotation */
+details summary .details-arrow {
+  transition: transform 0.3s ease;
+}
+
+details[open] summary .details-arrow {
+  transform: rotate(180deg);
+}
+
 @layer base {
   :root {
     --radius: 0.5rem;
