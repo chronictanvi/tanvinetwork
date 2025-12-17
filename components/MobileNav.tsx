@@ -40,7 +40,7 @@ const MobileNav = () => {
         <Dialog as="div" className="relative z-10" onClose={onToggleNav}>
           <Transition.Child
             as={Fragment}
-            enter="ease-out duration-300"
+            enter="ease-out duration-500"
             enterFrom="opacity-0"
             enterTo="opacity-100"
             leave="ease-in duration-200"
@@ -54,31 +54,17 @@ const MobileNav = () => {
             <div className="flex min-h-full items-center justify-center p-4 text-center">
               <Transition.Child
                 as={Fragment}
-                enter="transition ease-in-out duration-300 transform"
+                enter="transition ease-in-out duration-500 transform"
                 enterFrom="translate-x-full opacity-0"
                 enterTo="translate-x-0 opacity-95"
                 leave="transition ease-in duration-200 transform"
                 leaveFrom="translate-x-0 opacity-95"
                 leaveTo="translate-x-full opacity-0"
               >
-                <Dialog.Panel className="fixed left-0 top-0 z-10 h-full w-full bg-white opacity-95 duration-300 dark:bg-gray-950 dark:opacity-[0.98]">
-                  <nav className="fixed mt-8 h-full text-left">
-                    {headerNavLinks.map((link) => (
-                      <div key={link.title} className="px-12 py-4">
-                        <Link
-                          href={link.href}
-                          className="text-2xl font-bold text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
-                          onClick={onToggleNav}
-                        >
-                          {link.title}
-                        </Link>
-                      </div>
-                    ))}
-                  </nav>
-
-                  <div className="flex justify-end">
+                <Dialog.Panel className="fixed left-0 top-0 z-10 h-full w-full bg-white opacity-95 duration-300 dark:bg-stone-950 dark:opacity-[0.98]">
+                  <div className="absolute right-8 top-10">
                     <button
-                      className="mr-8 mt-11 h-8 w-8"
+                      className="h-8 w-8"
                       aria-label="Toggle Menu"
                       onClick={onToggleNav}
                     >
@@ -96,6 +82,19 @@ const MobileNav = () => {
                       </svg>
                     </button>
                   </div>
+                  <nav className="flex h-full w-full flex-col items-center justify-center">
+                    {headerNavLinks.map((link) => (
+                      <div key={link.title} className="py-4">
+                        <Link
+                          href={link.href}
+                          className="text-3xl/3 md:text-5xl/5 font-bold  text-stone-900 hover:text-primary-500 dark:text-stone-100 dark:hover:text-primary-400"
+                          onClick={onToggleNav}
+                        >
+                          {link.title}
+                        </Link>
+                      </div>
+                    ))}
+                  </nav>
                 </Dialog.Panel>
               </Transition.Child>
             </div>
