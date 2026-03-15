@@ -22,7 +22,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
   return (
     <SectionContainer>
       <ScrollTopAndComment />
-      <article className="px-1 md:px-20">
+      <article className="px-1 md:px-1">
         <div>
           <header>
             <div className="space-y-1 ">
