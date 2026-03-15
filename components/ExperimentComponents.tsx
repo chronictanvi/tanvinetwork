@@ -34,7 +34,7 @@ interface ExperimentMediaProps {
 
 export function ExperimentMedia({ children }: ExperimentMediaProps) {
   return (
-    <div className="w-full [&>iframe]:min-h-[400px] [&>iframe]:w-full [&>iframe]:rounded-md [&>iframe]:border-0 [&>img]:w-full [&>img]:rounded-md [&>video]:min-h-[300px] [&>video]:w-full [&>video]:rounded-md">
+    <div className="w-full [&>iframe]:min-h-[400px] [&>iframe]:w-full  [&>iframe]:border-0 [&>img]:w-full  [&>video]:min-h-[300px] [&>video]:w-full ">
       {children}
     </div>
   )
