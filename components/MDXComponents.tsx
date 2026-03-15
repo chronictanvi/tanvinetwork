@@ -17,6 +17,7 @@ import {
   ExperimentCardActions,
   VideoEmbed,
 } from './ExperimentComponents'
+import OpticalGrid from './OpticalGrid'
 
 export const components: MDXComponents = {
   Image,
@@ -35,4 +36,5 @@ export const components: MDXComponents = {
   ExperimentCardContent,
   ExperimentCardActions,
   VideoEmbed,
+  OpticalGrid,
 }

@@ -13,24 +13,10 @@ interface LayoutProps {
 }
 
 export default function ExperimentsLayout({ content, next, prev, children }: LayoutProps) {
-  const { title, summary } = content
-
   return (
     <SectionContainer>
       <ScrollTopAndComment />
       <article className="px-4 md:px-8 lg:px-12">
-        {/* Page Header */}
-        <header className="mb-16 pt-8">
-          <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 md:text-4xl">
-            {title}
-          </h1>
-          {summary && (
-            <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">{summary}</p>
-          )}
-        </header>
-
-        {/* Horizontal Divider */}
-        <hr className="border-gray-200 dark:border-gray-700" />
 
         {/* Main Content */}
         <div className="py-12">

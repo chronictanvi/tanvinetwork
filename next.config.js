@@ -13,7 +13,7 @@ const ContentSecurityPolicy = `
   media-src *.s3.amazonaws.com;
   connect-src *;
   font-src 'self';
-  frame-src giscus.app
+  frame-src giscus.app *.p5js.org editor.p5js.org preview.p5js.org
 `
 
 const securityHeaders = [
