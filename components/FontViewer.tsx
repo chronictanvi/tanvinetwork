@@ -54,7 +54,7 @@ const FontViewer = () => {
           {trackSize}
         </label> */}
         </div>
-        <div className="flex justify-center">
+        <div className="flex m-24 justify-center">
           <div
             className="character-preview "
             style={{ fontSize: `${fontSize}px`, marginTop: '20px' }}
