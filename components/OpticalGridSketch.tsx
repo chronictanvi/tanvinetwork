@@ -35,8 +35,9 @@ export default function OpticalGridSketch({ className }: OpticalGridSketchProps)
     p5.stroke(0)
     p5.strokeWeight(1)
 
-    const cols = 5 + p5.mouseX / 5
-    const rows = 5 + p5.mouseX / 5
+    const mx = p5.mouseX === 0 ? p5.width / 2 : p5.mouseX
+    const cols = 5 + mx / 5
+    const rows = 5 + mx / 5
     const cellSize = p5.width / cols
 
     for (let x = 0; x < cols; x++) {

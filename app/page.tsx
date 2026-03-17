@@ -14,11 +14,11 @@ export default function Home() {
     <>
       <Bio />
       <div className="overflow-x-hidden py-12">
-        <div className="px-12">
+        <div className="px-5 md:px-12">
           <h4 className="border-b border-gray-200 py-4 text-sm uppercase dark:border-gray-700">
             currently tinkering on
           </h4>
-          <div className="grid grid-cols-1 gap-8 py-8 md:grid-cols-2 md:items-end">
+          <div className="grid grid-cols-1 gap-24 md:gap-8  py-8 md:grid-cols-2 md:items-end">
             <div className="flex flex-col items-center">
               <DraggablePosterStack />
               <div className="pt-4 text-center">
@@ -57,14 +57,14 @@ export default function Home() {
          
         </div>
 
-   <div className="px-12 mt-32">
+   <div className="px-5 md:px-12 mt-12 md:mt-32">
           <h4 className="border-b border-gray-200 py-4 text-sm uppercase dark:border-gray-700">
           select projects 
           </h4>
           </div>
 
 
-        <div className="container mt-32">
+        <div className="container mt-12 md:mt-12">
          
           {projectsData.map((d) => (
             <Card
