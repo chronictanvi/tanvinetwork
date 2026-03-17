@@ -17,7 +17,7 @@ interface ExperimentTitleProps {
 }
 
 export function ExperimentTitle({ children }: ExperimentTitleProps) {
-  return <p className="m-0 pt-4 text-base not-prose font-bold leading-snug">{children}</p>
+  return <div className="pt-4 text-base font-bold leading-snug not-prose">{children}</div>
 }
 
 interface ExperimentDescProps {
@@ -25,7 +25,7 @@ interface ExperimentDescProps {
 }
 
 export function ExperimentDesc({ children }: ExperimentDescProps) {
-  return <p className="m-0 pt-4 text-base not-prose leading-snug text-gray-600 dark:text-gray-400">{children}</p>
+  return <div className="pt-4 text-base leading-snug text-gray-600 not-prose dark:text-gray-400">{children}</div>
 }
 
 interface ExperimentMediaProps {
