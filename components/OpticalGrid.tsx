@@ -6,6 +6,10 @@ const OpticalGridSketch = dynamic(() => import('./OpticalGridSketch'), {
   ssr: false,
 })
 
-export default function OpticalGrid() {
-  return <OpticalGridSketch />
+interface OpticalGridProps {
+  className?: string
+}
+
+export default function OpticalGrid({ className }: OpticalGridProps) {
+  return <OpticalGridSketch className={className} />
 }

@@ -4,7 +4,11 @@ import { useRef, useEffect, useState } from 'react'
 import Sketch from 'react-p5'
 import p5Types from 'p5'
 
-export default function OpticalGridSketch() {
+interface OpticalGridSketchProps {
+  className?: string
+}
+
+export default function OpticalGridSketch({ className }: OpticalGridSketchProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [size, setSize] = useState({ width: 700, height: 700 })
 
@@ -55,7 +59,7 @@ export default function OpticalGridSketch() {
   }
 
   return (
-    <div ref={containerRef} className="w-full">
+    <div ref={containerRef} className={className || 'w-full overflow-hidden [&_canvas]:!w-full [&_canvas]:!h-auto'}>
       <Sketch setup={setup} draw={draw} windowResized={windowResized} />
     </div>
   )

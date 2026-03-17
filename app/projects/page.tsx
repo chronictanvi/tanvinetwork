@@ -1,0 +1,28 @@
+import projectsData from '@/data/projectsData'
+import Card from '@/components/Card'
+import { genPageMetadata } from 'app/seo'
+import OtherPortfolio from '@/components/OtherPortfolio'
+
+export const metadata = genPageMetadata({ title: 'Projects' })
+
+export default function Projects() {
+  return (
+    <div className="overflow-x-hidden py-12">
+      <div className="container">
+        {projectsData.map((d) => (
+          <Card
+            key={d.title}
+            title={d.title}
+            description={d.description}
+            imgSrc={d.imgSrc}
+            href={d.href}
+            calltoaction={d.calltoaction}
+          />
+        ))}
+      </div>
+      <div className="m-4 px-3 py-3 md:px-5">
+        <OtherPortfolio />
+      </div>
+    </div>
+  )
+}

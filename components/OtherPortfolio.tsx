@@ -5,11 +5,7 @@ export default function OtherPortfolio() {
       image: '/static/images/pentagram.png', // replace with your actual path
       link: 'https://www.pentagram.com/work/gates-foundation-25th-anniversary',
     },
-    {
-      title: 'Posters',
-      image: '/static/images/posters.png',
-      link: 'https://tanvi.network/blog/posters',
-    },
+
       {
         title: 'Print',
         image: '/static/images/TheRosa_Issue3_cover.png',

@@ -13,7 +13,7 @@ const ContentSecurityPolicy = `
   media-src *.s3.amazonaws.com;
   connect-src *;
   font-src 'self';
-  frame-src giscus.app *.p5js.org editor.p5js.org preview.p5js.org
+  frame-src giscus.app *.p5js.org editor.p5js.org preview.p5js.org player.vimeo.com
 `
 
 const securityHeaders = [
@@ -83,14 +83,7 @@ module.exports = () => {
     },
 
     async redirects() {
-      return [
-        // Basic redirect
-        {
-          source: '/projects',
-          destination: '/',
-          permanent: true,
-        },
-      ]
+      return []
     },
 
     webpack: (config, options) => {
