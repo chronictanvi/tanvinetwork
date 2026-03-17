@@ -6,7 +6,7 @@ interface ExperimentRowProps {
 
 export function ExperimentRow({ children }: ExperimentRowProps) {
   return (
-    <div className="grid grid-cols-1 gap-6 border-b border-gray-200 last:border-b-0 dark:border-gray-700 md:grid-cols-[2fr_3fr_5fr] md:items-start">
+    <div className="grid grid-cols-1 p-12 gap-6 border-b border-gray-200 last:border-b-0 dark:border-gray-700 md:grid-cols-[2fr_3fr_5fr] md:items-start">
       {children}
     </div>
   )
