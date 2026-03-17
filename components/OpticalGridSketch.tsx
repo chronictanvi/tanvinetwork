@@ -6,7 +6,7 @@ import p5Types from 'p5'
 
 export default function OpticalGridSketch() {
   const containerRef = useRef<HTMLDivElement>(null)
-  const [size, setSize] = useState({ width: 800, height: 800 })
+  const [size, setSize] = useState({ width: 700, height: 700 })
 
   useEffect(() => {
     const updateSize = () => {
