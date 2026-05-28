@@ -24,12 +24,17 @@ const event = ({ action, category, label, value }: any) => {
   })
 }
 
-const downloadEuripides = () => {
+const downloadEuripides = (fileName: string) => {
   event({
     action: 'dwld_euripides',
     category: 'ecommerce',
     label: 'Item dowloaded',
     value: 'Font',
+  })
+  ;(window as any).gtag('event', 'file_download', {
+    file_name: fileName,
+    file_extension: fileName.split('.').pop(),
+    link_url: `/static/fonts/${fileName}`,
   })
 }
 
@@ -53,7 +58,7 @@ export default function Euripides() {
                 >
                   <button
                     className="rounded-lg border-2 border-black	 px-4 py-4 text-black hover:bg-red-400 dark:border-white dark:text-white"
-                    onClick={downloadEuripides}
+                    onClick={() => downloadEuripides('Euripides.woff2')}
                   >
                     Download .woff
                   </button>
@@ -68,7 +73,7 @@ export default function Euripides() {
                   {' '}
                   <button
                     className="rounded-lg border-2 border-black	 px-4 py-4 text-black hover:bg-red-400 dark:border-white dark:text-white"
-                    onClick={downloadEuripides}
+                    onClick={() => downloadEuripides('Euripides.otf')}
                   >
                     Download .otf
                   </button>
