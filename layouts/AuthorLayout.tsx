@@ -15,7 +15,7 @@ export default function AuthorLayout({ children, content }: Props) {
     <>
       <div className="px-10 md:px-20">
         <div className="">
-          {/* <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          {/* <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-300 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             About
           </h1> */}
         </div>
@@ -40,7 +40,7 @@ export default function AuthorLayout({ children, content }: Props) {
               <SocialIcon kind="x" href={twitter} />
             </div>
           </div>
-          <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
+          <div className="prose leading-relaxed max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2 prose-a:!text-gray-800 dark:prose-a:!text-gray-200 prose-a:!decoration-primary-400 prose-a:underline prose-a:underline-offset-4 hover:prose-a:decoration-dotted">
             {children}
           </div>
         </div>

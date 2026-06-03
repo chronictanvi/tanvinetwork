@@ -44,6 +44,14 @@ export default function Bio() {
           >
             Pentagram,
           </Link>{' '}
+             <Link
+            className="underline decoration-primary-400
+              underline-offset-4
+              hover:decoration-dotted"
+            href="https://www.polymode.studio/"
+          >
+           Polymode,
+          </Link>{' '}
           <Link
             className="underline decoration-primary-400
             underline-offset-4
@@ -61,7 +69,7 @@ export default function Bio() {
           >
             Spotify.
           </Link>{' '}
-          <br></br>I also curate the world's largest repository of{' '}
+I also curate the world's largest repository of{' '}
           <Link
             className="underline decoration-primary-400
             underline-offset-4
