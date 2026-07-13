@@ -23,7 +23,7 @@ export default function Bio() {
       <div className="space-y-2 pb-8 pt-6 md:space-y-5">
         <InteractiveTextEffects />
         <p className="max-w-2xl leading-8 tracking-tighter text-gray-500 dark:text-gray-300 md:text-lg">
-          I'm a Product Designer based in Brooklyn, NY. Currently at . {' '}
+          I'm a Designer, Art Director based in Harlem, NY. Currently at . {' '}
           {/*  I live with my cat{' '}
           <span
             onMouseLeave={debounce(() => {
